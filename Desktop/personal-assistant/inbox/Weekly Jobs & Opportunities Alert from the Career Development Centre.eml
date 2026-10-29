@@ -1,0 +1,346 @@
+Received: from MI9PR01MB830285.eurprd01.prod.exchangelabs.com
+ (2603:10a6:290:b6::14) by GV2PR01MB12437.eurprd01.prod.exchangelabs.com with
+ HTTPS; Wed, 28 Oct 2026 15:38:06 +0000
+Received: from PA7P264CA0145.FRAP264.PROD.OUTLOOK.COM (2603:10a6:102:377::17)
+ by MI9PR01MB830285.eurprd01.prod.exchangelabs.com (2603:10a6:290:b6::14) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.22; Wed, 28 Oct
+ 2026 15:38:01 +0000
+Received: from MI3PEPF0000855E.eurprd05.prod.outlook.com
+ (2603:10a6:102:377:cafe::45) by PA7P264CA0145.outlook.office365.com
+ (2603:10a6:102:377::17) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.546.22 via Frontend Transport; Wed,
+ 28 Oct 2026 15:38:00 +0000
+Authentication-Results: mx.microsoft.com 1; spf=pass (sender IP is
+ 89.167.234.247) smtp.mailfrom=targetconnect.net; dkim=pass (signature was
+ verified) header.d=targetconnect.net;dmarc=pass action=none
+ header.from=targetconnect.net;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of targetconnect.net
+ designates 89.167.234.247 as permitted sender)
+ receiver=protection.outlook.com; client-ip=89.167.234.247;
+ helo=mail1.targetconnect.net; pr=C
+Received: from mail1.targetconnect.net (89.167.234.247) by
+ MI3PEPF0000855E.mail.protection.outlook.com (10.167.240.26) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.569.4
+ via Frontend Transport; Wed, 28 Oct 2026 15:38:00 +0000
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=targetconnect.net; s=mailtcex; h=Content-Type:MIME-Version:Subject:
+	Message-ID:To:Reply-To:Sender:From:Date:Cc:Content-Transfer-Encoding:
+	Content-ID:Content-Description:Resent-Date:Resent-From:Resent-Sender:
+	Resent-To:Resent-Cc:Resent-Message-ID:In-Reply-To:References:List-Id:
+	List-Help:List-Unsubscribe:List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=H+efoKJYPITkReEXsmvxnbG2OmNUVKGqmWrGTH+evaY=; b=ibbo4Wg+s8IIYmPl+en1P3QYnQ
+	8HIH1pY4V7ijd/wN4NR1s2pJSEoCF4aMHyz2eTp6cg8RoGL0XqYlK6hrUkKMydjlD/FVKfzG8Fsb+
+	/InEFkEpXkWzx/Dv1TmfCS1g3Q8m/SVVV5QZJSYjJD5IlrI5FX4pJarLOhEZajsgfoFxw7yjnWWNT
+	V9EnGQ1iJbpux/1jmZmrGzgD3ooKmCVF/9sZ5E55rxf9Wt0tvnUkvNLLwLnc3z3/+8JROqD4Rum4V
+	+FKODgDNLdATF6NZXdjkZlacWe7f7LVzd3BMy3Oa8JQIyLtaFYhJ31hYPRFaP3zsPROP7DI+WBh3C
+	FeB/pAMQ==;
+Received: from srv-lon-tcjob2.groupgti.net ([172.28.144.133] helo=srv-lon-tcjob2n.groupgti.net)
+	by mail1.targetconnect.net with esmtps  (TLS1.3) tls TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+	(Exim 4.97)
+	(envelope-from <UniversityofGalwayCareers@targetconnect.net>)
+	id 1xKvht-00000003f1n-3uag
+	for b.garigela1@universityofgalway.ie;
+	Sun, 25 Oct 2026 10:44:05 +0000
+Received: from srv-lon-tcjob2n.groupgti.net (localhost [127.0.0.1])
+	by srv-lon-tcjob2n.groupgti.net (Postfix) with ESMTP id 4A79CA91AD
+	for <b.garigela1@universityofgalway.ie>; Sun, 25 Oct 2026 10:14:11 +0000 (UTC)
+Date: Sun, 25 Oct 2026 10:14:11 +0000 (UTC)
+From: UniversityofGalwayCareers@targetconnect.net
+Sender: UniversityofGalwayCareers@targetconnect.net
+Reply-To: University of Galway Career Development Centre
+ <careers@universityofgalway.ie>
+To: b.garigela1@universityofgalway.ie
+Message-ID: <275981791.1007250.1792923251304@srv-lon-tcjob2n.groupgti.net>
+Subject: Weekly Jobs & Opportunities Alert from the Career Development
+ Centre
+Content-Type: multipart/mixed; 
+	boundary="----=_Part_1007247_462112714.1792923251304"
+Return-Path: UniversityofGalwayCareers@targetconnect.net
+X-MS-Exchange-Organization-ExpirationStartTime: 28 Oct 2026 15:38:00.8610
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: d7d4e070-f9ad-4fe9-dee3-08df350972e6
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 13e3b186-c446-4aab-9c6d-9ab9bb76816c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: MI3PEPF0000855E:EE_|MI9PR01MB830285:EE_|GV2PR01MB12437:EE_
+X-MS-Exchange-Organization-AuthSource: MI3PEPF0000855E.eurprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: d7d4e070-f9ad-4fe9-dee3-08df350972e6
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-ms-reactions: disallow
+X-MS-Exchange-Organization-SCL: 1
+X-MS-Exchange-Organization-BulkCategory: Promotions
+X-Microsoft-Antispam: BCL:4;ARA:13230040|12012899012|5062899012|3072899012|2092899012|4022899009|260918215300599003|260918224100599003|260925021311599003|260925021911599003|261022105027099003|261021121427099003|261021123027099003|261021135927099003|261009223027099003|261022075727099003|260925022911599003|10067099003|5063699009|261026140227099003|8096899003|18003699003|6133799003|57112099003|55112099003|13003099007|261026121527099003|19002099009|261028144727099002|11063799006;
+X-Forefront-Antispam-Report: CIP:89.167.234.247;CTRY:GB;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail1.targetconnect.net;PTR:mail2.targetconnect.net;CAT:NONE;SFS:(13230040)(12012899012)(5062899012)(3072899012)(2092899012)(4022899009)(260918215300599003)(260918224100599003)(260925021311599003)(260925021911599003)(261022105027099003)(261021121427099003)(261021123027099003)(261021135927099003)(261009223027099003)(261022075727099003)(260925022911599003)(10067099003)(5063699009)(261026140227099003)(8096899003)(18003699003)(6133799003)(57112099003)(55112099003)(13003099007)(261026121527099003)(19002099009)(261028144727099002)(11063799006);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 28 Oct 2026 15:38:00.8561
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: d7d4e070-f9ad-4fe9-dee3-08df350972e6
+X-MS-Exchange-CrossTenant-Id: 13e3b186-c446-4aab-9c6d-9ab9bb76816c
+X-MS-Exchange-CrossTenant-AuthSource: MI3PEPF0000855E.eurprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: MI9PR01MB830285
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.7297668
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0546.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944490095)(944506478)(944626604)(920097)(930201)(20251009284)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?NGU5YWE4bFpsaUxuWG1RUjRuU1Q1bVNtQS9MaEJPYktmcjdsQmQwNW56Y0Qw?=
+ =?utf-8?B?YUVScGdDWVI2QnFzYllNa2k3SjA5V3ZEN1RuWTVQcXJJSWp3VGxzYTZsNS8z?=
+ =?utf-8?B?dWZXanVmMlpWVlh4M0liZnI2RVVTM0Y5SlBYdm4vbk00WEhOcE10MGJlYkFi?=
+ =?utf-8?B?TGtFVytKaWJZTFJHT3RhMjFNL3c4MktoMGdqQ0pnNmE3V2VGU1JFTjVTZWM2?=
+ =?utf-8?B?RFBhUjBZV2puMjhsM2hqQ05xcW5yZkZxOW9PRGZpYXlKN1phMU04WU14ZVNX?=
+ =?utf-8?B?M3NpSW9wYTRrQ1JtMkJBd01Cci9NOXdzMGVHbXVMMHpSSmQ2anNCYnI2cy9X?=
+ =?utf-8?B?OVVBZnd0WkJUOTI2N1RnV1BsOWdudzIvOVFWYjhDVnhPR1B5N0Q5bGVlZi92?=
+ =?utf-8?B?Ykw4OVhkK09NZWN5MWhiSE5DZ01vQnRlYXgxeE52TEtpK3AxamJqL05SYTNu?=
+ =?utf-8?B?cGl0TmpPc0FNOVM0ZStxWVhNamJ5UFRRMGtSM1BkeTJpblBQMjZtUjAzVTcv?=
+ =?utf-8?B?NFZvUVRxdjVvaGlOdXFZdmlwcjNqenJwQlBma05UYTQ0QW5QcGRDMWNjYTNG?=
+ =?utf-8?B?a3dKYXlVVTB2cWpKZG45UlJ6THRkd0gzKzdZQWxKZTJrZTkxR3E5b3RyMVFu?=
+ =?utf-8?B?ZVV4VDhka2kwRHNTYjRpUmE2REhXYXJBMUJVa0xrbFJzWHd2NFlXZ240ai9w?=
+ =?utf-8?B?K0xuRm9DVC9QbFpheDFSVmt6cG9RVUtHNzczVzNDQjMzeTVJc01uUWhmSW1B?=
+ =?utf-8?B?OFlNbXdPQ0JGMkRSYlZoZit5SzFrNlBTaklNaUJlaWttbU9uck9hV3h3cGJ6?=
+ =?utf-8?B?UUQvdXZNcDBRT29LV1BIVy9LVVJndWRBZXcwZjZlNG81RXI0ZUdkQThwblda?=
+ =?utf-8?B?TnprQkJ4aHBZZFZmdEpqVnBZMjd3S200Zk8wdVd3bkdwY3BEMHc1cldnSGVQ?=
+ =?utf-8?B?dnVPOEptSkl3Q01Ld1N2VW8xOTh6TG9hRXZkNGRVd1NiMVFCUnhmR2dYWmF0?=
+ =?utf-8?B?YmttakllMm85L0lvNmIxUFUyM2NveEJtVHByY1BRMThIYytmdVY4cjFsTTI2?=
+ =?utf-8?B?MzVaMitWN1E2SFZpRTlyTDcwdDFFaUpJZTJ6eWc3REpWcEdja3pvczJzOVlh?=
+ =?utf-8?B?YXpmTGMwS2M3aU5mcE5ZYXcrYmV0ajdjMEpUdldiZklIdlI1WVVSbUVNRWx6?=
+ =?utf-8?B?RXlSb0V6SlNRSHBiSFJuZ2ZHUndESysxTWVHSXlKejJWRFRENEFIekpkcFdH?=
+ =?utf-8?B?QUp3MlBqR1BsY3ZBUHdYSEdsTXVMS1c5SmR3VGh4ZVNpdFV1N09DaVVkNDd0?=
+ =?utf-8?B?SWxHUHlLK3U1OWU4UHU2V1VFM3BPNUhQTXYwNk1uZHNSZ2lBS3hPNUJBanNF?=
+ =?utf-8?B?MlVUdTFyNmtVQUx6b215Y1BZY1B2c0pucm5LcUE1SkJrUXY3dWh4R0RlRTNO?=
+ =?utf-8?B?UEptRDQzcm53T3p1NGJ6WXB4WEtzeWI0V3hoeUJlV3lJOTB5S2IvdWRVUkoz?=
+ =?utf-8?B?cUI4NnIwMWZQZ0h5M2pJK3Z2bDhNaHo3UVp6TVJGc0hvenp3cXJ4Nm94ZEhi?=
+ =?utf-8?B?L3pYVi81VzBvem5QUmg2eUUvcTVjTm1LQ3FoT0ZYclVkRjJFUVhqQVoyYzEw?=
+ =?utf-8?B?U2M1dlBadXZqR1k0WEN2MitzUjgyNWMzTDRuNUFpbGJybDdoeUVVRm5DVVdy?=
+ =?utf-8?B?YTNlN1hieFJoTkoydXVwSUtkREd0U1liSG90Z0tMWTNIdGlSdHlOaGlCZkNB?=
+ =?utf-8?B?elFnU0o1b2JTTmU1MDlzc1NkdHc0eGNNZUJrTy9FMmNOZ1kwMFdaUHJWeGpR?=
+ =?utf-8?B?cENZYk5YWmllOFRsSVpKWnI0MkhjM3dRUEI2TWhsNzlyYTN3UHRwZ2txZ3Fh?=
+ =?utf-8?B?T3dEUXVBc21CUVQvdzlGQnBITUdFRVQzZDFERndtQXhuZk1mMkgxR0Rhd1lG?=
+ =?utf-8?B?U3lyMmx4TFB4czBoWUh1NEFHMmsyc1BXUkVuY2tpNXJEZlZFZEhEd2Z0Smo2?=
+ =?utf-8?B?bDBXcnFLNjZ3aU9JcEtmLy9BTzFWdlRIR2QrWkhQQnV5bG5rOWR2Q3BOWU5Q?=
+ =?utf-8?B?OUUrNjYxZEI1Ky9RWlkwNUtBa2x5Sy9tS1BIb1lmeHlUYjVIRUFCWXQrNE1E?=
+ =?utf-8?B?SmRyZElGcmNZLzVNOTlrY2x3VDNqc0M1RWk1dTJ5ZndvZkhwVm5LeDJxSjVB?=
+ =?utf-8?B?ck03VzNJT2pEc2QwMk9yVU5Zb05Bdjh1VzdObXlYUnVnTGJKWFd1SHNjayth?=
+ =?utf-8?B?byt1UjVHdUFDTHg4MkV5QVdVS0hmU3Q3cmhuNUJCMGluaUpLeC81Mk10OUha?=
+ =?utf-8?B?TmhxK05QM0hwZC9pQ1ZNdkJ5OUJtVm9qbnZ5Z0ZmY2hpaXNwdXN1bU1UQUd5?=
+ =?utf-8?B?d2Rsc3VOeUpzdjB2L3lGUWc0UUw2Z3JVNmZKb2VESmV5NlZ6VWlIaHNTOW04?=
+ =?utf-8?B?TE4zTXlQM2g3N1U0aEhRWWFqSXpCRldST1B1bEZKWVh6NDFWbzd0SytUMGJ3?=
+ =?utf-8?B?Q2hQcnBUL3pCc2NvWXpQSHlPaTVBM29GdVA2WFNNNnR3aVhKUkMwS3BOM1hx?=
+ =?utf-8?B?K0ZITVZOSWdZc2hIUEtzNjNVQVNRSFRkRGJmRWZ5QjZ2a2p4VzVzNDlwOUVh?=
+ =?utf-8?B?ZWp5eVVsN0ZCVUhhbTlUZkMwRm50TGx2RVJpazNyc0xsZ3NNRVZFRmFmNEpi?=
+ =?utf-8?B?clRvY0RZNkRFRDB4eHorMGtUUEV1cTNMRXludG9tNk0zR3pVaVZ6aUZ2NnlX?=
+ =?utf-8?B?M1g4TDA2OUtGN0FzMmtFVmZ3R3Zpemw1Y3ZwREJiTHJESXlzdjdFYmhDSWJR?=
+ =?utf-8?B?SlVVRmo1L3c3SGtrMXovdmY3b3JIb0xWZ0pLVy9LMFpiRTRpSXg3VUtWUWJo?=
+ =?utf-8?B?VlFRc3NBN213MzE2aUFiMWlBY1AyVWVPSVV5ZTBoM042eEhrdzI0WW02MkY0?=
+ =?utf-8?B?ZENncU1YOHJ3YnJ2UVRQZnB5aXk4MWVvWTFueUNud2JzQzVvdFhnSVZ1RlpO?=
+ =?utf-8?B?SU9ia1hKQzZSNlRVbVI5RTZxbUtMbThjd2t5dG13ZktNZEJmeFVEMFRna1Zr?=
+ =?utf-8?B?MWRhNDB6aXc3OHFaYUZQRmxXQmtCVDl4NDJVUEQyakc4WnZjWldzSGRVSFN5?=
+ =?utf-8?B?UGVvTnZFWVgxV0RnaXA3WHRPdW92MjJjUlRaMERWNnNUUWtaYVh0djVMSTc1?=
+ =?utf-8?B?Z0hVOCtJaDJYQURtRGJ3ZjVEcjR6Z0JkQkc5WHVWa2tMVkJ4VUZNR2pmYk9u?=
+ =?utf-8?B?L3BDRGc9PQ==?=
+MIME-Version: 1.0
+
+------=_Part_1007247_462112714.1792923251304
+Content-Type: multipart/related; 
+	boundary="----=_Part_1007248_954201955.1792923251304"
+
+------=_Part_1007248_954201955.1792923251304
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_1007249_1199138171.1792923251304"
+
+------=_Part_1007249_1199138171.1792923251304
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+External Email: This email originated outside the University of Galway. Do =
+not open attachments or click on links unless you believe the content is sa=
+fe.
+R=C3=ADomhphost Seachtrach: N=C3=ADor th=C3=A1inig an r=C3=ADomhphost seo =
+=C3=B3 Ollscoil na Gaillimhe. N=C3=A1 hoscail ceangalt=C3=A1in agus n=C3=A1=
+ clice=C3=A1il ar naisc mura gcreideann t=C3=BA go bhfuil an t-=C3=A1bhar s=
+=C3=A1bh=C3=A1ilte.
+
+From University of Galway Career Development Centre
+Dear Bhumika Garigela
+
+Civil Technician Grade II<https://careersconnect.universityofgalway.ie/leap=
+/jobs.html?id=3D39187&service=3DCareers> at Mayo County Council
+
+Closing Date: 05-Nov-2026
+
+Dublin Training Contract 2027<https://careersconnect.universityofgalway.ie/=
+leap/jobs.html?id=3D39191&service=3DCareers> at Kennedys - Dublin
+
+Closing Date: 30-Oct-2026
+
+2027 Future Leaders Academy: Limerick Tax & Legal - Business Tax Graduate O=
+pportunity<https://careersconnect.universityofgalway.ie/leap/jobs.html?id=
+=3D39185&service=3DCareers> at Deloitte Ireland
+
+Closing Date: 28-Oct-2026
+
+Google Summer Internships 2027 | Sales, Marketing, Customer Growth & Financ=
+e | Dublin<https://careersconnect.universityofgalway.ie/leap/jobs.html?id=
+=3D39193&service=3DCareers> at Google
+
+Closing Date: 13-Nov-2026
+
+Manufacturing Engineering Technician <https://careersconnect.universityofga=
+lway.ie/leap/jobs.html?id=3D39189&service=3DCareers> at Chameleon Colour Sy=
+stems
+
+Closing Date: 30-Nov-2026
+
+OPW Engineering Internships 2027<https://careersconnect.universityofgalway.=
+ie/leap/jobs.html?id=3D39173&service=3DCareers> at Office of Public Works (=
+OPW)
+
+Closing Date: 14-Jan-2027
+
+SMBC Industrial Placement Programme 2027-2028<https://careersconnect.univer=
+sityofgalway.ie/leap/jobs.html?id=3D39167&service=3DCareers> at SMBC Bank E=
+U AG
+
+Closing Date: 01-Dec-2027
+
+Public law internship programme 2027<https://careersconnect.universityofgal=
+way.ie/leap/jobs.html?id=3D39199&service=3DCareers> at Houses of the Oireac=
+htas Service
+
+Closing Date: 30-Oct-2026
+
+Best wishes
+PLEASE DO NOT REPLY TO THIS EMAIL
+To opt out of certain emails from Careers, please log into Career Connect (=
+https://careersconnect.universityofgalway.ie/) and go to 'update my profile=
+' and change your settings.
+
+www.UniversityofGalway.ie/careers
+E: careers@UniversityofGalway.ie
+T: +353 (0)91 493589
+
+Click here to unsubscribe<https://careersconnect.universityofgalway.ie/leap=
+/preferences.html?a=3D206355&t=3D3aa7e383fdae0512f470bbc5a4cd0180fdd919d1fb=
+99bd7db5a5b8e0826af995c074c7af64fc23433fb674b20d3cf14bf856fc69c428274af39a6=
+95e65c857b6&n=3D1843563&service=3DCareers>
+Or click to unsubscribe<https://careersconnect.universityofgalway.ie/leap/p=
+references.html?a=3D206355&t=3D3aa7e383fdae0512f470bbc5a4cd0180fdd919d1fb99=
+bd7db5a5b8e0826af995c074c7af64fc23433fb674b20d3cf14bf856fc69c428274af39a695=
+e65c857b6&n=3D1843563&service=3DCareers>
+
+------=_Part_1007249_1199138171.1792923251304
+Content-Type: text/html;charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+</head>
+<body>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" widt=
+h=3D"100%">
+<tbody>
+<tr>
+<td style=3D"background:#dc3232;padding:3pt 1pt 3pt 1pt;font-family:Calibri=
+"></td>
+<td width=3D"100%" cellpadding=3D"3px 6px 3px 15px" style=3D"background:#ff=
+f7f7;padding:3pt 4pt 3pt 12pt;word-wrap:break-word">
+<div style=3D"color:#222222;"><span style=3D"font-size:12px;font-weight:bol=
+d;font-family:&quot;Segoe UI&quot;,sans-serif;color:#212121;">External Emai=
+l:</span>
+<span style=3D"font-size:12px;font-family:&quot;Segoe UI&quot;,sans-serif;c=
+olor:#212121;">This email originated outside the University of Galway. Do n=
+ot open attachments or click on links unless you believe the content is saf=
+e.</span><br>
+<span style=3D"font-size:12px;font-weight:bold;font-family:&quot;Segoe UI&q=
+uot;,sans-serif;color:#212121;">R=C3=ADomhphost Seachtrach:</span>
+<span style=3D"font-size:12px;font-family:&quot;Segoe UI&quot;,sans-serif;c=
+olor:#212121;">N=C3=ADor th=C3=A1inig an r=C3=ADomhphost seo =C3=B3 Ollscoi=
+l na Gaillimhe. N=C3=A1 hoscail ceangalt=C3=A1in agus n=C3=A1 clice=C3=A1il=
+ ar naisc mura gcreideann t=C3=BA go bhfuil an t-=C3=A1bhar s=C3=A1bh=C3=A1=
+ilte.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<div><!-- Generated by TARGETconnect -->From University of Galway Career De=
+velopment Centre<br>
+Dear Bhumika Garigela <br>
+<p><a href=3D"https://careersconnect.universityofgalway.ie/leap/jobs.html?i=
+d=3D39187&amp;service=3DCareers"><strong>Civil Technician Grade II</strong>=
+</a> at Mayo County Council
+</p>
+<p>Closing Date: 05-Nov-2026</p>
+<p><a href=3D"https://careersconnect.universityofgalway.ie/leap/jobs.html?i=
+d=3D39191&amp;service=3DCareers"><strong>Dublin Training Contract 2027</str=
+ong></a> at Kennedys - Dublin
+</p>
+<p>Closing Date: 30-Oct-2026</p>
+<p><a href=3D"https://careersconnect.universityofgalway.ie/leap/jobs.html?i=
+d=3D39185&amp;service=3DCareers"><strong>2027 Future Leaders Academy: Limer=
+ick Tax &amp; Legal - Business Tax Graduate Opportunity</strong></a> at Del=
+oitte Ireland
+</p>
+<p>Closing Date: 28-Oct-2026</p>
+<p><a href=3D"https://careersconnect.universityofgalway.ie/leap/jobs.html?i=
+d=3D39193&amp;service=3DCareers"><strong>Google Summer Internships 2027 | S=
+ales, Marketing, Customer Growth &amp; Finance | Dublin</strong></a> at Goo=
+gle
+</p>
+<p>Closing Date: 13-Nov-2026</p>
+<p><a href=3D"https://careersconnect.universityofgalway.ie/leap/jobs.html?i=
+d=3D39189&amp;service=3DCareers"><strong>Manufacturing Engineering Technici=
+an
+</strong></a>at Chameleon Colour Systems </p>
+<p>Closing Date: 30-Nov-2026</p>
+<p><a href=3D"https://careersconnect.universityofgalway.ie/leap/jobs.html?i=
+d=3D39173&amp;service=3DCareers"><strong>OPW Engineering Internships 2027</=
+strong></a> at Office of Public Works (OPW)
+</p>
+<p>Closing Date: 14-Jan-2027</p>
+<p><a href=3D"https://careersconnect.universityofgalway.ie/leap/jobs.html?i=
+d=3D39167&amp;service=3DCareers"><strong>SMBC Industrial Placement Programm=
+e 2027-2028</strong></a> at SMBC Bank EU AG
+</p>
+<p>Closing Date: 01-Dec-2027</p>
+<p><a href=3D"https://careersconnect.universityofgalway.ie/leap/jobs.html?i=
+d=3D39199&amp;service=3DCareers"><strong>Public law internship programme 20=
+27</strong></a> at Houses of the Oireachtas Service
+</p>
+<p>Closing Date: 30-Oct-2026</p>
+Best wishes <br>
+PLEASE DO NOT REPLY TO THIS EMAIL<br>
+To opt out of certain emails from Careers, please log into Career Connect (=
+https://careersconnect.universityofgalway.ie/) and go to 'update my profile=
+' and change your settings.
+<br>
+<br>
+www.UniversityofGalway.ie/careers<br>
+E: careers@UniversityofGalway.ie <br>
+T: +353 (0)91 493589<br>
+<br>
+<a href=3D"https://careersconnect.universityofgalway.ie/leap/preferences.ht=
+ml?a=3D206355&amp;t=3D3aa7e383fdae0512f470bbc5a4cd0180fdd919d1fb99bd7db5a5b=
+8e0826af995c074c7af64fc23433fb674b20d3cf14bf856fc69c428274af39a695e65c857b6=
+&amp;n=3D1843563&amp;service=3DCareers">Click here to
+ unsubscribe</a> <br>
+<a href=3D"https://careersconnect.universityofgalway.ie/leap/preferences.ht=
+ml?a=3D206355&amp;t=3D3aa7e383fdae0512f470bbc5a4cd0180fdd919d1fb99bd7db5a5b=
+8e0826af995c074c7af64fc23433fb674b20d3cf14bf856fc69c428274af39a695e65c857b6=
+&amp;n=3D1843563&amp;service=3DCareers">Or click to unsubscribe</a></div>
+</body>
+</html>
+
+------=_Part_1007249_1199138171.1792923251304--
+
+------=_Part_1007248_954201955.1792923251304--
+
+------=_Part_1007247_462112714.1792923251304--

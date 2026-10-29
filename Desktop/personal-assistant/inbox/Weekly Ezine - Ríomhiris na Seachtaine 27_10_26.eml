@@ -1,0 +1,2191 @@
+Received: from DU4PR01MB11194.eurprd01.prod.exchangelabs.com
+ (2603:10a6:10:583::13) by GV2PR01MB12437.eurprd01.prod.exchangelabs.com with
+ HTTPS; Tue, 27 Oct 2026 13:25:52 +0000
+Received: from PAZP264CA0205.FRAP264.PROD.OUTLOOK.COM (2603:10a6:102:237::15)
+ by DU4PR01MB11194.eurprd01.prod.exchangelabs.com (2603:10a6:10:583::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.546.22; Tue, 27 Oct
+ 2026 13:25:48 +0000
+Received: from MI3PEPF00008484.eurprd02.prod.outlook.com
+ (2603:10a6:102:237:cafe::39) by PAZP264CA0205.outlook.office365.com
+ (2603:10a6:102:237::15) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.546.22 via Frontend Transport; Tue,
+ 27 Oct 2026 13:25:48 +0000
+Authentication-Results: mx.microsoft.com 1; spf=pass (sender IP is
+ 203.55.21.132) smtp.mailfrom=cmail20.com; dkim=pass (signature was verified)
+ header.d=universityofgalway.ie;dkim=pass (signature was verified)
+ header.d=cmail2.com;dmarc=pass action=none
+ header.from=universityofgalway.ie;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of cmail20.com designates
+ 203.55.21.132 as permitted sender) receiver=protection.outlook.com;
+ client-ip=203.55.21.132; helo=mx132.a.outbound.createsend.com; pr=C
+Received: from mx132.a.outbound.createsend.com (203.55.21.132) by
+ MI3PEPF00008484.mail.protection.outlook.com (10.167.240.171) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.569.4
+ via Frontend Transport; Tue, 27 Oct 2026 13:25:47 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=cm; d=universityofgalway.ie;
+ h=Subject:From:To:Reply-To:Date:MIME-Version:Content-Type:List-Unsubscribe:
+ List-Unsubscribe-Post:Message-ID; i=noreply@universityofgalway.ie;
+ bh=QjyrZ6VPihJknQOuaCnbd6MK1Qql8kV7gLCm+nTO5cc=;
+ b=tDpFvbAwX+MfLFW5Sdh1qdXsSa43UrRMejTi2GYEH39oQTYOL7EF0WF/pbWHOhofdx0Ar+X0euRi
+   XcziYpB7j6u8T1tFJKlaHLKulFIN0Qvg0S1rVScqDAUA6F7pXZjrqjPlkWiK+a2Ibbuwkm8vt9Sn
+   3DIVqfnfzeQDP6SSiHs=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=cs2013; d=cmail2.com;
+ h=Subject:From:To:Reply-To:Date:MIME-Version:Content-Type:List-Unsubscribe:
+ List-Unsubscribe-Post:Message-ID;
+ bh=QjyrZ6VPihJknQOuaCnbd6MK1Qql8kV7gLCm+nTO5cc=;
+ b=leHB18RdrYN3aa7FFwrWbAnxDVfT67aWLsB1zEEnquThtTBvhiIS+JbEFB59u+6Ozz4tqWCr7vow
+   FVy/yYFieZCWk+/DosGBx03VlTMmhOij0RpU+X3i+j5tEnIpmhyQz9Acbjxct3zSHIvHUlc2pCG3
+   QZDoUz3qxweFV29mYfA=
+Subject: =?utf-8?Q?Weekly_Ezine_-_R=c3=adomhiris_na_Seachtaine_27/10/26?=
+From: "University of Galway" <noreply@universityofgalway.ie> 
+To: "Bhumika" <b.garigela1@universityofgalway.ie>
+Reply-To: noreply@universityofgalway.ie
+Date: Wed, 28 Oct 2026 00:10:13 +1100
+Content-Type: multipart/alternative;
+ boundary="_9cf0bf64-7b3f-4856-99da-4eaba1d23000_"; charset=utf-8
+X-Mailer: Create Send
+X-Complaints-To: abuse@cmail20.com
+X-Feedback-ID: CA1-r-tuktmo:LI1-r-nikqiu:CL1-r-ejkuh:createSEND
+List-Unsubscribe: <https://unsub.cmail20.com/t/completeheader/r/tuktmo/pijjljliil/c/>,
+ <mailto:unsubscribe-tuktmo2pijjljliil2r-D66B7630@cmail20.com?subject=Unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Message-ID: <cm.0010136538285.tuktmo.pijjljliil.r@cmail20.com>
+Return-Path: UniversityofGalway-tuktmo1pijjljliil1r@cmail20.com
+X-MS-Exchange-Organization-ExpirationStartTime: 27 Oct 2026 13:25:47.9685
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: edd64d85-4bf2-4e8c-c8df-08df342dd01d
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 13e3b186-c446-4aab-9c6d-9ab9bb76816c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: MI3PEPF00008484:EE_|DU4PR01MB11194:EE_|GV2PR01MB12437:EE_
+X-MS-Exchange-Organization-AuthSource: MI3PEPF00008484.eurprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: edd64d85-4bf2-4e8c-c8df-08df342dd01d
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-ETR: Bypass spam filtering for authenticated sender 'cmail*.com'
+X-Microsoft-Antispam: BCL:0;ARA:13230040|704161211799003|704160211799003|29132699027|3109299003|7049299003|3122999047|4022899009|260918215300599003|260918224100599003|69100299015|7149299003|19002099009|21082099003|18002099003|261026135527099003|55112099003|261026140227099003|4133799003|261026130827099003|8096899003|13003099007|56012099006|261021121427099003|5063699009|11063799006|261021133027099003|261022105027099003|261021123027099003|10067099003|261009221227099003|261022115727099003|261021135927099003|261021130227099003|261022075727099003|261009223027099003|261022113327099003|260925021911599003|261026121527099003|260925021311599003|260925022911599003;
+X-Forefront-Antispam-Report: CIP:203.55.21.132;CTRY:AU;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:SKN;H:mx132.a.outbound.createsend.com;PTR:mx132.a.outbound.createsend.com;CAT:NONE;SFS:(13230040)(704161211799003)(704160211799003)(29132699027)(3109299003)(7049299003)(3122999047)(4022899009)(260918215300599003)(260918224100599003)(69100299015)(7149299003)(19002099009)(21082099003)(18002099003)(261026135527099003)(55112099003)(261026140227099003)(4133799003)(261026130827099003)(8096899003)(13003099007)(56012099006)(261021121427099003)(5063699009)(11063799006)(261021133027099003)(261022105027099003)(261021123027099003)(10067099003)(261009221227099003)(261022115727099003)(261021135927099003)(261021130227099003)(261022075727099003)(261009223027099003)(261022113327099003)(260925021911599003)(261026121527099003)(260925021311599003)(260925022911599003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 27 Oct 2026 13:25:47.4352
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: edd64d85-4bf2-4e8c-c8df-08df342dd01d
+X-MS-Exchange-CrossTenant-Id: 13e3b186-c446-4aab-9c6d-9ab9bb76816c
+X-MS-Exchange-CrossTenant-AuthSource: MI3PEPF00008484.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DU4PR01MB11194
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:05.1537575
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0546.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944490095)(944506478)(944626604)(920097)(930201)(20251009284)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?MWV2ZmpMZk1iRlhUQnJ1SUV5SEE1VXpPOC9DcHJnS3RQYUdNWnZrM25TSUh4?=
+ =?utf-8?B?eUhjaEdXWCtBVjJmc2RSc1BSa2R2ZHlHb0lxZGxmL255clp0NCtXa1FGeld2?=
+ =?utf-8?B?ckdGbndPcWMwcnU5NTQ4czZLa0tpNTk3MVBEa2p4UVdtUTBNMXZyelpkcVpF?=
+ =?utf-8?B?YmFPbHpCNE80cTYvME1FeStENjBvV2pZNzg4UkRiWENoalQ3dzNkdkJjQ2pG?=
+ =?utf-8?B?MWVlZ3NWMU1WMStHVGNGcUZoQTh2Zk9FbVNla3UvRnNLK0MrWHVaZmtQL2cr?=
+ =?utf-8?B?NnZ6UUorbHpQOXVEOGx0T21TNVVrSnBPSHg4dm1uTkk4Vnhjd0Jva3VSSmNs?=
+ =?utf-8?B?Q1l2c24yYUdqd0dXdUd5aDMvM3V4MGoyZGwweCt6dWFKUE1KdkJ1eTk3Q3lF?=
+ =?utf-8?B?U3BVTkNuWmhzdENMU1N4NGdiV2JkUUt4MTVyeTdwTGw4YzBXeHg3TVI3d2pl?=
+ =?utf-8?B?cFZ3UUhvblF3Zi9LOVMyMEorZnk2d1lOZ3ZkK0FoK1VRRjZvNXl4eHd3NCtF?=
+ =?utf-8?B?aFlvTTFCMktVSHJ6UlIwamFmS1BwWk9md0RISE1URXR2T00ycy90OFpzc0Iz?=
+ =?utf-8?B?dnM1VjFWeWJucDlQZWIwY3RHQkROWVVDS3pMenQ5L3dWeC80ZEJnTDdmOVRt?=
+ =?utf-8?B?MzJ2WEd1WDR5TFJjbzNYcEVoYnFOUmRmVEg0d0JHbFlUdS9XbHFDMVF1RWNr?=
+ =?utf-8?B?d3hVZ1ZUbmVybW1MMmM3VHo3aVc4N1RJSStzcEhmdk9jWW5nTzBWbDA4ZDhx?=
+ =?utf-8?B?T3RSalAwUmZYaVBEdHdzREVtTlVQVlUwek0yM0o0cnE5aVQ0dE5ueUtYcGlI?=
+ =?utf-8?B?S3V0Y25kZUszVnJIQ3U4eDVQaGYvSG1yYXVXRVZibkt6OVJEMnNpUlBPSTNW?=
+ =?utf-8?B?RE9XTjJ1S3dxTlVRcllDOTBmalM1RERwMzZwdjJ2RkxETEZCS2lXNy80Zitm?=
+ =?utf-8?B?OStHd0xCNm5aZGJ1WkthN2Y1MnJ3Q3BRWnNZZUNlMmd3cnNRWXFsc0R5cnVm?=
+ =?utf-8?B?M1FsYUt2RXd5TVZER1ZNWmtlSmhWTzc2amJtYldXZ3FyNGN4eWR5R0pkOXpa?=
+ =?utf-8?B?MVY5NEh3QVkzbThSeEY3aFVsa3l6TksrdTlJeXR6N3hjYWxiTllHY2lhRExX?=
+ =?utf-8?B?eTNRSWV5Zk1tWkgzZ05GYkFaUEx5eXdnUGxQc294UWx0MEdiSGpYVWdXa0tr?=
+ =?utf-8?B?N2RFaEM0RlFmYUg1QjYrcFNrOGdvOUNLN3lqUFdkclhQSjl1VjBNbWpVYzVs?=
+ =?utf-8?B?Z1ZzcGdMRVRIOGhyZzJ2YXJBc2ZBUFlsdmQ2UElsSGk4a25WOVV5Z052bWFU?=
+ =?utf-8?B?cEN6b21TOXZFZVFpdWt2Y1h6WnZhNVV6Z3dwb1hZeDVzVEVrL1VNcitra3p5?=
+ =?utf-8?B?VHphc2EvSk1XaHpraDVvTXhUbFVYeUxYQ1pJVzdoclVjVFRuWVVyQjIzbjky?=
+ =?utf-8?B?WDN4b1QvNEo5aEJET0VPYUlETjc0VmZtaFlVR2RwVXBTTjNvZnhXdTRNY2Vq?=
+ =?utf-8?B?YXgwTjdmbi9tNkRtTXMra2JFd0RtNUc5R1E5SVRsMHJyOE5qK2ljZmNoSzF1?=
+ =?utf-8?B?djlrMEp0VkRYVVRURlFxMmk3SldneGt6dmlqY09QZktHa1hjV3BWNVBnWGRX?=
+ =?utf-8?B?V21DNm4rTXhJYkFNc1FoVGQ4Y2JIYkc4NlZHU1I5UkFnNDkzUFJJdGV5K0d0?=
+ =?utf-8?B?MjZ4U2xWSXg5VDZnUnFvZkIzOUlaR2RwU2t0V3lHbVU0S2l3OVIvVVMvV3Zk?=
+ =?utf-8?B?NXJWVXhhdzBhdjB6UzhFRk9DSTZDZDgxUG91U3JCMkdsZm83VnBKaXVUUVE4?=
+ =?utf-8?B?Nms4c0lxeTV6bzJFYXREUkZPalM3ZzZ3dUhZTnRSR0ljTTN3MGsxd1BweEJm?=
+ =?utf-8?B?ckNYREpiWGgwRzZVYUUxSmN2Z0NlY1Z3THc2UGdVVm0wMkZUc2hhY084UUk0?=
+ =?utf-8?B?OU5ZTlB3cmk4QU1NRE41dy9XdU1jVW9kU1RhQnJCRTZFUTAvVk52Tnc4RVE5?=
+ =?utf-8?B?b1E0WExWMmNqNnFwWW5iM040N21BTzBiVjR5RytJeXZscTRjWkFvbTVmRE1B?=
+ =?utf-8?B?WkVLS3RQN0ZMNjFJeC9pbXVPOFV4c0RNcjdRcURnQTBnWHhydGxOV0VTZ210?=
+ =?utf-8?B?VW5CNElMOEszUXhZbXVpUmFoTFlpa3FIYkdrckNyMUdpQUJoMld2QzZBN1lz?=
+ =?utf-8?Q?AHv705IgEsRAfWbA0VIiC6M=3D?=
+MIME-Version: 1.0
+
+--_9cf0bf64-7b3f-4856-99da-4eaba1d23000_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+No images?  Click here https://universityofgalway.cmail19.com=
+/t=
+/r-e-tuktmo-pijjljliil-m/
+
+Dear =
+Bhumika=
+=
+,
+
+Get ready for a frightfully fun week filled with events and celebrations in=
+cluding the Students' Union Halloween Party in Sult.
+
+This week we are also celebrating Black Legacies Unbound as part of Black H=
+istory Month.
+
+Don't forget, the fees payment deadline for semester one is Saturday 31 Oct=
+ober, see below for more info.
+
+Keep reading...if you dare!
+
+HALLOWEEN IN GALWAY
+
+Did you know that Irish households once left food outside at Halloween to w=
+elcome the spirits of their ancestors and keep unwanted spirits away?
+
+Halloween has a rich history in Ireland, so why not grab your friends, expl=
+ore Galway and make the most of the spooky season!
+
+Fancy a fright?  The Haunted Walking Tour of Galway City [https://www.galw=
+aytourism.ie/haunted-walking-tour-of-galway-city/] explores the city=E2=80=99=
+s darker past through scary stories and local legends that bring its histor=
+y to life.
+
+From spooky stories to spectacular sights,  Time by Luxmuralis [https://th=
+t.ticketsolve.com/ticketbooth/shows/1173668978] brings impressive light and=
+ sound displays to St Nicholas=E2=80=99 Collegiate Church.
+
+The fun doesn't stop there!  See what else is happening in Galway this Hall=
+oween.  [https://www.galwaytourism.ie/event/galway-aboo-halloween-festival=
+/]
+
+GET CREATIVE AT MAKERSPACE
+
+Want to try something new or bring an idea to life?  MakerSpace [https://l=
+ibrary.universityofgalway.ie/studying/makerspace/], located on the ground f=
+loor of the Library, is a space where you can get creative, develop ideas a=
+nd collaborate with others. No booking is required!
+
+From free  3D printing [https://forms.cloud.microsoft/Pages/ResponsePage.a=
+spx?id=3DhrHjE0bEq0qcbZq5u3aBbKnA84xtP6VKpjjlToM7g-dURFNORVdPQTZRTzI5Uk5KS0=
+RMS0oyREZBUy4u] and laser cutting to sewing machines and drones, there are =
+plenty of ways to explore the equipment, get involved in existing projects =
+and bring your own designs to life!
+
+If you are interested in volunteering or want to find out more, email the M=
+akerSpace team at  [libmakerspace@universityofgalway.ie].
+
+GET COOKING THIS AUTUMN
+
+As October brings cooler weather and darker evenings, it=E2=80=99s a lovely=
+ time to get creative in the kitchen and explore seasonal ingredients. Cook=
+ing at home is a great way to enjoy fresh food, try something different and=
+ make the most of seasonal produce.
+
+Why give cooking at home a go?
+
+Save money: Cooking at home is cheaper than relying on takeaways or eating =
+out.
+
+Make nutritious choices: Include a variety of ingredients and build balance=
+d meals.
+
+Learn new skills: Try new techniques and build your confidence.
+
+Unwind and get creative: Cooking can be relaxing and fun, get experimental =
+with ingredients and recipes.
+
+Connect with others: Cook with friends, share meals and enjoy spending time=
+ together.
+
+An Bhialann has shared some seasonal recipes, along with tips on food, nutr=
+ition and harvest traditions.  Check out the full guide [https://nuigalway=
+ie-my.sharepoint.com/:b:/g/personal/0129727s_universityofgalway_ie/IQCncjnz=
+_yrRQKXz04Wco5p8Ad3Y_-6XntbhU4VfPFdxOLw?e=3DZ6K5v1]!
+
+SPACE FOR EVERYONE
+
+Black History Month is a time to celebrate the culture and achievements of =
+Black communities, while learning more about Black history and experiences.
+
+We want every student to feel valued, included and welcomed at our Universi=
+ty. Our Race Equality Advisors offer a safe space for students to receive s=
+upport, guidance and advice. To book a confidential meeting, visit  their w=
+ebpage [https://www.universityofgalway.ie/equalityanddiversity/raceequalit=
+y/meettheteam/] or email  [raceequality@universityofgalway.ie].
+
+Check out the events section below for details of the Black History Month E=
+xhibition.
+
+IMEACHTA=C3=8D - EVENTS
+
+Computer Skills Workshop
+
+When: 6pm, Wednesday 28 October
+
+Where: CSB-1007
+
+Workshop on computer skills that are useful to have for students in physics=
+ and other scientific disciplines.
+
+Bring your laptop, follow along and ask as many questions as your heart des=
+ires. Free pizza afterwards!
+
+What Do Engineers Do?
+
+When: 6pm, Wednesday 28 October
+
+Where: ENG-G018, Alice Perry building
+
+Curious about what life as an engineer actually looks like? Join the  IEEE =
+student branch [https://socs.universityofgalway.ie/societies/ieeestudentbr=
+anch] and Vincent Walsh and Keith Hynes from Microchip Technology, for a gl=
+impse into the day-to-day life of an engineer and what working in the field=
+ is really like.
+
+Everyone=E2=80=99s welcome, so come along, hear what they have to say and s=
+tick around for the Q&A at the end!
+
+Pub Quiz
+
+When: 7:15pm, Wednesday 28 October
+
+Where: Busker Brownes, Cross Street
+
+Join the Video Game Society Pub Quiz on all things video games! Prizes on t=
+he night! Tickets =E2=82=AC5 per person: Maximum of 6 Teams: 4-6 People Max=
+ Costumes welcome but not mandatory!
+
+Celebrating Black History Month
+
+When: 11am-2pm, Thursday 29 October
+
+Where: The Hub, =C3=81ras na Mac L=C3=A9inn
+
+Explore an exhibition hosted with the help of the  African Caribbean Societ=
+y [https://socs.universityofgalway.ie/societies/africancaribbeansociety] h=
+onouring Black contributions through colonial histories, literature, cultur=
+e, identity and the generations shaping our future.
+
+The Mayor of Galway, Councillor Helen Ogbu, will officially open this event=
+=2E
+
+Drop in, discover powerful stories, and celebrate Black legacies in Ireland=
+ and beyond.
+
+2016-oween Halloween Party
+
+When: 8pm, Thursday 29 October
+
+Where: Sult
+
+Join the Students' Union as they travel back in time to 2016 for their 2016=
+Oween Halloween Party.
+
+There are prizes to be won for the best fancy dress and it=E2=80=99s free e=
+ntry!
+
+Keep up to date on events in the Student Calendar [https://socs.university=
+ofgalway.ie/events/]
+
+AN RAIBH A FHIOS AGAT?
+
+Fees Deadline
+
+The fees payment deadline for semester one is Saturday 31 October.  All stu=
+dents who remain registered beyond this date will be liable for full fees f=
+or semester one.  Any withdrawals after this date may impact current or fut=
+ure funding opportunities. A late payment penalty of =E2=82=AC200 applies w=
+here fees are paid after the deadline. Find out more on the Fees Office  we=
+bsite [https://www.universityofgalway.ie/student-fees/].
+
+Marie Birkett Bursary
+
+This bursary will support a first-year undergraduate student at University =
+of Galway with care experience or kinship care experience. The bursary has =
+a total value of =E2=82=AC6,000, paid in equal annual instalments throughou=
+t an undergraduate degree.
+
+Applications close 6 November 2026.  Learn more & apply.  [https://univers=
+ityofgalway.ie/access/scholarshipsfunds/mariebirkettbursary/]
+
+Galway Wind Park scholarship
+
+This scholarship offers students living within 15km of the Galway Wind Park=
+ an opportunity to apply for 50% funding support towards third-level educat=
+ion fees up to a maximum of 3 years. Check  their website [https://www.uni=
+versityofgalway.ie/undergraduate-scholarships/galwaywindparkscholarship/] f=
+or more info.
+
+Take a look at the new  Scholarships webpage [https://www.universityofgalw=
+ay.ie/scholarships/] to see all the available scholarships for students, bo=
+th undergrads and postgrads.
+
+Sustainability Fund for Student Societies
+
+Do you have an idea for a sustainability event on campus? The Sustainabilit=
+y Office is offering =E2=82=AC500 awards to support student societies to br=
+ing sustainability event ideas to life on campus during 2026=E2=80=9327.
+
+Applications close Friday 6 November. Find out more on  their website. [ht=
+tps://www.universityofgalway.ie/sustainability/studentsresources/societiess=
+ustainabilityfund/]
+
+TACA=C3=8DOCHTA=C3=8D - SUPPORTS
+
+Need support? Find information on the resources available by clicking on th=
+e  Support Wheel link [https://www.universityofgalway.ie/student-services/=
+supportwheel/].
+
+We want your feedback!
+
+If you have suggestions for future editions of the weekly Student Enquiry C=
+entre ezine, please get in touch by emailing  [sec@universityofgalway.ie].
+
+University of Galway,
+
+University Road,
+
+Galway, Ireland
+
+H91 TK33
+
+Preferences https://universityofgalway.updatemyprofile.com/r-tuktmo-=
+D66B7630-pijjljliil-c  |   Unsubscribe https://universityofgalw=
+ay.cmail19.com=
+/t/r-u-tuktmo-pijjljliil-q/
+
+--_9cf0bf64-7b3f-4856-99da-4eaba1d23000_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www=
+.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html style=3D"margin: 0;pad=
+ding: 0;" xmlns=3D"http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+    <title></title>
+    <!--[if !mso]><!--><meta http-equiv=3D"X-UA-Compatible" content=3D"IE=
+=3Dedge"><!--<![endif]-->
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width"><style type=3D=
+"text/css">
+@media only screen and (min-width: 620px){.column{}.wrapper{min-width:600px=
+ !important}.wrapper h1{}.wrapper h1{font-size:26px !important;line-height:=
+34px !important}.wrapper h2{}.wrapper h2{font-size:20px !important;line-hei=
+ght:28px !important}.wrapper h3{}.wrapper h3{font-size:20px !important;line=
+-height:28px !important}.wrapper .size-8,.wrapper .size-8-m,.wrapper .size-=
+8-l{font-size:8px !important;line-height:14px !important}.wrapper .size-8-m=
+{line-height:16px !important}.wrapper .size-8-l{line-height:24px !important=
+}.wrapper .size-9,.wrapper .size-9-m,.wrapper .size-9-l{font-size:9px !impo=
+rtant;line-height:16px !important}.wrapper .size-9-m{line-height:18px !impo=
+rtant}.wrapper .size-9-l{line-height:27px !important}.wrapper .size-10,.wra=
+pper .size-10-m,.wrapper .size-10-l{font-size:10px !important;line-height:1=
+8px !important}.wrapper .size-10-m{line-height:20px !important}.wrapper=20
+.size-10-l{line-height:30px !important}.wrapper .size-11,.wrapper .size-11-=
+m,.wrapper .size-11-l{font-size:11px !important;line-height:19px !important=
+}.wrapper .size-11-m{line-height:22px !important}.wrapper .size-11-l{line-h=
+eight:33px !important}.wrapper .size-12,.wrapper .size-12-m,.wrapper .size-=
+12-l{font-size:12px !important;line-height:19px !important}.wrapper .size-1=
+2-m{line-height:24px !important}.wrapper .size-12-l{line-height:36px !impor=
+tant}.wrapper .size-13,.wrapper .size-13-m,.wrapper .size-13-l{font-size:13=
+px !important;line-height:21px !important}.wrapper .size-13-m{line-height:2=
+6px !important}.wrapper .size-13-l{line-height:39px !important}.wrapper .si=
+ze-14,.wrapper .size-14-m,.wrapper .size-14-l{font-size:14px !important;lin=
+e-height:21px !important}.wrapper .size-14-m{line-height:28px !important}.w=
+rapper .size-14-l{line-height:42px !important}.wrapper .size-15,.wrapper=20
+.size-15-m,.wrapper .size-15-l{font-size:15px !important;line-height:23px !=
+important}.wrapper .size-15-m{line-height:30px !important}.wrapper .size-15=
+-l{line-height:45px !important}.wrapper .size-16,.wrapper .size-16-m,.wrapp=
+er .size-16-l{font-size:16px !important;line-height:24px !important}.wrappe=
+r .size-16-m{line-height:32px !important}.wrapper .size-16-l{line-height:48=
+px !important}.wrapper .size-17,.wrapper .size-17-m,.wrapper .size-17-l{fon=
+t-size:17px !important;line-height:26px !important}.wrapper .size-17-m{line=
+-height:34px !important}.wrapper .size-17-l{line-height:51px !important}.wr=
+apper .size-18,.wrapper .size-18-m,.wrapper .size-18-l{font-size:18px !impo=
+rtant;line-height:26px !important}.wrapper .size-18-m{line-height:36px !imp=
+ortant}.wrapper .size-18-l{line-height:54px !important}.wrapper .size-20,.w=
+rapper .size-20-m,.wrapper .size-20-l{font-size:20px=20
+!important;line-height:28px !important}.wrapper .size-20-m{line-height:40px=
+ !important}.wrapper .size-20-l{line-height:60px !important}.wrapper .size-=
+22,.wrapper .size-22-m,.wrapper .size-22-l{font-size:22px !important;line-h=
+eight:31px !important}.wrapper .size-22-m{line-height:44px !important}.wrap=
+per .size-22-l{line-height:66px !important}.wrapper .size-24,.wrapper .size=
+-24-m,.wrapper .size-24-l{font-size:24px !important;line-height:32px !impor=
+tant}.wrapper .size-24-m{line-height:48px !important}.wrapper .size-24-l{li=
+ne-height:72px !important}.wrapper .size-26,.wrapper .size-26-m,.wrapper .s=
+ize-26-l{font-size:26px !important;line-height:34px !important}.wrapper .si=
+ze-26-m{line-height:52px !important}.wrapper .size-26-l{line-height:78px !i=
+mportant}.wrapper .size-28,.wrapper .size-28-m,.wrapper .size-28-l{font-siz=
+e:28px !important;line-height:36px !important}.wrapper=20
+.size-28-m{line-height:56px !important}.wrapper .size-28-l{line-height:84px=
+ !important}.wrapper .size-30,.wrapper .size-30-m,.wrapper .size-30-l{font-=
+size:30px !important;line-height:38px !important}.wrapper .size-30-m{line-h=
+eight:60px !important}.wrapper .size-30-l{line-height:90px !important}.wrap=
+per .size-32,.wrapper .size-32-m,.wrapper .size-32-l{font-size:32px !import=
+ant;line-height:40px !important}.wrapper .size-32-m{line-height:64px !impor=
+tant}.wrapper .size-32-l{line-height:96px !important}.wrapper .size-34,.wra=
+pper .size-34-m,.wrapper .size-34-l{font-size:34px !important;line-height:4=
+3px !important}.wrapper .size-34-m{line-height:68px !important}.wrapper .si=
+ze-34-l{line-height:102px !important}.wrapper .size-36,.wrapper .size-36-m,=
+.wrapper .size-36-l{font-size:36px !important;line-height:43px !important}.=
+wrapper .size-36-m{line-height:72px !important}.wrapper=20
+.size-36-l{line-height:108px !important}.wrapper .size-40,.wrapper .size-40=
+-m,.wrapper .size-40-l{font-size:40px !important;line-height:47px !importan=
+t}.wrapper .size-40-m{line-height:80px !important}.wrapper .size-40-l{line-=
+height:120px !important}.wrapper .size-44,.wrapper .size-44-m,.wrapper .siz=
+e-44-l{font-size:44px !important;line-height:50px !important}.wrapper .size=
+-44-m{line-height:88px !important}.wrapper .size-44-l{line-height:132px !im=
+portant}.wrapper .size-48,.wrapper .size-48-m,.wrapper .size-48-l{font-size=
+:48px !important;line-height:54px !important}.wrapper .size-48-m{line-heigh=
+t:96px !important}.wrapper .size-48-l{line-height:144px !important}.wrapper=
+ .size-56,.wrapper .size-56-m,.wrapper .size-56-l{font-size:56px !important=
+;line-height:60px !important}.wrapper .size-56-m{line-height:112px !importa=
+nt}.wrapper .size-56-l{line-height:168px !important}.wrapper=20
+.size-64,.wrapper .size-64-m,.wrapper .size-64-l{font-size:64px !important;=
+line-height:68px !important}.wrapper .size-64-m{line-height:128px !importan=
+t}.wrapper .size-64-l{line-height:192px !important}.wrapper .size-72,.wrapp=
+er .size-72-m,.wrapper .size-72-l{font-size:72px !important;line-height:76p=
+x !important}.wrapper .size-72-m{line-height:144px !important}.wrapper .siz=
+e-72-l{line-height:216px !important}.wrapper .size-80,.wrapper .size-80-m,.=
+wrapper .size-80-l{font-size:80px !important;line-height:84px !important}.w=
+rapper .size-80-m{line-height:160px !important}.wrapper .size-80-l{line-hei=
+ght:240px !important}.wrapper .size-96,.wrapper .size-96-m,.wrapper .size-9=
+6-l{font-size:96px !important;line-height:100px !important}.wrapper .size-9=
+6-m{line-height:192px !important}.wrapper .size-96-l{line-height:288px !imp=
+ortant}.wrapper .size-112,.wrapper .size-112-m,.wrapper=20
+.size-112-l{font-size:112px !important;line-height:116px !important}.wrappe=
+r .size-112-m{line-height:224px !important}.wrapper .size-112-l{line-height=
+:336px !important}.wrapper .size-128,.wrapper .size-128-m,.wrapper .size-12=
+8-l{font-size:128px !important;line-height:132px !important}.wrapper .size-=
+128-m{line-height:256px !important}.wrapper .size-128-l{line-height:384px !=
+important}.wrapper .size-144,.wrapper .size-144-m,.wrapper .size-144-l{font=
+-size:144px !important;line-height:148px !important}.wrapper .size-144-m{li=
+ne-height:288px !important}.wrapper .size-144-l{line-height:432px !importan=
+t}}
+</style>
+    <meta name=3D"x-apple-disable-message-reformatting">
+    <style type=3D"text/css">
+.main, .mso {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+* {
+  line-height: inherit;
+}
+[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.wrapper .footer__share-button a:hover,
+.wrapper .footer__share-button a:focus {
+  color: #ffffff !important;
+}
+.wrapper .footer__share-button a.icon-white:hover,
+.wrapper .footer__share-button a.icon-white:focus {
+  color: #ffffff !important;
+}
+.wrapper .footer__share-button a.icon-black:hover,
+.wrapper .footer__share-button a.icon-black:focus {
+  color: #000000 !important;
+}
+.btn a:hover,
+.btn a:focus,
+.footer__share-button a:hover,
+.footer__share-button a:focus,
+.email-footer__links a:hover,
+.email-footer__links a:focus {
+  opacity: 0.8;
+}
+.preheader,
+.header,
+.layout,
+.column {
+  transition: width 0.25s ease-in-out, max-width 0.25s ease-in-out;
+}
+.preheader td {
+  padding-bottom: 8px;
+}
+.layout,
+div.header {
+  max-width: 400px !important;
+  -fallback-width: 95% !important;
+  width: calc(100% - 20px) !important;
+}
+div.preheader {
+  max-width: 360px !important;
+  -fallback-width: 90% !important;
+  width: calc(100% - 60px) !important;
+}
+.snippet,
+.webversion {
+  Float: none !important;
+}
+.stack .column {
+  max-width: 400px !important;
+  width: 100% !important;
+}
+.fixed-width.has-border {
+  max-width: 402px !important;
+}
+.fixed-width.has-border .layout__inner {
+  box-sizing: border-box;
+}
+.snippet,
+.webversion {
+  width: 50% !important;
+}
+.mso .layout__edges {
+  font-size: 0;
+}
+.layout-fixed-width,
+.mso .layout-full-width {
+  background-color: #ffffff;
+}
+@media only screen and (min-width: 620px) {
+  .column,
+  .gutter {
+    display: table-cell;
+    Float: none !important;
+    vertical-align: top;
+  }
+  div.preheader,
+  .email-footer {
+    max-width: 560px !important;
+    width: 560px !important;
+  }
+  .snippet,
+  .webversion {
+    width: 280px !important;
+  }
+  div.header,
+  .layout,
+  .one-col .column {
+    max-width: 600px !important;
+    width: 600px !important;
+  }
+  .fixed-width.has-border,
+  .fixed-width.x_has-border,
+  .has-gutter.has-border,
+  .has-gutter.x_has-border {
+    max-width: 602px !important;
+    width: 602px !important;
+  }
+  .two-col .column {
+    max-width: 300px !important;
+    width: 300px !important;
+  }
+  .three-col .column,
+  .column.narrow,
+  .column.x_narrow {
+    max-width: 200px !important;
+    width: 200px !important;
+  }
+  .column.wide,
+  .column.x_wide {
+    width: 400px !important;
+  }
+  .two-col.has-gutter .column,
+  .two-col.x_has-gutter .column {
+    max-width: 290px !important;
+    width: 290px !important;
+  }
+  .three-col.has-gutter .column,
+  .three-col.x_has-gutter .column,
+  .has-gutter .narrow {
+    max-width: 188px !important;
+    width: 188px !important;
+  }
+  .has-gutter .wide {
+    max-width: 394px !important;
+    width: 394px !important;
+  }
+  .two-col.has-gutter.has-border .column,
+  .two-col.x_has-gutter.x_has-border .column {
+    max-width: 292px !important;
+    width: 292px !important;
+  }
+  .three-col.has-gutter.has-border .column,
+  .three-col.x_has-gutter.x_has-border .column,
+  .has-gutter.has-border .narrow,
+  .has-gutter.x_has-border .narrow {
+    max-width: 190px !important;
+    width: 190px !important;
+  }
+  .has-gutter.has-border .wide,
+  .has-gutter.x_has-border .wide {
+    max-width: 396px !important;
+    width: 396px !important;
+  }
+}
+@supports (display: flex) {
+  @media only screen and (min-width: 620px) {
+    .fixed-width.has-border .layout__inner {
+      display: flex !important;
+    }
+  }
+}
+/***
+* Mobile Styles
+*
+* 1. Overriding inline styles
+*/
+@media(max-width: 619px) {
+  .email-flexible-footer .left-aligned-footer .column,
+  .email-flexible-footer .center-aligned-footer,
+  .email-flexible-footer .right-aligned-footer .column {
+    max-width: 100% !important; /* [1] */
+    text-align: center !important; /* [1] */
+    width: 100% !important; /* [1] */
+  }
+  .flexible-footer-logo {
+    margin-left: 0px !important; /* [1] */
+    margin-right: 0px !important; /* [1] */
+  }
+  .email-flexible-footer .left-aligned-footer .flexible-footer__share-butto=
+n__container,
+  .email-flexible-footer .center-aligned-footer .flexible-footer__share-but=
+ton__container,
+  .email-flexible-footer .right-aligned-footer .flexible-footer__share-butt=
+on__container {
+    display: inline-block;
+    margin-left: 5px !important; /* [1] */
+    margin-right: 5px !important; /* [1] */
+  }
+  .email-flexible-footer__additionalinfo--center {
+    text-align: center !important; /* [1] */
+  }
+ =20
+  .email-flexible-footer .left-aligned-footer table,
+  .email-flexible-footer .center-aligned-footer table,
+  .email-flexible-footer .right-aligned-footer table {
+    display: table !important; /* [1] */
+    width: 100% !important; /* [1] */
+  }
+  .email-flexible-footer .footer__share-button,
+  .email-flexible-footer .email-footer__additional-info {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and=
+ (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-rat=
+io: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min=
+-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .fblike {
+    background-image: url(https://i7.cmail19.com/static/eb/master/13-the-bl=
+ueprint-3/images/fblike@2x.png) !important;
+  }
+  .tweet {
+    background-image: url(https://i8.cmail19.com/static/eb/master/13-the-bl=
+ueprint-3/images/tweet@2x.png) !important;
+  }
+  .linkedinshare {
+    background-image: url(https://i9.cmail19.com/static/eb/master/13-the-bl=
+ueprint-3/images/lishare@2x.png) !important;
+  }
+  .forwardtoafriend {
+    background-image: url(https://i10.cmail19.com/static/eb/master/13-the-b=
+lueprint-3/images/forward@2x.png) !important;
+  }
+}
+@media (max-width: 321px) {
+  .fixed-width.has-border .layout__inner {
+    border-width: 1px 0 !important;
+  }
+  .layout,
+  .stack .column {
+    min-width: 320px !important;
+    width: 320px !important;
+  }
+  .border {
+    display: none;
+  }
+  .has-gutter .border {
+    display: table-cell;
+  }
+}
+.cmctbl--inline table {
+  border-collapse: collapse;
+}
+</style>
+   =20
+    <!--[if mso]><xml>
+      <w:WordDocument xmlns:w=3D"urn:schemas-microsoft-com:office:word">
+        <w:DontUseAdvancedTypographyReadingMail/>
+      </w:WordDocument>
+    </xml><![endif]-->
+  <!--[if !mso]><!--><style type=3D"text/css">
+@import url(https://fonts.googleapis.com/css?family=3DPT+Sans:400,700,400it=
+alic,700italic|PT+Serif:400,700,400italic,700italic|Roboto:400,700,400itali=
+c,700italic);
+</style><link href=3D"https://fonts.googleapis.com/css?family=3DPT+Sans:400=
+,700,400italic,700italic|PT+Serif:400,700,400italic,700italic|Roboto:400,70=
+0,400italic,700italic" rel=3D"stylesheet" type=3D"text/css"><!--<![endif]--=
+><style type=3D"text/css">
+.main,.mso{background-color:#dbd7db}.logo a:hover,.logo a:focus{color:#859b=
+b1 !important}.footer-logo a:hover,.footer-logo a:focus{color:#372d1b !impo=
+rtant}.mso .layout-has-border{border-top:1px solid #aba1ab;border-bottom:1p=
+x solid #aba1ab}.mso .layout-has-bottom-border{border-bottom:1px solid #aba=
+1ab}.mso .border{background-color:#aba1ab}.mso h1{}.mso h1{font-size:26px !=
+important;line-height:34px !important}.mso h2{}.mso h2{font-size:20px !impo=
+rtant;line-height:28px !important}.mso h3{}.mso h3{font-size:20px !importan=
+t;line-height:28px !important}.mso .layout__inner{}.mso .footer__share-butt=
+on p{}.mso .footer__share-button p{font-family:PT Sans,Trebuchet MS,sans-se=
+rif}
+</style><!--[if mso]><style type=3D"text/css" emb-not-inline>
+.mso div{border:0 none white !important}.mso .w560 .divider{}.mso .w560 .di=
+vider{Margin-left:260px !important;Margin-right:260px !important}.mso .w360=
+ .divider{}.mso .w360 .divider{Margin-left:160px !important;Margin-right:16=
+0px !important}.mso .w260 .divider{}.mso .w260 .divider{Margin-left:110px !=
+important;Margin-right:110px !important}.mso .w160 .divider{}.mso .w160 .di=
+vider{Margin-left:60px !important;Margin-right:60px !important}.mso .w60 .d=
+ivider{}.mso .w60 .divider{Margin-left:10px !important;Margin-right:10px !i=
+mportant}.mso .w354 .divider{}.mso .w354 .divider{Margin-left:157px !import=
+ant;Margin-right:157px !important}.mso .w250 .divider{}.mso .w250 .divider{=
+Margin-left:105px !important;Margin-right:105px !important}.mso .w148 .divi=
+der{}.mso .w148 .divider{Margin-left:54px !important;Margin-right:54px !imp=
+ortant}.mso .size-8,.mso .size-8-m,.mso .size-8-l{font-size:8px=20
+!important;line-height:14px !important}.mso .size-8-m{line-height:16px !imp=
+ortant}.mso .size-8-l{line-height:24px !important}.mso .size-9,.mso .size-9=
+-m,.mso .size-9-l{font-size:9px !important;line-height:16px !important}.mso=
+ .size-9-m{line-height:18px !important}.mso .size-9-l{line-height:27px !imp=
+ortant}.mso .size-10,.mso .size-10-m,.mso .size-10-l{font-size:10px !import=
+ant;line-height:18px !important}.mso .size-10-m{line-height:20px !important=
+}.mso .size-10-l{line-height:30px !important}.mso .size-11,.mso .size-11-m,=
+.mso .size-11-l{font-size:11px !important;line-height:19px !important}.mso =
+.size-11-m{line-height:22px !important}.mso .size-11-l{line-height:33px !im=
+portant}.mso .size-12,.mso .size-12-m,.mso .size-12-l{font-size:12px !impor=
+tant;line-height:19px !important}.mso .size-12-m{line-height:24px !importan=
+t}.mso .size-12-l{line-height:36px !important}.mso .size-13,.mso=20
+.size-13-m,.mso .size-13-l{font-size:13px !important;line-height:21px !impo=
+rtant}.mso .size-13-m{line-height:26px !important}.mso .size-13-l{line-heig=
+ht:39px !important}.mso .size-14,.mso .size-14-m,.mso .size-14-l{font-size:=
+14px !important;line-height:21px !important}.mso .size-14-m{line-height:28p=
+x !important}.mso .size-14-l{line-height:42px !important}.mso .size-15,.mso=
+ .size-15-m,.mso .size-15-l{font-size:15px !important;line-height:23px !imp=
+ortant}.mso .size-15-m{line-height:30px !important}.mso .size-15-l{line-hei=
+ght:45px !important}.mso .size-16,.mso .size-16-m,.mso .size-16-l{font-size=
+:16px !important;line-height:24px !important}.mso .size-16-m{line-height:32=
+px !important}.mso .size-16-l{line-height:48px !important}.mso .size-17,.ms=
+o .size-17-m,.mso .size-17-l{font-size:17px !important;line-height:26px !im=
+portant}.mso .size-17-m{line-height:34px !important}.mso=20
+.size-17-l{line-height:51px !important}.mso .size-18,.mso .size-18-m,.mso .=
+size-18-l{font-size:18px !important;line-height:26px !important}.mso .size-=
+18-m{line-height:36px !important}.mso .size-18-l{line-height:54px !importan=
+t}.mso .size-20,.mso .size-20-m,.mso .size-20-l{font-size:20px !important;l=
+ine-height:28px !important}.mso .size-20-m{line-height:40px !important}.mso=
+ .size-20-l{line-height:60px !important}.mso .size-22,.mso .size-22-m,.mso =
+.size-22-l{font-size:22px !important;line-height:31px !important}.mso .size=
+-22-m{line-height:44px !important}.mso .size-22-l{line-height:66px !importa=
+nt}.mso .size-24,.mso .size-24-m,.mso .size-24-l{font-size:24px !important;=
+line-height:32px !important}.mso .size-24-m{line-height:48px !important}.ms=
+o .size-24-l{line-height:72px !important}.mso .size-26,.mso .size-26-m,.mso=
+ .size-26-l{font-size:26px !important;line-height:34px !important}.mso=20
+.size-26-m{line-height:52px !important}.mso .size-26-l{line-height:78px !im=
+portant}.mso .size-28,.mso .size-28-m,.mso .size-28-l{font-size:28px !impor=
+tant;line-height:36px !important}.mso .size-28-m{line-height:56px !importan=
+t}.mso .size-28-l{line-height:84px !important}.mso .size-30,.mso .size-30-m=
+,.mso .size-30-l{font-size:30px !important;line-height:38px !important}.mso=
+ .size-30-m{line-height:60px !important}.mso .size-30-l{line-height:90px !i=
+mportant}.mso .size-32,.mso .size-32-m,.mso .size-32-l{font-size:32px !impo=
+rtant;line-height:40px !important}.mso .size-32-m{line-height:64px !importa=
+nt}.mso .size-32-l{line-height:96px !important}.mso .size-34,.mso .size-34-=
+m,.mso .size-34-l{font-size:34px !important;line-height:43px !important}.ms=
+o .size-34-m{line-height:68px !important}.mso .size-34-l{line-height:102px =
+!important}.mso .size-36,.mso .size-36-m,.mso .size-36-l{font-size:36px=20
+!important;line-height:43px !important}.mso .size-36-m{line-height:72px !im=
+portant}.mso .size-36-l{line-height:108px !important}.mso .size-40,.mso .si=
+ze-40-m,.mso .size-40-l{font-size:40px !important;line-height:47px !importa=
+nt}.mso .size-40-m{line-height:80px !important}.mso .size-40-l{line-height:=
+120px !important}.mso .size-44,.mso .size-44-m,.mso .size-44-l{font-size:44=
+px !important;line-height:50px !important}.mso .size-44-m{line-height:88px =
+!important}.mso .size-44-l{line-height:132px !important}.mso .size-48,.mso =
+.size-48-m,.mso .size-48-l{font-size:48px !important;line-height:54px !impo=
+rtant}.mso .size-48-m{line-height:96px !important}.mso .size-48-l{line-heig=
+ht:144px !important}.mso .size-56,.mso .size-56-m,.mso .size-56-l{font-size=
+:56px !important;line-height:60px !important}.mso .size-56-m{line-height:11=
+2px !important}.mso .size-56-l{line-height:168px !important}.mso=20
+.size-64,.mso .size-64-m,.mso .size-64-l{font-size:64px !important;line-hei=
+ght:68px !important}.mso .size-64-m{line-height:128px !important}.mso .size=
+-64-l{line-height:192px !important}.mso .size-72,.mso .size-72-m,.mso .size=
+-72-l{font-size:72px !important;line-height:76px !important}.mso .size-72-m=
+{line-height:144px !important}.mso .size-72-l{line-height:216px !important}=
+.mso .size-80,.mso .size-80-m,.mso .size-80-l{font-size:80px !important;lin=
+e-height:84px !important}.mso .size-80-m{line-height:160px !important}.mso =
+.size-80-l{line-height:240px !important}.mso .size-96,.mso .size-96-m,.mso =
+.size-96-l{font-size:96px !important;line-height:100px !important}.mso .siz=
+e-96-m{line-height:192px !important}.mso .size-96-l{line-height:288px !impo=
+rtant}.mso .size-112,.mso .size-112-m,.mso .size-112-l{font-size:112px !imp=
+ortant;line-height:116px !important}.mso .size-112-m{line-height:224px=20
+!important}.mso .size-112-l{line-height:336px !important}.mso .size-128,.ms=
+o .size-128-m,.mso .size-128-l{font-size:128px !important;line-height:132px=
+ !important}.mso .size-128-m{line-height:256px !important}.mso .size-128-l{=
+line-height:384px !important}.mso .size-144,.mso .size-144-m,.mso .size-144=
+-l{font-size:144px !important;line-height:148px !important}.mso .size-144-m=
+{line-height:288px !important}.mso .size-144-l{line-height:432px !important=
+}.mso .cmctbl table td,.mso .cmctbl table th{Margin-left:20px !important;Ma=
+rgin-right:20px !important}.mso .cmctbl- -inline,.mso .cmctbl{padding-left:=
+20px !important;padding-right:20px !important}.mso .cmctbl- -inline table,.=
+mso .cmctbl=20
+table{mso-table-lspace:0pt;mso-table-rspace:0pt;mso-line-height-rule:exactl=
+y}.size-8,.size-9{mso-text-raise:9px}.size-34,h1{mso-text-raise:13px}.size-=
+36{mso-text-raise:14px}.size-40{mso-text-raise:16px}.size-44{mso-text-raise=
+:17px}.size-48{mso-text-raise:18px}.size-56{mso-text-raise:22px}.size-64{ms=
+o-text-raise:25px}.size-72{mso-text-raise:28px}.size-80{mso-text-raise:32px=
+}.size-96{mso-text-raise:40px}.size-112{mso-text-raise:46px}.size-128{mso-t=
+ext-raise:54px}.size-144{mso-text-raise:58px}.size-11-m,.size-12-m{mso-text=
+-raise:6px}.size-13-m,.size-14-m{mso-text-raise:7px}.size-15-m,.size-16-m,.=
+size-8-l{mso-text-raise:8px}.size-17-m,.size-18-m{mso-text-raise:9px}.size-=
+20-m,.size-10-l{mso-text-raise:10px}.size-22-m,.size-11-l{mso-text-raise:11=
+px}.size-24-m,.size-12-l{mso-text-raise:12px}.size-26-m,.size-13-l{mso-text=
+-raise:13px}.size-28-m,.size-14-l{mso-text-raise:14px}.size-30-m,.size-15-l=
+{mso-text-raise:15px}.size-32-m,.size-16-l{mso-text-raise:16px}.size-34-m,.=
+size-17-l{mso-text-raise:17px}.size-36-m,.size-18-l{mso-text-raise:18px}.si=
+ze-40-m,.size-20-l{mso-text-raise:20px}.size-44-m,.size-22-l{mso-text-raise=
+:22px}.size-48-m,.size-24-l{mso-text-raise:24px}.size-26-l{mso-text-raise:2=
+6px}.size-56-m,.size-28-l{mso-text-raise:28px}.size-30-l{mso-text-raise:30p=
+x}.size-64-m,.size-32-l{mso-text-raise:32px}.size-34-l{mso-text-raise:34px}=
+.size-72-m,.size-36-l{mso-text-raise:36px}.size-80-m,.size-40-l{mso-text-ra=
+ise:40px}.size-44-l{mso-text-raise:44px}.size-96-m,.size-48-l{mso-text-rais=
+e:48px}.size-112-m,.size-56-l{mso-text-raise:56px}.size-128-m,.size-64-l{ms=
+o-text-raise:64px}.size-144-m,.size-72-l{mso-text-raise:72px}.size-80-l{mso=
+-text-raise:80px}.size-96-l{mso-text-raise:96px}.size-112-l{mso-text-raise:=
+112px}.size-128-l{mso-text-raise:128px}.size-144-l{mso-text-raise:144px}=0D
+</style><![endif]--></head>
+<!--[if mso]>
+  <body class=3D"mso">
+<![endif]-->
+<!--[if !mso]><!-->
+  <body class=3D"main full-padding" style=3D"margin: 0;padding: 0;-webkit-t=
+ext-size-adjust: 100%;">
+<!--<![endif]-->
+    <table class=3D"wrapper" style=3D"border-collapse: collapse;table-layou=
+t: fixed;min-width: 320px;width: 100%;background-color: #dbd7db;" cellpaddi=
+ng=3D"0" cellspacing=3D"0" role=3D"presentation"><tbody><tr><td>
+      <div role=3D"banner">
+        <div class=3D"preheader" style=3D"Margin: 0 auto;max-width: 560px;m=
+in-width: 280px; width: 280px;width: calc(28000% - 167440px);">
+          <div style=3D"border-collapse: collapse;display: table;width: 100=
+%;">
+          <!--[if mso]><table align=3D"center" class=3D"preheader" cellpadd=
+ing=3D"0" cellspacing=3D"0" role=3D"presentation"><tr><td style=3D"width: 2=
+80px" valign=3D"top"><![endif]-->
+            <div class=3D"snippet" style=3D"display: table-cell;Float: left=
+;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 140px; width=
+: 140px;width: calc(14000% - 78120px);padding: 10px 0 5px 0;color: #828282;=
+font-family: PT Sans,Trebuchet MS,sans-serif;">
+             =20
+            </div>
+          <!--[if mso]></td><td style=3D"width: 280px" valign=3D"top"><![en=
+dif]-->
+            <div class=3D"webversion" style=3D"display: table-cell;Float: l=
+eft;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 139px; wi=
+dth: 139px;width: calc(14100% - 78680px);padding: 10px 0 5px 0;text-align: =
+right;color: #828282;font-family: PT Sans,Trebuchet MS,sans-serif;">
+              <p style=3D"Margin-top: 0;Margin-bottom: 0;" emb-social=3D"we=
+bversion">No images? <a style=3D"text-decoration: underline;transition: opa=
+city 0.1s ease-in;color: #828282;" href=3D"https://universityofgalway.cmail=
+19.com/t/r-e-tuktmo-pijjljliil-e/">Click here</a></p>
+            </div>
+          <!--[if mso]></td></tr></table><![endif]-->
+          </div>
+        </div>
+       =20
+      </div>
+      <div>
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <img class=3D"gnd-corner-image gnd-corner-image-center gnd-corner=
+-image-top gnd-corner-image-bottom" style=3D"border: 0;display: block;heigh=
+t: auto;width: 100%;max-width: 900px;" alt=3D"Ezine banner image with date =
+of the ezine and a poster of ghost, pumpkins and leaves" width=3D"600" src=
+=3D"https://i1.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/0411241-990000000=
+0079e3c.png">
+        </div>
+     =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p class=3D"size-15" style=3D"Margin-top: 0;Margin-bottom: 0;font-f=
+amily: &quot;PT Sans&quot;,&quot;Trebuchet MS&quot;,sans-serif;font-size: 1=
+5px;line-height: 23px;" lang=3D"x-size-15">Dear Bhumika,</p><p style=3D"Mar=
+gin-top: 20px;Margin-bottom: 0;">Get ready for a frightfully fun week fille=
+d with events and celebrations including the Students' Union Halloween Part=
+y in Sult.</p><p style=3D"Margin-top: 20px;Margin-bottom: 0;">This week we =
+are also celebrating Black Legacies Unbound as part of Black History Month.=
+&nbsp;</p><p style=3D"Margin-top: 20px;Margin-bottom: 0;">Don't forget, the=
+ fees payment deadline for semester one is <strong>Saturday&nbsp;31 October=
+, </strong>see below for more info.</p><p style=3D"Margin-top: 20px;Margin-=
+bottom: 0;">Keep reading...if you dare!</p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #a80050;background: 92% 82%/cover=
+ no-repeat url(https://i1.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/Copyof=
+MaroonEzineBanner72x25in5.jpg) #a80050;background-position: 92% 82%;backgro=
+und-image: url(https://i1.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/Copyof=
+MaroonEzineBanner72x25in5.jpg);background-repeat: no-repeat;background-size=
+: cover;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground: 92% 82%/cover no-repeat url(https://i1.cmail19.com/ei/r/E1/0F4/4D2/=
+235105/csfinal/CopyofMaroonEzineBanner72x25in5.jpg) #a80050;background-posi=
+tion: 92% 82%;background-image: url(https://i1.cmail19.com/ei/r/E1/0F4/4D2/=
+235105/csfinal/CopyofMaroonEzineBanner72x25in5.jpg);background-repeat: no-r=
+epeat;background-size: cover;background-color: #a80050;"><td style=3D"width=
+: 600px" class=3D"w560"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p class=3D"size-22" style=3D"Margin-top: 0;Margin-bottom: 0;font-s=
+ize: 18px;line-height: 26px;" lang=3D"x-size-22"><span style=3D"text-decora=
+tion: inherit;color: #ffffff;"><strong>HALLOWEEN IN GALWAY&nbsp;</strong></=
+span></p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <img class=3D"gnd-corner-image gnd-corner-image-center gnd-corner=
+-image-top gnd-corner-image-bottom" style=3D"border: 0;display: block;heigh=
+t: auto;width: 100%;max-width: 900px;" alt=3D"A photo of houses in the clad=
+dagh beside the water at night" width=3D"600" src=3D"https://i2.cmail19.com=
+/ei/r/E1/0F4/4D2/235105/csfinal/AcademicIntegrity4-cdbea91b8863f524.jpg">
+        </div>
+     =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p style=3D"Margin-top: 0;Margin-bottom: 0;">Did you know&nbsp;that=
+ Irish households once left food outside at Halloween to welcome the spirit=
+s of their ancestors and keep unwanted spirits away?&nbsp;</p><p style=3D"M=
+argin-top: 20px;Margin-bottom: 0;">Halloween has a rich history in Ireland,=
+&nbsp;so why not grab your friends, explore Galway and make the most of the=
+ spooky season!&nbsp;</p><p style=3D"Margin-top: 20px;Margin-bottom: 0;">Fa=
+ncy a fright? <a style=3D"text-decoration: underline;transition: opacity 0.=
+1s ease-in;color: #e45d6b;" href=3D"https://universityofgalway.cmail19.com/=
+t/r-l-tuktmo-pijjljliil-r/">The Haunted Walking Tour of Galway City</a>&nbs=
+p;explores the city=E2=80=99s darker past through scary stories and local l=
+egends that bring its history to life.</p><p style=3D"Margin-top: 20px;Marg=
+in-bottom: 0;">From spooky stories to spectacular sights, <a style=3D"text-=
+decoration: underline;transition: opacity 0.1s ease-in;color: #e45d6b;" hre=
+f=3D"https://universityofgalway.cmail19.com/t/r-l-tuktmo-pijjljliil-y/">Tim=
+e by Luxmuralis</a> brings impressive light and sound displays&nbsp;to St N=
+icholas=E2=80=99&nbsp;Collegiate Church.</p><p style=3D"Margin-top: 20px;Ma=
+rgin-bottom: 0;">The&nbsp;fun doesn't stop there!<a style=3D"text-decoratio=
+n: underline;transition: opacity 0.1s ease-in;color: #e45d6b;" href=3D"http=
+s://universityofgalway.cmail19.com/t/r-l-tuktmo-pijjljliil-j/"> See what el=
+se is happening in Galway this Halloween.&nbsp;</a></p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #a80050;background: 88% 57%/cover=
+ no-repeat url(https://i2.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/EzineF=
+eaturesize1920x1080px10.jpg) #a80050;background-position: 88% 57%;backgroun=
+d-image: url(https://i2.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/EzineFea=
+turesize1920x1080px10.jpg);background-repeat: no-repeat;background-size: co=
+ver;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground: 88% 57%/cover no-repeat url(https://i2.cmail19.com/ei/r/E1/0F4/4D2/=
+235105/csfinal/EzineFeaturesize1920x1080px10.jpg) #a80050;background-positi=
+on: 88% 57%;background-image: url(https://i2.cmail19.com/ei/r/E1/0F4/4D2/23=
+5105/csfinal/EzineFeaturesize1920x1080px10.jpg);background-repeat: no-repea=
+t;background-size: cover;background-color: #a80050;"><td style=3D"width: 60=
+0px" class=3D"w560"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p class=3D"size-22" style=3D"Margin-top: 0;Margin-bottom: 0;font-s=
+ize: 18px;line-height: 26px;" lang=3D"x-size-22"><span style=3D"text-decora=
+tion: inherit;color: #ffffff;"><strong>GET CREATIVE AT MAKERSPACE</strong><=
+/span></p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <img class=3D"gnd-corner-image gnd-corner-image-center gnd-corner=
+-image-top gnd-corner-image-bottom" style=3D"border: 0;display: block;heigh=
+t: auto;width: 100%;max-width: 900px;" alt=3D"Picture of makerspace staff s=
+howing students computer equipment." width=3D"600" src=3D"https://i3.cmail1=
+9.com/ei/r/E1/0F4/4D2/235105/csfinal/MakerSpace2-9900000000079e3c.jpg">
+        </div>
+     =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p style=3D"Margin-top: 0;Margin-bottom: 0;">Want to try something =
+new or bring an idea to life? <a style=3D"text-decoration: underline;transi=
+tion: opacity 0.1s ease-in;color: #e45d6b;" href=3D"https://universityofgal=
+way.cmail19.com/t/r-l-tuktmo-pijjljliil-t/">MakerSpace</a>, located on the =
+ground floor of the Library, is a space&nbsp;where you can&nbsp;get creativ=
+e, develop ideas&nbsp;and collaborate with others.&nbsp;No booking&nbsp;is&=
+nbsp;required!&nbsp;</p><p style=3D"Margin-top: 20px;Margin-bottom: 0;">Fro=
+m free&nbsp;<a style=3D"text-decoration: underline;transition: opacity 0.1s=
+ ease-in;color: #e45d6b;" href=3D"https://universityofgalway.cmail19.com/t/=
+r-l-tuktmo-pijjljliil-i/">3D printing</a> and laser cutting to sewing machi=
+nes and drones, there are plenty of ways to explore the equipment, get invo=
+lved in existing projects=20
+and&nbsp;bring your own designs to life!&nbsp;&nbsp;</p><p style=3D"Margin-=
+top: 20px;Margin-bottom: 0;">If you are interested in volunteering or want =
+to find out more, email the MakerSpace team at <a style=3D"text-decoration:=
+ underline;transition: opacity 0.1s ease-in;color: #e45d6b;" href=3D"mailto=
+:libmakerspace@universityofgalway.ie"><u>libmakerspace@universityofgalway.i=
+e</u></a>.&nbsp;&nbsp;</p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #a80050;background: 95% 93%/cover=
+ no-repeat url(https://i3.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/Copyof=
+MaroonEzineBanner72x25in.png) #a80050;background-position: 95% 93%;backgrou=
+nd-image: url(https://i3.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/CopyofM=
+aroonEzineBanner72x25in.png);background-repeat: no-repeat;background-size: =
+cover;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground: 95% 93%/cover no-repeat url(https://i3.cmail19.com/ei/r/E1/0F4/4D2/=
+235105/csfinal/CopyofMaroonEzineBanner72x25in.png) #a80050;background-posit=
+ion: 95% 93%;background-image: url(https://i3.cmail19.com/ei/r/E1/0F4/4D2/2=
+35105/csfinal/CopyofMaroonEzineBanner72x25in.png);background-repeat: no-rep=
+eat;background-size: cover;background-color: #a80050;"><td style=3D"width: =
+600px" class=3D"w560"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p class=3D"size-22" style=3D"Margin-top: 0;Margin-bottom: 0;font-s=
+ize: 18px;line-height: 26px;" lang=3D"x-size-22"><span style=3D"text-decora=
+tion: inherit;color: #ffffff;"><strong>GET COOKING THIS AUTUMN</strong></sp=
+an></p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <img class=3D"gnd-corner-image gnd-corner-image-center gnd-corner=
+-image-top gnd-corner-image-bottom" style=3D"border: 0;display: block;heigh=
+t: auto;width: 100%;max-width: 900px;" alt=3D"poster of food and autumn lea=
+ves with benefits of cooking at home typed in front of it." width=3D"600" s=
+rc=3D"https://i4.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/Cookingathome-9=
+900000000079e3c.jpg">
+        </div>
+     =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p style=3D"Margin-top: 0;Margin-bottom: 0;">As October brings cool=
+er weather and darker evenings, it=E2=80=99s a lovely time to get creative =
+in the kitchen and explore seasonal ingredients. Cooking at home is a great=
+ way to enjoy fresh food, try something different and make the most of seas=
+onal produce.</p><p style=3D"Margin-top: 20px;Margin-bottom: 0;"><strong>Wh=
+y give cooking at home a go?</strong></p><ul style=3D"Margin-top: 20px;Marg=
+in-bottom: 0;Margin-left: 24px;padding: 0;list-style-type: disc;"><li style=
+=3D"Margin-top: 20px;Margin-bottom: 0;Margin-left: 0;"><p style=3D"Margin-t=
+op: 0;Margin-bottom: 0;"><strong>Save money:</strong> Cooking at home is&nb=
+sp;cheaper than relying on takeaways or eating out.</p></li><li style=3D"Ma=
+rgin-top: 0;Margin-bottom: 0;Margin-left: 0;"><p style=3D"Margin-top: 0;Mar=
+gin-bottom: 0;"><strong>Make nutritious choices:</strong>&nbsp;Include a va=
+riety of=20
+ingredients and build balanced meals.</p></li><li style=3D"Margin-top: 0;Ma=
+rgin-bottom: 0;Margin-left: 0;"><p style=3D"Margin-top: 0;Margin-bottom: 0;=
+"><strong>Learn new skills:</strong> Try new&nbsp;techniques and build your=
+ confidence.</p></li><li style=3D"Margin-top: 0;Margin-bottom: 0;Margin-lef=
+t: 0;"><p style=3D"Margin-top: 0;Margin-bottom: 0;"><strong>Unwind&nbsp;and=
+ get creative:&nbsp;</strong>Cooking can be relaxing and fun, get experimen=
+tal with ingredients and recipes.</p></li><li style=3D"Margin-top: 0;Margin=
+-bottom: 0;Margin-left: 0;"><p style=3D"Margin-top: 0;Margin-bottom: 0;"><s=
+trong>Connect with others:</strong> Cook with friends, share meals and enjo=
+y spending time together.</p></li></ul><p style=3D"Margin-top: 20px;Margin-=
+bottom: 0;">An Bhialann has shared some seasonal recipes, along with tips o=
+n food, nutrition and harvest traditions. <u><a style=3D"text-decoration:=20
+underline;transition: opacity 0.1s ease-in;color: #e45d6b;" href=3D"https:/=
+/universityofgalway.cmail19.com/t/r-l-tuktmo-pijjljliil-d/">Check out the f=
+ull guide</a>!&nbsp;</u></p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #a80050;background: 88% 57%/cover=
+ no-repeat url(https://i4.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/EzineF=
+eaturesize1920x1080px10.jpg) #a80050;background-position: 88% 57%;backgroun=
+d-image: url(https://i4.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/EzineFea=
+turesize1920x1080px10.jpg);background-repeat: no-repeat;background-size: co=
+ver;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground: 88% 57%/cover no-repeat url(https://i4.cmail19.com/ei/r/E1/0F4/4D2/=
+235105/csfinal/EzineFeaturesize1920x1080px10.jpg) #a80050;background-positi=
+on: 88% 57%;background-image: url(https://i4.cmail19.com/ei/r/E1/0F4/4D2/23=
+5105/csfinal/EzineFeaturesize1920x1080px10.jpg);background-repeat: no-repea=
+t;background-size: cover;background-color: #a80050;"><td style=3D"width: 60=
+0px" class=3D"w560"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p class=3D"size-22" style=3D"Margin-top: 0;Margin-bottom: 0;font-s=
+ize: 18px;line-height: 26px;" lang=3D"x-size-22"><span style=3D"text-decora=
+tion: inherit;color: #ffffff;"><strong>SPACE FOR EVERYONE</strong></span></=
+p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <img class=3D"gnd-corner-image gnd-corner-image-center gnd-corner=
+-image-top gnd-corner-image-bottom" style=3D"border: 0;display: block;heigh=
+t: auto;width: 100%;max-width: 900px;" alt=3D"picture of the race equality =
+officers in the ILAS building" width=3D"600" src=3D"https://i5.cmail19.com/=
+ei/r/E1/0F4/4D2/235105/csfinal/Yourparagraphtext3-3ab1c318f3fd6d9a.jpg">
+        </div>
+     =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div style=3D"mso-line-height-rule: exactly;line-height: 2px;font-siz=
+e: 2px;">&nbsp;</div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p style=3D"Margin-top: 0;Margin-bottom: 0;">Black History Month is=
+ a time to celebrate the culture and achievements of Black communities, whi=
+le learning more about Black history and experiences.&nbsp;</p><p style=3D"=
+Margin-top: 20px;Margin-bottom: 0;">We want every student to feel valued, i=
+ncluded and welcomed at our University. Our Race Equality Advisors&nbsp;off=
+er a safe space for students to receive support, guidance&nbsp;and advice. =
+To book a&nbsp;confidential meeting, visit <a style=3D"text-decoration: und=
+erline;transition: opacity 0.1s ease-in;color: #e45d6b;" href=3D"https://un=
+iversityofgalway.cmail19.com/t/r-l-tuktmo-pijjljliil-h/">their webpage</a> =
+or email <a style=3D"text-decoration: underline;transition: opacity 0.1s ea=
+se-in;color: #e45d6b;" href=3D"mailto:raceequality@universityofgalway.ie"><=
+u>raceequality@universityofgalway.ie</u></a>.&nbsp;</p><p style=3D"Margin-t=
+op: 20px;Margin-bottom: 0;">Check out the events section below for details =
+of the Black History Month Exhibition.&nbsp;</p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #a80050;background: 88% 57%/cover=
+ no-repeat url(https://i5.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/EzineF=
+eaturesize1920x1080px10.jpg) #a80050;background-position: 88% 57%;backgroun=
+d-image: url(https://i5.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/EzineFea=
+turesize1920x1080px10.jpg);background-repeat: no-repeat;background-size: co=
+ver;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground: 88% 57%/cover no-repeat url(https://i5.cmail19.com/ei/r/E1/0F4/4D2/=
+235105/csfinal/EzineFeaturesize1920x1080px10.jpg) #a80050;background-positi=
+on: 88% 57%;background-image: url(https://i5.cmail19.com/ei/r/E1/0F4/4D2/23=
+5105/csfinal/EzineFeaturesize1920x1080px10.jpg);background-repeat: no-repea=
+t;background-size: cover;background-color: #a80050;"><td style=3D"width: 60=
+0px" class=3D"w560"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p class=3D"size-22" style=3D"Margin-top: 0;Margin-bottom: 0;font-s=
+ize: 18px;line-height: 26px;" lang=3D"x-size-22"><span style=3D"text-decora=
+tion: inherit;color: #ffffff;"><strong>IMEACHTA=C3=8D - EVENTS</strong></sp=
+an></p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout two-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 300px" valign=3D"top" class=3D"=
+w260"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 200=
+0%);Float: left;">
+         =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <img class=3D"gnd-corner-image gnd-corner-image-center gnd-corner=
+-image-top gnd-corner-image-bottom" style=3D"border: 0;display: block;heigh=
+t: auto;width: 100%;max-width: 480px;" alt=3D"event poster with computer sk=
+ills workshop text on black background" width=3D"300" src=3D"https://i6.cma=
+il19.com/ei/r/E1/0F4/4D2/235105/csfinal/02f9d1833f714f0284fef39a9f48fc25-99=
+0000000003cf3c.jpg">
+        </div>
+     =20
+          </div>
+        <!--[if mso]></td><td style=3D"width: 300px" valign=3D"top" class=
+=3D"w260"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 200=
+0%);Float: left;">
+         =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;">
+      <div style=3D"mso-line-height-rule: exactly;line-height: 25px;font-si=
+ze: 1px;">&nbsp;</div>
+    </div>
+         =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-botto=
+m: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p style=3D"Margin-top: 0;Margin-bottom: 0;"><strong>Computer Skill=
+s Workshop<br>
+When</strong>: 6pm, Wednesday 28 October<br>
+<strong>Where</strong>: CSB-1007</p><p style=3D"Margin-top: 20px;Margin-bot=
+tom: 0;">Workshop on computer skills that are useful to have for students i=
+n physics and other scientific disciplines.&nbsp;</p><p style=3D"Margin-top=
+: 20px;Margin-bottom: 0;">&nbsp;Bring your laptop, follow along and ask as =
+many questions as your heart desires. Free pizza afterwards!</p>
+      </div>
+    </div>
+         =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout two-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;" dir=3D"rtl">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 300px" valign=3D"top" class=3D"=
+w260"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 200=
+0%);float: right;" dir=3D"ltr">
+         =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <img class=3D"gnd-corner-image gnd-corner-image-center gnd-corner=
+-image-top gnd-corner-image-bottom" style=3D"border: 0;display: block;heigh=
+t: auto;width: 100%;max-width: 480px;" alt=3D"event poster with what do eng=
+ineers do text on blue background" width=3D"300" src=3D"https://i7.cmail19.=
+com/ei/r/E1/0F4/4D2/235105/csfinal/EzineEventsize24-2026-10-27T095802.249-9=
+90000000003cf3c.jpg">
+        </div>
+     =20
+          </div>
+        <!--[if mso]></td><td style=3D"width: 300px" valign=3D"top" class=
+=3D"w260"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 200=
+0%);float: right;" dir=3D"ltr">
+         =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p style=3D"Margin-top: 0;Margin-bottom: 0;"><strong>What Do Engine=
+ers Do?<br>
+When</strong>: 6pm, Wednesday 28 October<br>
+<strong>Where</strong>: ENG-G018, Alice Perry building</p><p style=3D"Margi=
+n-top: 20px;Margin-bottom: 0;">Curious about what life as an engineer actua=
+lly looks like? Join the <a style=3D"text-decoration: underline;transition:=
+ opacity 0.1s ease-in;color: #e45d6b;" href=3D"https://universityofgalway.c=
+mail19.com/t/r-l-tuktmo-pijjljliil-k/">IEEE student branch</a> and Vincent =
+Walsh and Keith Hynes from Microchip Technology, for a glimpse into the day=
+-to-day life of an engineer and what working in the field is really like.</=
+p><p style=3D"Margin-top: 20px;Margin-bottom: 0;">Everyone=E2=80=99s welcom=
+e, so come along, hear what they have to say and stick around for the Q&amp=
+;A at the end!</p>
+      </div>
+    </div>
+         =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout two-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 300px" valign=3D"top" class=3D"=
+w260"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 200=
+0%);Float: left;">
+         =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;">
+      <div style=3D"mso-line-height-rule: exactly;line-height: 1px;font-siz=
+e: 1px;">&nbsp;</div>
+    </div>
+         =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <img class=3D"gnd-corner-image gnd-corner-image-center gnd-corner=
+-image-bottom" style=3D"border: 0;display: block;height: auto;width: 100%;m=
+ax-width: 480px;" alt=3D"pub quiz poster with that text on orange backgroun=
+d" width=3D"300" src=3D"https://i8.cmail19.com/ei/r/E1/0F4/4D2/235105/csfin=
+al/PubQuizPoster2_1792422317_th-38c8db2c5d00de2a.jpeg">
+        </div>
+     =20
+          </div>
+        <!--[if mso]></td><td style=3D"width: 300px" valign=3D"top" class=
+=3D"w260"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 200=
+0%);Float: left;">
+         =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p style=3D"Margin-top: 0;Margin-bottom: 0;"><strong>Pub Quiz<br>
+When</strong>: 7:15pm, Wednesday 28 October<br>
+<strong>Where</strong>: Busker Brownes, Cross Street</p><p style=3D"Margin-=
+top: 20px;Margin-bottom: 0;">Join the Video Game Society&nbsp;Pub Quiz on a=
+ll things video games! Prizes on the night! Tickets =E2=82=AC5 per person: =
+Maximum of 6 Teams: 4-6 People Max Costumes welcome but not mandatory!</p>
+      </div>
+    </div>
+         =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout two-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;" dir=3D"rtl">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 300px" valign=3D"top" class=3D"=
+w260"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 200=
+0%);float: right;" dir=3D"ltr">
+         =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;">
+      <div style=3D"mso-line-height-rule: exactly;line-height: 2px;font-siz=
+e: 1px;">&nbsp;</div>
+    </div>
+         =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <img class=3D"gnd-corner-image gnd-corner-image-center gnd-corner=
+-image-bottom" style=3D"border: 0;display: block;height: auto;width: 100%;m=
+ax-width: 480px;" alt=3D"Poster with pictures of African students celebrati=
+ng their heritage." width=3D"300" src=3D"https://i9.cmail19.com/ei/r/E1/0F4=
+/4D2/235105/csfinal/BlackHistoryMonth8.jpg-6c33e783a9cd2120.jpg">
+        </div>
+     =20
+          </div>
+        <!--[if mso]></td><td style=3D"width: 300px" valign=3D"top" class=
+=3D"w260"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 200=
+0%);float: right;" dir=3D"ltr">
+         =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p style=3D"Margin-top: 0;Margin-bottom: 0;"><strong>Celebrating Bl=
+ack History Month</strong><br>
+<strong>When: </strong>11am-2pm, Thursday 29 October<br>
+<strong>Where: </strong>The Hub, =C3=81ras na Mac L=C3=A9inn</p><p style=3D=
+"Margin-top: 20px;Margin-bottom: 0;">Explore an exhibition hosted with the =
+help of the&nbsp;<a style=3D"text-decoration: underline;transition: opacity=
+ 0.1s ease-in;color: #e45d6b;" href=3D"https://universityofgalway.cmail19.c=
+om/t/r-l-tuktmo-pijjljliil-u/">African Caribbean Society</a> honouring Blac=
+k contributions through colonial histories, literature, culture, identity a=
+nd the generations shaping our future.</p><p style=3D"Margin-top: 20px;Marg=
+in-bottom: 0;">The Mayor of Galway, Councillor Helen Ogbu, will officially =
+open this event<strong>.</strong></p><p style=3D"Margin-top: 20px;Margin-bo=
+ttom: 0;">Drop in, discover powerful stories, and celebrate Black legacies =
+in Ireland and beyond.</p>
+      </div>
+    </div>
+         =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout two-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 300px" valign=3D"top" class=3D"=
+w260"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 200=
+0%);Float: left;">
+         =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;">
+      <div style=3D"mso-line-height-rule: exactly;line-height: 1px;font-siz=
+e: 1px;">&nbsp;</div>
+    </div>
+         =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <img class=3D"gnd-corner-image gnd-corner-image-center gnd-corner=
+-image-bottom" style=3D"border: 0;display: block;height: auto;width: 100%;m=
+ax-width: 480px;" alt=3D"halloween poster with drawing of pumpkin and hand =
+on black background." width=3D"300" src=3D"https://i10.cmail19.com/ei/r/E1/=
+0F4/4D2/235105/csfinal/Screenshot2026-10-22151721-990000000003cf3c.png">
+        </div>
+     =20
+          </div>
+        <!--[if mso]></td><td style=3D"width: 300px" valign=3D"top" class=
+=3D"w260"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 200=
+0%);Float: left;">
+         =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;">
+      <div style=3D"mso-line-height-rule: exactly;line-height: 20px;font-si=
+ze: 1px;">&nbsp;</div>
+    </div>
+         =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-botto=
+m: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p style=3D"Margin-top: 0;Margin-bottom: 0;"><strong>2016-oween Hal=
+loween Party</strong><br>
+<strong>When:&nbsp;</strong>8pm, Thursday 29 October<br>
+<strong>Where:</strong> Sult&nbsp;</p><p style=3D"Margin-top: 20px;Margin-b=
+ottom: 0;">Join the Students' Union as they travel back in time to 2016 for=
+ their 2016Oween Halloween Party.</p><p style=3D"Margin-top: 20px;Margin-bo=
+ttom: 0;">There are prizes to be won for the best fancy dress and it=E2=80=
+=99s free entry!</p>
+      </div>
+    </div>
+         =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div class=3D"btn btn--flat btn--large" style=3D"text-align:center;">
+        <!--[if !mso]><!--><a style=3D"border-radius: 4px;display: inline-b=
+lock;font-size: 14px;font-weight: bold;line-height: 24px;padding: 12px 24px=
+;text-align: center;text-decoration: none !important;transition: opacity 0.=
+1s ease-in;color: #262626 !important;background-color: #f5cb3f;font-family:=
+ Roboto, Tahoma, sans-serif;" href=3D"https://universityofgalway.cmail19.co=
+m/t/r-l-tuktmo-pijjljliil-o/">Keep up to date on events in the Student Cale=
+ndar</a><!--<![endif]-->
+      <!--[if mso]><p style=3D"line-height:0;margin:0;">&nbsp;</p><v:roundr=
+ect xmlns:v=3D"urn:schemas-microsoft-com:vml" href=3D"https://universityofg=
+alway.cmail19.com/t/r-l-tuktmo-pijjljliil-o/" style=3D"width:271.5pt" arcsi=
+ze=3D"9%" fillcolor=3D"#F5CB3F" stroke=3D"f"><v:textbox style=3D"mso-fit-sh=
+ape-to-text:t" inset=3D"0pt,8.25pt,0pt,8.25pt"><center style=3D"font-size:1=
+4px;line-height:24px;color:#262626;font-family:Roboto,Tahoma,sans-serif;fon=
+t-weight:bold;mso-line-height-rule:exactly;mso-text-raise:1.5px">Keep up to=
+ date on events in the Student Calendar</center></v:textbox></v:roundrect><=
+![endif]--></div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #a80050;background: 92% 75%/cover=
+ no-repeat url(https://i6.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/Maroon=
+EzineBanner52.png) #a80050;background-position: 92% 75%;background-image: u=
+rl(https://i6.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/MaroonEzineBanner5=
+2.png);background-repeat: no-repeat;background-size: cover;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground: 92% 75%/cover no-repeat url(https://i6.cmail19.com/ei/r/E1/0F4/4D2/=
+235105/csfinal/MaroonEzineBanner52.png) #a80050;background-position: 92% 75=
+%;background-image: url(https://i6.cmail19.com/ei/r/E1/0F4/4D2/235105/csfin=
+al/MaroonEzineBanner52.png);background-repeat: no-repeat;background-size: c=
+over;background-color: #a80050;"><td style=3D"width: 600px" class=3D"w560">=
+<![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p class=3D"size-22" style=3D"Margin-top: 0;Margin-bottom: 0;font-s=
+ize: 18px;line-height: 26px;" lang=3D"x-size-22"><span style=3D"text-decora=
+tion: inherit;color: #ffffff;"><strong>AN RAIBH A FHIOS AGAT?</strong></spa=
+n></p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <img class=3D"gnd-corner-image gnd-corner-image-center gnd-corner=
+-image-top gnd-corner-image-bottom" style=3D"border: 0;display: block;heigh=
+t: auto;width: 100%;max-width: 900px;" alt=3D"Tree in front of the Quadrang=
+le with the words Did You Know written on a postit note on the right hand s=
+ide of the image" width=3D"600" src=3D"https://i1.cmail19.com/ei/r/E1/0F4/4=
+D2/235105/csfinal/EmailHeaderEzine4-b18d6741521cfe68.png">
+        </div>
+     =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p style=3D"Margin-top: 0;Margin-bottom: 0;"><strong>Fees Deadline<=
+/strong><br>
+The fees payment deadline for semester one is <strong>Saturday&nbsp;31 Octo=
+ber.&nbsp;&nbsp;</strong>All students who remain registered beyond this dat=
+e will be liable for full fees for semester one.&nbsp; Any withdrawals afte=
+r this date may impact current or future funding opportunities. A late paym=
+ent <strong>penalty of =E2=82=AC200</strong> applies where fees are paid af=
+ter the deadline.&nbsp;Find out more on the Fees Office&nbsp;<a style=3D"te=
+xt-decoration: underline;transition: opacity 0.1s ease-in;color: #e45d6b;" =
+data-emb-iscopy=3D"true" href=3D"https://universityofgalway.cmail19.com/t/r=
+-l-tuktmo-pijjljliil-b/">website</a>.&nbsp;</p><p style=3D"Margin-top: 20px=
+;Margin-bottom: 0;"><strong>Marie Birkett Bursary</strong><br>
+This bursary will support a first-year undergraduate student at University =
+of Galway with care experience or kinship care experience. The bursary has =
+a total value of =E2=82=AC6,000, paid in equal annual instalments throughou=
+t an undergraduate degree.</p><p style=3D"Margin-top: 20px;Margin-bottom: 0=
+;"><span style=3D"text-decoration: inherit;">Applications close 6 November =
+2026.&nbsp;</span><a style=3D"text-decoration: underline;transition: opacit=
+y 0.1s ease-in;color: #e45d6b;" href=3D"https://universityofgalway.cmail19.=
+com/t/r-l-tuktmo-pijjljliil-n/">Learn more &amp; apply.&nbsp;</a></p><p sty=
+le=3D"Margin-top: 20px;Margin-bottom: 0;"><strong>Galway Wind Park scholars=
+hip</strong><br>
+This scholarship offers students living within 15km of the Galway Wind Park=
+ an opportunity to apply for 50% funding support towards third-level educat=
+ion fees up to a maximum of 3 years. Check <a style=3D"text-decoration: und=
+erline;transition: opacity 0.1s ease-in;color: #e45d6b;" href=3D"https://un=
+iversityofgalway.cmail19.com/t/r-l-tuktmo-pijjljliil-p/">their website</a>&=
+nbsp;for more info.&nbsp;</p><p style=3D"Margin-top: 20px;Margin-bottom: 0;=
+">Take a look at the new <a style=3D"text-decoration: underline;transition:=
+ opacity 0.1s ease-in;color: #e45d6b;" href=3D"https://universityofgalway.c=
+mail19.com/t/r-l-tuktmo-pijjljliil-x/">Scholarships webpage</a> to see all =
+the available scholarships for students, both undergrads and postgrads.&nbs=
+p;</p><p style=3D"Margin-top: 20px;Margin-bottom: 0;"><strong>Sustainabilit=
+y Fund for Student=20
+Societies</strong><br>
+Do you have an idea for a sustainability event on campus? The Sustainabilit=
+y Office is offering =E2=82=AC500 awards to support student societies to br=
+ing sustainability event ideas to life on campus during 2026=E2=80=9327.</p=
+><p style=3D"Margin-top: 20px;Margin-bottom: 0;">Applications close Friday =
+6 November.&nbsp;Find out more&nbsp;on <a style=3D"text-decoration: underli=
+ne;transition: opacity 0.1s ease-in;color: #e45d6b;" href=3D"https://univer=
+sityofgalway.cmail19.com/t/r-l-tuktmo-pijjljliil-a/">their website.</a></p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #a80050;background: 94% 94%/cover=
+ no-repeat url(https://i7.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/Maroon=
+EzineBanner12.jpg) #a80050;background-position: 94% 94%;background-image: u=
+rl(https://i7.cmail19.com/ei/r/E1/0F4/4D2/235105/csfinal/MaroonEzineBanner1=
+2.jpg);background-repeat: no-repeat;background-size: cover;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground: 94% 94%/cover no-repeat url(https://i7.cmail19.com/ei/r/E1/0F4/4D2/=
+235105/csfinal/MaroonEzineBanner12.jpg) #a80050;background-position: 94% 94=
+%;background-image: url(https://i7.cmail19.com/ei/r/E1/0F4/4D2/235105/csfin=
+al/MaroonEzineBanner12.jpg);background-repeat: no-repeat;background-size: c=
+over;background-color: #a80050;"><td style=3D"width: 600px" class=3D"w560">=
+<![endif]-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p class=3D"size-22" style=3D"Margin-top: 0;Margin-bottom: 0;font-s=
+ize: 18px;line-height: 26px;" lang=3D"x-size-22"><span style=3D"text-decora=
+tion: inherit;color: #ffffff;"><strong>TACA=C3=8DOCHTA=C3=8D - SUPPORTS&nbs=
+p;</strong></span></p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p style=3D"Margin-top: 0;Margin-bottom: 0;">Need support? Find inf=
+ormation on the resources available by clicking on the <a style=3D"text-dec=
+oration: underline;transition: opacity 0.1s ease-in;color: #e45d6b;" href=
+=3D"https://universityofgalway.cmail19.com/t/r-l-tuktmo-pijjljliil-f/" data=
+-emb-iscopy=3D"true">Support Wheel link</a>.&nbsp;&nbsp;&nbsp;</p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+        <div style=3D"font-size: 12px;font-style: normal;font-weight: norma=
+l;line-height: 19px;" align=3D"center">
+          <a style=3D"text-decoration: underline;transition: opacity 0.1s e=
+ase-in;color: #e45d6b;" href=3D"https://universityofgalway.cmail19.com/t/r-=
+l-tuktmo-pijjljliil-z/"><img class=3D"gnd-corner-image gnd-corner-image-cen=
+ter gnd-corner-image-top" style=3D"border: 0;display: block;height: auto;wi=
+dth: 100%;max-width: 900px;" alt=3D"University of Galway Support Wheel Grap=
+hic" width=3D"600" src=3D"https://i2.cmail19.com/ei/r/E1/0F4/4D2/235105/csf=
+inal/Poster7-9900000000079e3c.jpg"></a>
+        </div>
+     =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+20px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;line-height: 20px;font-si=
+ze: 1px;">&nbsp;</div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      <div class=3D"layout one-col fixed-width stack" style=3D"Margin: 0 au=
+to;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167=
+400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-wo=
+rd;">
+        <div class=3D"layout__inner" style=3D"border-collapse: collapse;dis=
+play: table;width: 100%;background-color: #ffffff;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-fixed-width" style=3D"back=
+ground-color: #ffffff;"><td style=3D"width: 600px" class=3D"w560"><![endif]=
+-->
+          <div class=3D"column" style=3D"text-align: left;color: #262626;fo=
+nt-size: 15px;line-height: 23px;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+       =20
+            <div style=3D"Margin-left: 20px;Margin-right: 20px;Margin-top: =
+24px;Margin-bottom: 24px;">
+      <div style=3D"mso-line-height-rule: exactly;mso-text-raise: 11px;vert=
+ical-align: middle;">
+        <p class=3D"size-20" style=3D"Margin-top: 0;Margin-bottom: 0;font-s=
+ize: 17px;line-height: 26px;" lang=3D"x-size-20"><strong>We want your feedb=
+ack!</strong></p><p style=3D"Margin-top: 20px;Margin-bottom: 0;">If you hav=
+e suggestions for future editions of the weekly Student Enquiry Centre ezin=
+e, please get in touch by emailing&nbsp;<a style=3D"text-decoration: underl=
+ine;transition: opacity 0.1s ease-in;color: #e45d6b;" href=3D"mailto:sec@un=
+iversityofgalway.ie" data-emb-iscopy=3D"true">sec@universityofgalway.ie</a>=
+.</p>
+      </div>
+    </div>
+       =20
+          </div>
+        <!--[if mso]></td></tr></table><![endif]-->
+        </div>
+      </div>
+ =20
+      </div>
+      <div role=3D"contentinfo"><div style=3D"line-height:4px;font-size:4px=
+;" id=3D"footer-top-spacing">&nbsp;</div><div class=3D"layout email-flexibl=
+e-footer email-footer" style=3D"Margin: 0 auto;max-width: 600px;min-width: =
+320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-wor=
+d;word-wrap: break-word;word-break: break-word;" id=3D"footer-content">
+      <div class=3D"layout__inner left-aligned-footer" style=3D"border-coll=
+apse: collapse;display: table;width: 100%;">
+        <!--[if mso]><table align=3D"center" cellpadding=3D"0" cellspacing=
+=3D"0" role=3D"presentation"><tr class=3D"layout-email-footer"><![endif]-->
+        <!--[if mso]><td><table cellpadding=3D"0" cellspacing=3D"0"><![endi=
+f]-->
+        <!--[if mso]><td valign=3D"top"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;font-size: 12px;l=
+ine-height: 19px;color: #828282;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;">
+      <div class=3D"footer-logo emb-logo-margin-box" style=3D"font-size: 26=
+px;line-height: 32px;Margin-top: 10px;Margin-bottom: 20px;color: #7b663d;fo=
+nt-family: Roboto,Tahoma,sans-serif;" align=3D"center">
+        <div style=3D"margin-right: 20px;" emb-flexible-footer-logo=3D"" al=
+ign=3D"center"><a style=3D"text-decoration: none;transition: opacity 0.1s e=
+ase-in;color: #7b663d;" href=3D"https://universityofgalway.cmail19.com/t/r-=
+l-tuktmo-pijjljliil-v/"><img style=3D"border: 0;display: block;height: auto=
+;width: 100%;max-width: 180px;" src=3D"https://i1.cmail19.com/ei/r/E1/0F4/4=
+D2/235104/csfinal/University_Of_Galway_Logo__Positive_Landscape_Stac.png" a=
+lt=3D"" width=3D"180"></a></div>
+      </div>
+    </div>
+        <!--[if mso]></td><![endif]-->
+        <!--[if mso]><td valign=3D"top"><![endif]-->
+          <div class=3D"column" style=3D"text-align: left;font-size: 12px;l=
+ine-height: 19px;color: #828282;font-family: PT Sans,Trebuchet MS,sans-seri=
+f;display: none;">
+      <div style=3D"margin-left: 0;margin-right: 0;Margin-top: 10px;Margin-=
+bottom: 10px;">
+        <div class=3D"footer__share-button">
+         =20
+         =20
+         =20
+         =20
+        </div>
+      </div>
+    </div>
+        <!--[if mso]></td><![endif]-->
+        <!--[if mso]><td valign=3D"top"><![endif]-->
+          <table style=3D"border-collapse: collapse;table-layout: fixed;dis=
+play: inline-block;width: 400px;" cellpadding=3D"0" cellspacing=3D"0"><tbod=
+y><tr><td><div class=3D"column js-footer-additional-info" style=3D"text-ali=
+gn: left;font-size: 12px;line-height: 19px;color: #828282;font-family: PT S=
+ans,Trebuchet MS,sans-serif;width: 400px;">
+      <div style=3D"margin-left: 0;margin-right: 0;Margin-top: 10px;Margin-=
+bottom: 10px;">
+        <div class=3D"email-footer__additional-info" style=3D"font-size: 12=
+px;line-height: 19px;margin-bottom: 18px;margin-top: 0px;">
+          <div bind-to=3D"address"><p class=3D"email-flexible-footer__addit=
+ionalinfo--center" style=3D"Margin-top: 0;Margin-bottom: 0;">University of =
+Galway,<br>
+University Road,<br>
+Galway, Ireland<br>
+H91 TK33</p></div>
+        </div>
+       =20
+       =20
+        <div class=3D"email-footer__additional-info" style=3D"font-size: 12=
+px;line-height: 19px;margin-bottom: 15px;Margin-top: 18px;">
+          <span><a style=3D"text-decoration: underline;transition: opacity =
+0.1s ease-in;color: #828282;" href=3D"https://universityofgalway.updatemypr=
+ofile.com/r-tuktmo-D66B7630-pijjljliil-s" lang=3D"en">Preferences</a>&nbsp;=
+&nbsp;|&nbsp;&nbsp;</span><a style=3D"text-decoration: underline;transition=
+: opacity 0.1s ease-in;color: #828282;" href=3D"https://universityofgalway.=
+cmail19.com/t/r-u-tuktmo-pijjljliil-g/" lang=3D"en">Unsubscribe</a>
+        </div>
+        <!--[if mso]>&nbsp;<![endif]-->
+      </div>
+    </div></td></tr></tbody></table>
+        <!--[if mso]></table></td><![endif]-->
+        <!--[if mso]></td></tr></table><![endif]-->
+      </div>
+    </div><div style=3D"line-height:40px;font-size:40px;" id=3D"footer-bott=
+om-spacing">&nbsp;</div></div>
+     =20
+    </td></tr></tbody></table>
+  <style type=3D"text/css">
+@media (max-width:619px){.email-flexible-footer .left-aligned-footer .colum=
+n,.email-flexible-footer .center-aligned-footer,.email-flexible-footer .rig=
+ht-aligned-footer .column{max-width:100% !important;text-align:center !impo=
+rtant;width:100% !important}.flexible-footer-logo{margin-left:0px !importan=
+t;margin-right:0px !important}.email-flexible-footer .left-aligned-footer .=
+flexible-footer__share-button__container,.email-flexible-footer .center-ali=
+gned-footer .flexible-footer__share-button__container,.email-flexible-foote=
+r .right-aligned-footer .flexible-footer__share-button__container{display:i=
+nline-block;margin-left:5px !important;margin-right:5px !important}.email-f=
+lexible-footer__additionalinfo--center{text-align:center !important}.email-=
+flexible-footer .left-aligned-footer table,.email-flexible-footer .center-a=
+ligned-footer table,.email-flexible-footer .right-aligned-footer=20
+table{display:table !important;width:100% !important}.email-flexible-footer=
+ .footer__share-button,.email-flexible-footer .email-footer__additional-inf=
+o{margin-left:20px;margin-right:20px}}
+</style><img style=3D"visibility: hidden !important; display: block !import=
+ant; height:1px !important; width:1px !important; border: 0 !important; mar=
+gin: 0 !important; padding: 0 !important" src=3D"https://universityofgalway=
+.cmail19.com/t/r-o-tuktmo-pijjljliil/o.gif" width=3D"1" height=3D"1" border=
+=3D"0" alt=3D"">
+</body></html>
+
+
+
+--_9cf0bf64-7b3f-4856-99da-4eaba1d23000_--

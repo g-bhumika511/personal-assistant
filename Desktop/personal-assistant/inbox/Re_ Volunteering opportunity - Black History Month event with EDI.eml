@@ -1,0 +1,729 @@
+Received: from AS1PR01MB9107.eurprd01.prod.exchangelabs.com
+ (2603:10a6:20b:4d8::13) by MRWPR01MB12446.eurprd01.prod.exchangelabs.com with
+ HTTPS; Wed, 28 Oct 2026 19:24:24 +0000
+Received: from DBAPR01MB6965.eurprd01.prod.exchangelabs.com
+ (2603:10a6:10:199::20) by AS1PR01MB9107.eurprd01.prod.exchangelabs.com
+ (2603:10a6:20b:4d8::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.569.8; Wed, 28 Oct
+ 2026 19:24:17 +0000
+Received: from DBAPR01MB6965.eurprd01.prod.exchangelabs.com
+ ([fe80::b2a6:4cb7:d4b4:a42f]) by DBAPR01MB6965.eurprd01.prod.exchangelabs.com
+ ([fe80::b2a6:4cb7:d4b4:a42f%5]) with mapi id 15.21.0546.021; Wed, 28 Oct 2026
+ 19:24:10 +0000
+From: Alive Student Volunteering Programme
+	<studentvolunteering@universityofgalway.ie>
+CC: "Thabethe, Gugulethu" <G.Thabethe1@universityofgalway.ie>,
+	=?Windows-1252?Q?Mart=EDnez_del_Canizo=2C_Paula?=
+	<paula.p.martinezdelcanizo@universityofgalway.ie>
+Subject: Re: Volunteering opportunity - Black History Month event with EDI
+Thread-Topic: Volunteering opportunity - Black History Month event with EDI
+Thread-Index: AQHdZxHoTNaCRDTZCEmG3gNZIT29gg==
+Date: Wed, 28 Oct 2026 19:24:09 +0000
+Message-ID:
+	<DBAPR01MB6965E4EC4FEB8583694F4D99826F2@DBAPR01MB6965.eurprd01.prod.exchangelabs.com>
+References:
+	<GV2PR01MB12866F12F025BE073B8ED7369AB8A2@GV2PR01MB12866.eurprd01.prod.exchangelabs.com>
+ <DBAPR01MB696500CE1FC0294AB717203A82932@DBAPR01MB6965.eurprd01.prod.exchangelabs.com>
+ <GV2PR01MB12866E64E56813A2109036BCCAB932@GV2PR01MB12866.eurprd01.prod.exchangelabs.com>
+ <GV2PR01MB1286623E85AA87D4C80C7DA75AB6F2@GV2PR01MB12866.eurprd01.prod.exchangelabs.com>
+In-Reply-To:
+	<GV2PR01MB1286623E85AA87D4C80C7DA75AB6F2@GV2PR01MB12866.eurprd01.prod.exchangelabs.com>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthAs: Internal
+X-MS-Exchange-Organization-AuthMechanism: 04
+X-MS-Exchange-Organization-AuthSource:
+	DBAPR01MB6965.eurprd01.prod.exchangelabs.com
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-Network-Message-Id:
+	6c950c12-2cb7-4c7c-9e95-08df35290aac
+X-MS-Exchange-Organization-SCL: 1
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+msip_labels:
+	MSIP_Label_3c92e4bf-1f60-4796-a90f-2b1633f88872_Enabled=True;MSIP_Label_3c92e4bf-1f60-4796-a90f-2b1633f88872_SiteId=13e3b186-c446-4aab-9c6d-9ab9bb76816c;MSIP_Label_3c92e4bf-1f60-4796-a90f-2b1633f88872_SetDate=2026-10-28T19:24:08.967Z;MSIP_Label_3c92e4bf-1f60-4796-a90f-2b1633f88872_Name=Controlled;MSIP_Label_3c92e4bf-1f60-4796-a90f-2b1633f88872_ContentBits=1;MSIP_Label_3c92e4bf-1f60-4796-a90f-2b1633f88872_Method=Standard;
+x-ms-publictraffictype: Email
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930201)(20251009284)(140003);
+X-Microsoft-Antispam-Message-Info:
+	Lc0CbDgDzV1SXqwV8F4yItXjP0aIuN8GJi5AfJu0K4u38Aiy9u9d/89Oc74FwN3ghdjFV9Pq8LM8Xl9fBQlMjteZhXZ6I0nfn/vEb7x9kjsSlsnEn66Nu9lFhwX7kFvZQsa/ruiAnIXGUeTzS0PLEzYTFPsrv4ppn63WakAGKORwcShTID1FN2wdsEXitJkLl84dRwILedLAVX8vzisas2/S7OuQ5dyt8X3BNwdXGipmEDNrMEVp4rUM6BKaIVlUqbwqmlFNodrjtxWtxb8TMOemoZvqj3XhLREeqN3yh1jdhe7phpoOV4LirMCqIZzNKQx29sj3W0SPUamFqppqQzL7KVPuaKUmlagMEOWtlwyCTCSQKmsjI60hXcvkqhJX90J0GdaNx8YzbeRDnXY3IL1jHuRCn0i5UcJ6rMKgXbcIrW+vqEMPP9+8JefLkguaxfp2RmoMC4r6DeJMZkTmDaYvtNVEWLriuc1urIQpUQgM2Gh2NSkIzZcfUjF0nICi7DTk4JyQnHuEBs81yJ5/Ed04WLHvNsWQYsEGbPkEZQlI/U3sCa2CCkDugsySQW7DvfUymSd+uay9iuyXqNiMJgrZm3XUGk3fQDuJvFCWijavrJzws6OEojjd9KIqaii8ByxDDIl83ZifXd3r+b8ihURISxNQbwFVdwy0zJZhv1VH7R6RsDstmrgIigXZ+RdKzK/DeX8Irf/YKcXNDQM+DmlyIbC+oBb4F7/ARl+9ppWa3OEqXR10/OFVmQOQPcS7bn46jclWGSsDyzZsNAMiGopwy1v8gvmw+ce/F8tLHt58h/QFnX6Z6LJsfXupACAe8PLRMooWXF8nXMqcPUysSg==
+Content-Type: multipart/related;
+	boundary="_004_DBAPR01MB6965E4EC4FEB8583694F4D99826F2DBAPR01MB6965eurp_";
+	type="multipart/alternative"
+MIME-Version: 1.0
+
+--_004_DBAPR01MB6965E4EC4FEB8583694F4D99826F2DBAPR01MB6965eurp_
+Content-Type: multipart/alternative;
+	boundary="_000_DBAPR01MB6965E4EC4FEB8583694F4D99826F2DBAPR01MB6965eurp_"
+
+--_000_DBAPR01MB6965E4EC4FEB8583694F4D99826F2DBAPR01MB6965eurp_
+Content-Type: text/plain; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+Dear all,
+So sorry for the last minute request, is anyone available to help out in th=
+e morning  29th of October?
+
+The event is happening from 11am till 2pm. The first half starts at 11am at=
+ the view and it will move down to the Hub.
+
+To help with the setting up and helping with the redirection of participate=
+s to the Hub.
+
+You can log your volunteering hours for the ALIVE award, contact  Gugulethu=
+  cced for more information.
+
+
+Le gach dea-mh=E9in,
+
+Ann
+Current newsletter<https://us5.campaign-archive.com/?u=3D47f0c87986fc2ce1d5=
+b3d0a36&id=3D0694b0a198>
+Dr Ann O'Brien
+
+Community Engagement Manager Bainisteoir Rannph=E1irt=EDochta Pobail
+
+Subscribe to our Newsletter<https://mailchi.mp/3fbd732fb7f2/community-engag=
+ement-university-of-galway> <https://mailchi.mp/3fbd732fb7f2/community-enga=
+gement-university-of-galway>
+
+
+O=92Brien A, Clavin A, Horkan S, Cassidy A, Duane S, Cronin N, Mitchell S, =
+Clancy J, Horan LA, Sammon J, Kindermann G (2026;), "Co-creating sustainabl=
+e learning communities in a transdisciplinary course". Information and Lear=
+ning Sciences, Vol. ahead-of-print No. ahead-of-print. https://doi.org/10.1=
+108/ILS-09-2025-0172
+
+O'Brien, A., Whelan, E., Qiu, Y. and Levie, J., 2025. You'll never work alo=
+ne: Assessing user value in remote working hubs. Journal of Rural Studies, =
+120, p.103873 https://doi.org/10.1016/j.jrurstud.2025.103873
+
+O'Brien A, Murphy L, Hunt A, Dwyer D, Hunter A. A co-created multimethod ev=
+aluation of recovery education in Ireland. Health Expect. 2024;27:.https://=
+onlinelibrary.wiley.com/doi/10.1111/hex.13937
+
+
+Oifig Rannph=E1irt=EDocht, Engagement Office
+
+Community Engagement
+[cid:61b60539-365e-48aa-ba01-22e29324e0ce]
+[University of Galway] <https://www.universityofgalway.ie/>
+[UniversityofGalway.ie] <https://www.universityofgalway.ie/>
+Uimhir Carthanachta Cl=E1raithe/Registered Charity Number 20002107
+
+
+
+
+________________________________
+From: Thabethe, Gugulethu <G.Thabethe1@universityofgalway.ie>
+Sent: Wednesday, October 28, 2026 12:07 PM
+To: O'Brien, Ann J. <ann.obrien@universityofgalway.ie>
+Subject: Re: Volunteering opportunity
+
+Hi Ann,
+
+It was lovely to see you earlier today.
+
+Sorry for late notice. Our event is happening tomorrow 29 of October . The =
+event is happening from 11am till 2pm. The first half starts at 11am at the=
+ view and it will move down to the Hub.
+
+We would like to ask if you would have a couple of volunteers to help with =
+the setting up and helping with the redirection of participates to the Hub.
+
+Looking forward to hearing from you. Also, there's no pressure so if you ca=
+n help, that would be great if not, it's all good, as this is last minute.
+
+Kind Regards,
+Vusi
+________________________________
+From: Thabethe, Gugulethu <G.Thabethe1@universityofgalway.ie>
+Sent: Thursday 8 October 2026 13:44
+To: O'Brien, Ann J. <ann.obrien@universityofgalway.ie>
+Subject: Re: Volunteering opportunity
+
+
+Will do and thanks
+________________________________
+From: O'Brien, Ann J. <ann.obrien@universityofgalway.ie>
+Sent: Thursday 8 October 2026 13:41
+To: Thabethe, Gugulethu <G.Thabethe1@universityofgalway.ie>
+Subject: Re: Volunteering opportunity
+
+Hi Vusi,
+Lovely to hear from you. Let me know how you get on re the date, happy to s=
+upport.
+Best,
+Ann
+
+Sent from Outlook for Android<https://aka.ms/AAb9ysg>
+________________________________
+From: Thabethe, Gugulethu <G.Thabethe1@universityofgalway.ie>
+Sent: Thursday, 08 October 2026 13:35:21
+To: O'Brien, Ann J. <ann.obrien@universityofgalway.ie>
+Subject: Volunteering opportunity
+
+Hi Anne,
+
+I was wondering if you would have volunteers available to help with an even=
+t which EDI is planning to host towards the end of the month for Black Hist=
+ory month?
+
+With your recognition, we would hope to offer the volunteers, volunteering =
+credit towards the Alive President Award.
+
+The volunteer duties will include the helping of setting up tables and stan=
+ds for the event. And helping with operations throughout the event.
+Total hours for the actual event will be 5 hours including the setting up o=
+f the event.
+
+We are hoping to host the event in the Baile Allen. But as yet to agree on =
+the actual date and time. I will have more information as we get closer to =
+the day.
+
+For your consideration,
+
+Kind regards,
+Vusi
+
+
+
+--_000_DBAPR01MB6965E4EC4FEB8583694F4D99826F2DBAPR01MB6965eurp_
+Content-Type: text/html; charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+
+<html>
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DWindows-1=
+252">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+Dear all,&nbsp;</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+So sorry for the last minute request, is anyone available to help out in th=
+e morning&nbsp; 29th of October?</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+The event is happening from 11am till 2pm. The first half starts at 11am at=
+ the view and it will move down to the Hub.</div>
+<div style=3D"direction: ltr; font-family: Aptos, Aptos_EmbeddedFont, Aptos=
+_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb=
+(0, 0, 0);" class=3D"elementToProof">
+<br>
+</div>
+<div style=3D"direction: ltr; font-family: Aptos, Aptos_EmbeddedFont, Aptos=
+_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb=
+(0, 0, 0);" class=3D"elementToProof">
+To help with the setting up and helping with the redirection of participate=
+s to the Hub.</div>
+<div style=3D"direction: ltr; font-family: Aptos, Aptos_EmbeddedFont, Aptos=
+_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb=
+(0, 0, 0);" class=3D"elementToProof">
+<br>
+</div>
+<div style=3D"direction: ltr; font-family: Aptos, Aptos_EmbeddedFont, Aptos=
+_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb=
+(0, 0, 0);" class=3D"elementToProof">
+You can log your volunteering hours for the ALIVE award, contact&nbsp; Gugu=
+lethu&nbsp; cced for more information.</div>
+<div id=3D"Signature" class=3D"elementToProof">
+<div class=3D"elementToProof" style=3D"font-family: Aptos, Aptos_EmbeddedFo=
+nt, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; c=
+olor: rgb(0, 0, 0);">
+<br>
+</div>
+<p style=3D"line-height: 120%; margin: 0cm 0cm 8pt;" class=3D"elementToProo=
+f"><span style=3D"font-family: Aptos, sans-serif; font-size: 11pt; color: r=
+gb(0, 0, 0);">Le gach dea-mh=E9in,</span></p>
+<div style=3D"margin-top: 1em; margin-bottom: 1em; font-family: Aptos, Apto=
+s_EmbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-s=
+ize: 11pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+Ann</div>
+<div style=3D"line-height: 120%; margin: 0cm 0cm 8pt; font-family: Aptos, s=
+ans-serif; font-size: 11pt; color: rgb(12, 100, 192);" class=3D"elementToPr=
+oof">
+<a href=3D"https://us5.campaign-archive.com/?u=3D47f0c87986fc2ce1d5b3d0a36&=
+amp;id=3D0694b0a198" id=3D"OWAf39d391e-f5ee-a698-2b3e-4af82c37a0db" class=
+=3D"OWAAutoLink" title=3D"https://us5.campaign-archive.com/?u=3D47f0c87986f=
+c2ce1d5b3d0a36&amp;id=3D0694b0a198"><b>Current newsletter</b></a></div>
+<table id=3D"x_x_x_x_x_x_x_x_x_x_x_x_x_tableSelected1" style=3D"width: 606p=
+x; height: 315.2px; box-sizing: border-box; border-collapse: collapse; bord=
+er-spacing: 0px;">
+<tbody>
+<tr>
+<td style=3D"line-height: 24px; padding-top: 4px; padding-bottom: 4px; colo=
+r: rgb(0, 0, 0); width: 602.8px; height: 121.5px; box-sizing: border-box;">
+<div style=3D"line-height: 24px; font-family: Aptos, Aptos_EmbeddedFont, Ap=
+tos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt;" class=
+=3D"elementToProof">
+Dr Ann&nbsp;O'Brien</div>
+<p style=3D"line-height: 24px; margin-top: 1em; margin-bottom: 1em;" class=
+=3D"elementToProof">
+<span style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService,=
+ Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);">Com=
+munity Engagement Manager Bainisteoir Rannph=E1irt=EDochta Pobail</span></p=
+>
+<div style=3D"line-height: 24px; font-family: Aptos, Aptos_EmbeddedFont, Ap=
+tos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 12pt; color: =
+rgb(12, 100, 192);" class=3D"elementToProof">
+<a href=3D"https://mailchi.mp/3fbd732fb7f2/community-engagement-university-=
+of-galway" target=3D"_blank" id=3D"OWA3f1d4e8a-2ed5-2e23-3c50-50039185c40d"=
+ class=3D"x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_OWAAutoLink" title=3D"https:/=
+/mailchi.mp/3fbd732fb7f2/community-engagement-university-of-galway" rel=3D"=
+noopener noreferrer" style=3D"color: rgb(12, 100, 192);"><b>Subscribe
+ to our Newsletter</b></a><a href=3D"https://mailchi.mp/3fbd732fb7f2/commun=
+ity-engagement-university-of-galway" target=3D"_blank" id=3D"OWA773835ef-b4=
+a8-c28a-6803-25f3ec4927fa" class=3D"x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_x_OWA=
+AutoLink" title=3D"https://mailchi.mp/3fbd732fb7f2/community-engagement-uni=
+versity-of-galway" rel=3D"noopener noreferrer" style=3D"color: rgb(12, 100,=
+ 192); text-decoration: none;"><b>&nbsp;</b></a></div>
+<div style=3D"line-height: 24px; font-family: Aptos, Aptos_EmbeddedFont, Ap=
+tos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 14pt; color: =
+rgb(12, 100, 192);" class=3D"elementToProof">
+<br>
+</div>
+<p style=3D"line-height: normal; margin: 0cm 0cm 8pt;" class=3D"elementToPr=
+oof"><span style=3D"font-family: Aptos, sans-serif; font-size: 11pt; color:=
+ black;">O=92Brien A, Clavin A, Horkan S, Cassidy A, Duane S, Cronin N, Mit=
+chell S, Clancy J, Horan LA, Sammon J, Kindermann
+ G (2026;), &quot;Co-creating sustainable learning communities in a transdi=
+sciplinary course&quot;.
+<i>Information and Learning Sciences</i>, Vol. ahead-of-print No. ahead-of-=
+print.
+<a href=3D"https://doi.org/10.1108/ILS-09-2025-0172" target=3D"_blank" id=
+=3D"OWA41e1d46e-1db8-ac65-fb14-65e57b011390" class=3D"x_x_x_x_x_OWAAutoLink=
+" style=3D"margin-top: 0px; margin-bottom: 0px;">
+https://doi.org/10.1108/ILS-09-2025-0172</a></span></p>
+<div style=3D"line-height: normal; margin: 0cm 0cm 8pt; font-family: Aptos,=
+ sans-serif; font-size: 11pt; color: black;" class=3D"elementToProof">
+O'Brien, A., Whelan, E., Qiu, Y. and Levie, J., 2025. You'll never work alo=
+ne: Assessing user value in remote working hubs.
+<i>Journal of Rural Studies</i>, <i>120</i>, p.103873 <a href=3D"https://do=
+i.org/10.1016/j.jrurstud.2025.103873" id=3D"OWAaf0d940c-7c51-a636-def6-f685=
+b3053fb0" class=3D"OWAAutoLink">
+https://doi.org/10.1016/j.jrurstud.2025.103873</a></div>
+<p style=3D"line-height: normal; margin: 0cm;" class=3D"elementToProof"><sp=
+an style=3D"font-family: Aptos, sans-serif; font-size: 11pt; color: black;"=
+>O'Brien A, Murphy L, Hunt A, Dwyer D, Hunter A. A co-created multimethod e=
+valuation of recovery education in Ireland.
+ Health Expect. 2024;27:.<a href=3D"https://onlinelibrary.wiley.com/doi/10.=
+1111/hex.13937" id=3D"OWAa7812b66-8fb5-f510-1dbf-4df80b999485" class=3D"OWA=
+AutoLink" style=3D"margin-top: 0px; margin-bottom: 0px;">https://onlinelibr=
+ary.wiley.com/doi/10.1111/hex.13937</a></span></p>
+<div style=3D"line-height: normal; margin: 0cm; font-family: Aptos, Aptos_E=
+mbeddedFont, Aptos_MSFontService, Calibri, Helvetica, sans-serif; font-size=
+: 11pt; color: rgb(0, 0, 0);" class=3D"elementToProof">
+<br>
+</div>
+<p style=3D"line-height: 12pt; margin: 0cm;" class=3D"elementToProof"><span=
+ style=3D"font-family: Arial, sans-serif; font-size: 9pt; color: black;">Oi=
+fig Rannph=E1irt=EDocht,
+</span><span style=3D"font-family: Arial, sans-serif; font-size: 12px; colo=
+r: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" class=3D"spanWithBa=
+ckgroundColor">Engagement Office</span></p>
+<div style=3D"line-height: 12pt; margin: 0cm; font-family: Arial, sans-seri=
+f; font-size: 12px; color: rgb(0, 0, 0);" class=3D"elementToProof">
+<span style=3D"background-color: rgb(255, 255, 255);" class=3D"spanWithBack=
+groundColor"><br>
+</span></div>
+<div style=3D"line-height: 12pt; margin: 0cm; font-family: Arial, sans-seri=
+f; font-size: 12px; color: rgb(0, 0, 0);" class=3D"elementToProof">
+<span style=3D"background-color: rgb(255, 255, 255);" class=3D"spanWithBack=
+groundColor">Community Engagement</span></div>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 16px; color: rgb(0, 0, 0); width: 602.8px; height=
+: 20.4px; box-sizing: border-box;">
+<div style=3D"line-height: 16px; font-family: Aptos, Aptos_EmbeddedFont, Ap=
+tos_MSFontService, Calibri, Helvetica, sans-serif; font-size: 11pt; color: =
+rgb(0, 0, 0);" class=3D"elementToProof">
+<img id=3D"x_x_x_x_x_x_x_x_x_x_x_x_x_image_1_dragging" style=3D"width: 204.=
+778px; height: 38px; max-width: 798px;" width=3D"204" height=3D"38" size=3D=
+"2379" data-outlook-trace=3D"F:1|T:1" src=3D"cid:61b60539-365e-48aa-ba01-22=
+e29324e0ce"></div>
+</td>
+</tr>
+<tr>
+<td style=3D"padding-top: 12px; padding-bottom: 12px; width: 602.8px; heigh=
+t: 103.2px; box-sizing: border-box;">
+<table id=3D"x_x_x_x_x_x_x_x_x_x_x_x_x_tableSelected0" style=3D"width: 600p=
+x;">
+<tbody>
+<tr>
+<td style=3D"width: 300px;"><span style=3D"font-family: Verdana; font-size:=
+ 12pt; color: rgb(0, 0, 0);"><a href=3D"https://www.universityofgalway.ie/"=
+ target=3D"_blank" id=3D"OWA103efe73-9f4b-ff03-ca33-81aac75b4169" class=3D"=
+OWAAutoLink" style=3D"text-decoration: none;"><img alt=3D"University of Gal=
+way" style=3D"width: 220px; height: 70px;" width=3D"220" height=3D"70" src=
+=3D"https://4a230fb91e1a137178a6-3f787f34e1d06519b4288a7a4b359065.ssl.cf3.r=
+ackcdn.com/Galway/Email/2023/big-logo.png">
+</a></span></td>
+<td style=3D"text-align: right; width: 300px;">
+<div style=3D"text-align: right; font-family: Verdana; font-size: 12pt; col=
+or: rgb(0, 0, 0);" class=3D"elementToProof">
+<a href=3D"https://www.universityofgalway.ie/" target=3D"_blank" id=3D"OWAf=
+77b6e8e-e08a-00ed-5118-018b43aabd86" class=3D"OWAAutoLink" style=3D"text-de=
+coration: none;"><img alt=3D"UniversityofGalway.ie" style=3D"width: 90px; h=
+eight: 45px;" width=3D"90" height=3D"45" src=3D"https://4a230fb91e1a137178a=
+6-3f787f34e1d06519b4288a7a4b359065.ssl.cf3.rackcdn.com/Galway/Email/2023/bi=
+g-url.png">
+</a></div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td style=3D"line-height: 12px; color: rgb(0, 0, 0); width: 602.8px; height=
+: 18px; box-sizing: border-box;">
+<div style=3D"line-height: 12px; font-family: Arial, sans-serif; font-size:=
+ 10px;" class=3D"elementToProof">
+Uimhir Carthanachta Cl=E1raithe/Registered Charity Number 20002107 </div>
+</td>
+</tr>
+<tr>
+<td style=3D"width: 602.8px; height: 38.8px; box-sizing: border-box;">
+<div class=3D"elementToProof" style=3D"font-family: Verdana; font-size: 30p=
+x; color: rgb(0, 0, 0);">
+&nbsp;</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p style=3D"margin-top: 1em; margin-bottom: 1em;" class=3D"elementToProof">=
+<span style=3D"font-family: Aptos, Aptos_EmbeddedFont, Aptos_MSFontService,=
+ Calibri, Helvetica, sans-serif; font-size: 11pt; color: rgb(0, 0, 0);">&nb=
+sp;</span></p>
+</div>
+<div id=3D"appendonsend"></div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>From:</b> Thabethe, Gugulethu &=
+lt;G.Thabethe1@universityofgalway.ie&gt;<br>
+<b>Sent:</b> Wednesday, October 28, 2026 12:07 PM<br>
+<b>To:</b> O'Brien, Ann J. &lt;ann.obrien@universityofgalway.ie&gt;<br>
+<b>Subject:</b> Re: Volunteering opportunity </font>
+<div>&nbsp;</div>
+</div>
+<style type=3D"text/css" style=3D"display:none">
+<!--
+p
+	{margin-top:0;
+	margin-bottom:0}
+-->
+</style>
+<div dir=3D"ltr">
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+Hi Ann,</div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+<br>
+</div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+It was lovely to see you earlier today.&nbsp;</div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+<br>
+</div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+Sorry for late notice. Our event is happening tomorrow 29 of October . The =
+event is happening from 11am till 2pm. The first half starts at 11am at the=
+ view and it will move down to the Hub.</div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+<br>
+</div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+We would like to ask if you would have a couple of volunteers to help with =
+the setting up and helping with the redirection of participates to the Hub.=
+</div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+<br>
+</div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+Looking forward to hearing from you. Also, there's no pressure so if you ca=
+n help, that would be great if not, it's all good, as this is last minute.<=
+/div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+<br>
+</div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+Kind Regards,</div>
+<div class=3D"x_elementToProof" style=3D"font-family:Aptos,Aptos_EmbeddedFo=
+nt,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; color:=
+rgb(0,0,0)">
+Vusi</div>
+<div id=3D"x_appendonsend"></div>
+<hr tabindex=3D"-1" style=3D"display:inline-block; width:98%">
+<div id=3D"x_divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif" =
+color=3D"#000000" style=3D"font-size:11pt"><b>From:</b> Thabethe, Gugulethu=
+ &lt;G.Thabethe1@universityofgalway.ie&gt;<br>
+<b>Sent:</b> Thursday 8 October 2026 13:44<br>
+<b>To:</b> O'Brien, Ann J. &lt;ann.obrien@universityofgalway.ie&gt;<br>
+<b>Subject:</b> Re: Volunteering opportunity </font>
+<div>&nbsp;</div>
+</div>
+<style type=3D"text/css" style=3D"display:none">
+<!--
+p
+	{margin-top:0;
+	margin-bottom:0}
+-->
+</style>
+<div dir=3D"ltr">
+<div class=3D"x_x_elementToProof" style=3D"font-family:Aptos,Aptos_Embedded=
+Font,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; colo=
+r:rgb(0,0,0)">
+<br>
+</div>
+<div class=3D"x_x_elementToProof" style=3D"font-family:Aptos,Aptos_Embedded=
+Font,Aptos_MSFontService,Calibri,Helvetica,sans-serif; font-size:12pt; colo=
+r:rgb(0,0,0)">
+Will do and thanks</div>
+<div id=3D"x_x_appendonsend"></div>
+<hr tabindex=3D"-1" style=3D"display:inline-block; width:98%">
+<div id=3D"x_x_divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-serif=
+" color=3D"#000000" style=3D"font-size:11pt"><b>From:</b> O'Brien, Ann J. &=
+lt;ann.obrien@universityofgalway.ie&gt;<br>
+<b>Sent:</b> Thursday 8 October 2026 13:41<br>
+<b>To:</b> Thabethe, Gugulethu &lt;G.Thabethe1@universityofgalway.ie&gt;<br=
+>
+<b>Subject:</b> Re: Volunteering opportunity </font>
+<div>&nbsp;</div>
+</div>
+<div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+Hi Vusi,&nbsp;</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+Lovely to hear from you. Let me know how you get on re the date, happy to s=
+upport.</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+Best,</div>
+<div dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontService,-apple-sys=
+tem,Roboto,Arial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)"=
+>
+Ann</div>
+<div id=3D"x_x_x_ms-outlook-mobile-body-separator-line" data-applydefaultfo=
+ntstyles=3D"true" dir=3D"auto" style=3D"font-family:Aptos,Aptos_MSFontServi=
+ce,-apple-system,Roboto,Arial,Helvetica,sans-serif; font-size:12pt">
+<div style=3D"font-family:Aptos,Aptos_MSFontService,-apple-system,Roboto,Ar=
+ial,Helvetica,sans-serif; font-size:12pt">
+<br>
+</div>
+</div>
+<div id=3D"x_x_x_ms-outlook-mobile-signature" dir=3D"auto" style=3D"font-fa=
+mily:Aptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-se=
+rif; font-size:12pt; color:rgb(33,33,33)">
+<span style=3D"font-family:Aptos,Aptos_MSFontService,-apple-system,Roboto,A=
+rial,Helvetica,sans-serif; font-size:12pt; color:rgb(33,33,33)">Sent from
+</span><a href=3D"https://aka.ms/AAb9ysg" style=3D"font-family:Aptos,Aptos_=
+MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; font-size:12=
+pt">Outlook for Android</a></div>
+<hr tabindex=3D"-1" style=3D"display:inline-block; width:98%">
+<div id=3D"x_x_x_divRplyFwdMsg" dir=3D"ltr"><font face=3D"Calibri, sans-ser=
+if" color=3D"#000000" style=3D"font-size:11pt"><b>From:</b> Thabethe, Gugul=
+ethu &lt;G.Thabethe1@universityofgalway.ie&gt;<br>
+<b>Sent:</b> Thursday, 08 October 2026 13:35:21<br>
+<b>To:</b> O'Brien, Ann J. &lt;ann.obrien@universityofgalway.ie&gt;<br>
+<b>Subject:</b> Volunteering opportunity </font>
+<div>&nbsp;</div>
+</div>
+<style type=3D"text/css" style=3D"display:none">
+<!--
+p
+	{margin-top:0;
+	margin-bottom:0}
+-->
+</style>
+<div dir=3D"ltr">
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+Hi Anne,</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+<br>
+</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+I was wondering if you would have volunteers available to help with an even=
+t which EDI is planning to host towards the end of the month for Black Hist=
+ory month?</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+<br>
+</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+With your recognition, we would hope to offer the volunteers, volunteering =
+credit towards the Alive President Award.</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+<br>
+</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+The volunteer duties will include the helping of setting up tables and stan=
+ds for the event. And helping with operations throughout the event.</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+Total hours for the actual event will be 5 hours including the setting up o=
+f the event.</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+<br>
+</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+We are hoping to host the event in the Baile Allen. But as yet to agree on =
+the actual date and time. I will have more information as we get closer to =
+the day.</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+<br>
+</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+For your consideration,</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+<br>
+</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+Kind regards,</div>
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+Vusi</div>
+<div id=3D"x_x_x_x_ms-outlook-mobile-body-separator-line" class=3D"x_x_x_x_=
+elementToProof">
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt">
+<br>
+</div>
+</div>
+<div id=3D"x_x_x_x_ms-outlook-mobile-signature" class=3D"x_x_x_x_elementToP=
+roof">
+<div class=3D"x_x_x_x_elementToProof" style=3D"direction:ltr; font-family:A=
+ptos,Aptos_MSFontService,-apple-system,Roboto,Arial,Helvetica,sans-serif; f=
+ont-size:12pt; color:rgb(33,33,33)">
+<br>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--_000_DBAPR01MB6965E4EC4FEB8583694F4D99826F2DBAPR01MB6965eurp_--
+
+--_004_DBAPR01MB6965E4EC4FEB8583694F4D99826F2DBAPR01MB6965eurp_
+Content-Type: image/png; name="image.png"
+Content-Description: image.png
+Content-Disposition: inline; filename="image.png"; size=2622;
+	creation-date="Wed, 28 Oct 2026 19:16:18 GMT";
+	modification-date="Wed, 28 Oct 2026 19:24:27 GMT"
+Content-ID: <61b60539-365e-48aa-ba01-22e29324e0ce>
+Content-Transfer-Encoding: base64
+
+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
+
+--_004_DBAPR01MB6965E4EC4FEB8583694F4D99826F2DBAPR01MB6965eurp_--

@@ -1,0 +1,870 @@
+Received: from AS8PR01MB7317.eurprd01.prod.exchangelabs.com
+ (2603:10a6:20b:239::15) by GV2PR01MB12437.eurprd01.prod.exchangelabs.com with
+ HTTPS; Thu, 29 Oct 2026 10:25:37 +0000
+ARC-Seal: i=2; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=pass;
+ b=CHJchA8dXFgwqM+0t7y0VS4n5G4w1WtRp50VA7+hk2v7miREyj3z0CgMjg6Gz0tJYF+ps+h18tqmHeMaLtYOBIccPqMrDMkqjQWdlKnIgUf/9uLK/GbUF0W+h/5EnUUFsMOL4zA7oisZPIMwn690D5FAS41zxB9ozmOM17Qvr8ALywi39FcS5uUw+ewSgged3B0S6P3KsyNVds6BiXJA7RKiO/pDPrvvs+u42cUsYdWyJXUWfT55bzwTqHayrBm5l/S6rYabeqvk9Ui1YgaM6viO5ZBdFmqhaGL9NK8M2v7T/fyNNx0LcVUn1rfbl6tBDASeAfaynSJRtaIX6P/jyw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=qEPvgRDgJV8sfwpqqFXBF3WaWWb0HoCGfSWxzAZKRV4=;
+ b=qIL4ThlL/xhhGHeB49zTdWS9O1tY0JU0Fdi13ASq4gZQvCz/29EUYyyjO4rV/gGljbx6MbGw2IuGFihCmSKrd/hfE3jQG4yQWGPUoZAZoOl3Z/3ChaYOLVLF1g5fdyTGzDvDdskWzD2M54j/hUB6j8C+DQk0rNmCrwpplTyqZtSaUTPW+8b9hZl3AWkgFwXextlS8WIm3PawIMKEZzz4+i2/ZAYuR5gxhDSnWgyYNnaw/v0HAzBKs082n3htEev89mnL+au2i+2Ms5FAs6q4n64JXKZ/6SE4xtJ+oNGUq3shwJmHJDV5A3EtjtP3B2qTulIz1jB5NFlJtggm7I4X0g==
+ARC-Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 2607:f8b0:4864:20::b135) smtp.rcpttodomain=universityofgalway.ie
+ smtp.mailfrom=socs.universityofgalway.ie; dmarc=pass (p=reject sp=reject
+ pct=100) action=none header.from=socs.universityofgalway.ie; dkim=pass
+ (signature was verified)
+ header.d=socs-universityofgalway-ie.20260707.gappssmtp.com; arc=pass (0 oda=0
+ ltdi=1)
+Received: from PR3P195CA0018.EURP195.PROD.OUTLOOK.COM (2603:10a6:102:b6::23)
+ by AS8PR01MB7317.eurprd01.prod.exchangelabs.com (2603:10a6:20b:239::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.569.8; Thu, 29 Oct
+ 2026 10:25:34 +0000
+Received: from MAD0EPF000008C1.eurprd05.prod.outlook.com
+ (2603:10a6:102:b6:cafe::66) by PR3P195CA0018.outlook.office365.com
+ (2603:10a6:102:b6::23) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.546.22 via Frontend Transport; Thu,
+ 29 Oct 2026 10:25:34 +0000
+Authentication-Results: mx.microsoft.com 1; spf=pass (sender IP is
+ 2607:f8b0:4864:20::b135) smtp.mailfrom=socs.universityofgalway.ie; dkim=pass
+ (signature was verified)
+ header.d=socs-universityofgalway-ie.20260707.gappssmtp.com;dmarc=pass
+ action=none header.from=socs.universityofgalway.ie;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of
+ socs.universityofgalway.ie designates 2607:f8b0:4864:20::b135 as permitted
+ sender) receiver=protection.outlook.com; client-ip=2607:f8b0:4864:20::b135;
+ helo=mail-yx1-xb135.google.com; pr=C
+Received: from mail-yx1-xb135.google.com (2607:f8b0:4864:20::b135) by
+ MAD0EPF000008C1.mail.protection.outlook.com (2603:10b6:140::1c5) with
+ Microsoft SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id
+ 15.21.569.4 via Frontend Transport; Thu, 29 Oct 2026 10:25:34 +0000
+Received: by mail-yx1-xb135.google.com with SMTP id 956f58d0204a3-677bc4704cbso2001129d50.0
+        for <b.garigela1@universityofgalway.ie>; Thu, 29 Oct 2026 03:25:34 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1793269533; cv=none;
+        d=google.com; s=arc-20260327;
+        b=mI2DDSWN5EEtbSo8d1RoIWG/uwp1LPSbyYeFNtd6yshJ+pryzXni06hmZj6336VY2L
+         gGn5yHov7oZU4MU2psMO82INNdgDw8U7UosENKKO4cCtA/yf6k2otIqnACjPTTggT2CJ
+         YPGuX8oibq7+HVpJaqCZHaHnMh3DiG79RYl/kpjkySXhHQ3ZHi5EkLUSZ0FIth5spyxu
+         qY8J010BsNjqGYE4Kye720ynn4DWML3VQchiFvxqflxa0eoKCiBhg6ndcbUk6vZLSo7S
+         IyIPToc2SQ+/TH544dwekBJXiju6kqdYd5IKcvGch0qDMOkmHLtVsIxUyWCKzuKcv8+i
+         s4EA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=qEPvgRDgJV8sfwpqqFXBF3WaWWb0HoCGfSWxzAZKRV4=;
+        fh=id5nYxKIfoiE66I7iiw1+7TrRJ/fIlYFdwqrTm3QkUs=;
+        b=NQ0z/gITmJiRFsJrkQPgsBilLSfe1nzu/Bb9lqMM3nfDtlXaCYs15An2cwpoVOBqZS
+         UcP8xIlPDabTouj2QtLPO5W2m8tUF2gnDbhfSCzqFZkavfL3mrbHJgy/VrQD5g6j1Clm
+         aAOsQmQppy1EmmIwXShH1kWuZItwxLXqPEnepfowaQQsmhuhAjgrxVI9ntCU2DgN4rKM
+         GqmvuZJqWfPtcNqVMDXn/XcVvpiwpbnWa/JNY8cUUdosTvYwrPD2qYUpuT/9GphnbkIv
+         ji00ahsGik+gPSel5DOc1x0/I0muFfOKmcoS6ZY65pvyNe8j6Z9o/DHcsG//KyQVBoHu
+         wOeg==;
+        darn=universityofgalway.ie
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=socs-universityofgalway-ie.20260707.gappssmtp.com; s=20260707; t=1793269533; x=1793874333; darn=universityofgalway.ie;
+        h=content-type:to:subject:message-id:date:from:mime-version:from:to
+         :cc:subject:date:message-id:reply-to:content-type;
+        bh=qEPvgRDgJV8sfwpqqFXBF3WaWWb0HoCGfSWxzAZKRV4=;
+        b=bB9/2NwMR8DVM2gmi152Itn0HdhmON5V+HOeqlRFSMtrZiUcMcsgLt4NfXkSNAQSlu
+         5w9j3RDub9ezScEOZUjsnUOszvhOxcFRxDd0VGPaNErKKoBAy88rVHgzcClxBDaHwQXt
+         xEMJCA8zwXpl6gEcKIHX1+p0mzhCa3Xm3juRvdgRDjzrRZnWCcSr9GkahWXSWoSvU8Zv
+         RxrjPFqniIjqHKpIpA/yRKzsKzfjTVfEXkYVMqIiEm93FZYb6kbR9OXtdbwnlCYKJU+f
+         luJm8Djsqii8ppipAT433tmoo1z9cPkiNZ6iyTML83lUW3bBAKeVh+uYINQhhpdT785j
+         aLbQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20260707; t=1793269533; x=1793874333;
+        h=content-type:to:subject:message-id:date:from:mime-version:x-gm-gg
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to
+         :content-type;
+        bh=qEPvgRDgJV8sfwpqqFXBF3WaWWb0HoCGfSWxzAZKRV4=;
+        b=g4qfbSYBYVVdjk9YiCOKbuh9SeLgqHrGIvM2OFJoJUagGZLEN8mT7ABkwRUFrRegBj
+         nxtr76icO+Itu/3xjvWAbYBj9/8+jHIzbveUtpgdvOfKWGKl6B5f86iC6ePcIWFZ0cbn
+         w7h6iNT4GCPYAIqlpVdv4Lno+dFTtYbnOLFkbFrBiaWQV345ckEANf0y3pAuIQ3QfMgt
+         KWi0qSQXYNDOpKZn90rCl27RIlp/GtXwecB7Ji/zfDQNKj9/GWidcyxMRbCTSlrt1rt8
+         2Z1tEXHIFyDiJLZEhIeywhopAaj63AgtpgwpK99fI2TPPgW8OboG8HXtKKUFiOv2ojat
+         grbA==
+X-Forwarded-Encrypted: i=1; AKwUvBx9zQgvxLgwjiIYIAlzw0MASc1uC5vn9ENnFEf9+UzA8atu54aKfbIpIgSD2VKHeNCnJdA10cVZ/vzRBg==@universityofgalway.ie
+X-Gm-Message-State: AFq9FYIYQPRRexyHPBwToP1j9Po1jI3nvrJqxWgXMBJC6jH3pzZJCHTS
+	I7zK9Jb89lV40m5C4VkQ+M3ZghHn1L0pl7SKxq4Tsk+ZRj9TgR9OO7yvpgLutDUDwnEPfbGJoF5
+	EF1fvy81cAVMXefXB5bfDft5zVg/EfaTMX9Kh2jAW9cA2
+X-Gm-Gg: AYBFou291Y1hYCYlCE5orHlLo2+SGM6nNCrGzVEFfe2EGGzDTP6LVRYiYEe/wtJn6jj
+	JYGCt3P9oPuLEh7NPFg4kMWmcfiRGcBfACFJOAvpedNAWUOgRu+EPEFWUQmK0DoYIwhXuWXWI2x
+	JnSxbaURKsExUVGjfQ83kow8ObrkUF87O70JJRJs6opqUT+qBrrKh9PxeYfG8MMKEzcuJASr8Ym
+	Rehphk53NMKXZeF1kvxSWYtrtKn7V4djv2QZD9u4oA3i13wbu8Ru3Ckuqe12mJJitPY6P7HqUmy
+	2/oJyPERKoc0XbGaS3p4K+/SVXT6wzH/ci5yy2jMp6z/NnyYNxpxZisjtsrKK0Y74Wm1O5C+msq
+	bqrtxKh4kWZeiWpfSnFLZCkLr2h9k5hL1LoG1Kt2iLB1HMwdmsGdoy4nZcUCExpm7KTo=
+X-Received: by 2002:a05:690e:b85:b0:67b:98ee:6bf with SMTP id
+ 956f58d0204a3-67b98ee08bcmr511316d50.19.1793269532820; Thu, 29 Oct 2026
+ 03:25:32 -0700 (PDT)
+From: Societies Office <socsbox@socs.universityofgalway.ie>
+Date: Thu, 29 Oct 2026 10:24:56 +0000
+X-Gm-Features: AclHuK-zZU9cIvGzrEY5TKp2fgqEjrN7pf42JQMex6GpcYdxnQ6kGm221W--LhE
+Message-ID: <CADjqR-iVPkwnqvgqm62UaQhN0Xx2NykMJ+gBqhEdvOFqw1Gpnw@mail.gmail.com>
+Subject: Outstanding items to be completed asap
+To: Cyber Security Soc <cybersecurity@socs.universityofgalway.ie>
+Content-Type: multipart/alternative; boundary="0000000000007d99ce065ef81920"
+BCC: <b.garigela1@universityofgalway.ie>
+Return-Path: socsbox@socs.universityofgalway.ie
+X-MS-Exchange-Organization-ExpirationStartTime: 29 Oct 2026 10:25:34.3287
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: cc98f4b5-837e-4e36-ccd1-08df35a6f782
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 13e3b186-c446-4aab-9c6d-9ab9bb76816c:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: MAD0EPF000008C1:EE_|AS8PR01MB7317:EE_|GV2PR01MB12437:EE_
+X-MS-Exchange-Organization-AuthSource: MAD0EPF000008C1.eurprd05.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: cc98f4b5-837e-4e36-ccd1-08df35a6f782
+X-MS-Exchange-AtpMessageProperties: SA|SL
+x-ms-reactions: disallow
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|43022699015|260918215300599003|260918224100599003|12012899012|19002099009|55112099003|18002099003|16102099003|8096899003|13003099007|4133799003|56012099006|11063799006|5063699009|261022105027099003|261021123027099003|261026140227099003|261026121527099003|261022075727099003|10067099003|261009223027099003|261028144727099003;
+X-Forefront-Antispam-Report: CIP:2607:f8b0:4864:20::b135;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:mail-yx1-xb135.google.com;PTR:mail-yx1-xb135.google.com;CAT:NONE;SFTY:9.25;SFS:(13230040)(43022699015)(260918215300599003)(260918224100599003)(12012899012)(19002099009)(55112099003)(18002099003)(16102099003)(8096899003)(13003099007)(4133799003)(56012099006)(11063799006)(5063699009)(261022105027099003)(261021123027099003)(261026140227099003)(261026121527099003)(261022075727099003)(10067099003)(261009223027099003)(261028144727099003);DIR:INB;SFTY:9.25;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 29 Oct 2026 10:25:34.2500
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: cc98f4b5-837e-4e36-ccd1-08df35a6f782
+X-MS-Exchange-CrossTenant-Id: 13e3b186-c446-4aab-9c6d-9ab9bb76816c
+X-MS-Exchange-CrossTenant-AuthSource: MAD0EPF000008C1.eurprd05.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS8PR01MB7317
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.9991495
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0569.002
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(4710232)(4713193)(4999285)(920097)(930201)(20251009284)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?WkN3V1BiUjFFek96c3lWNTFoRGV0ME9iMmMrM0hDK0wvdHNpT01mdU5seGlk?=
+ =?utf-8?B?RDZ2ZGsyRm1Gd1c1eTg2Nk5LMi9ZMnd2dkFwNzBlLzltWmNLVkZ4TnFLU3ZS?=
+ =?utf-8?B?L0xMc2JEOGl5Q1NPa0kvS0dsK0NVOWhRNzNhb2N3OHU5dHVwWVU5SDlyclRz?=
+ =?utf-8?B?RDlxcHp4QVRKN2pMR2ZGRWVvVU9JRXI3MkdlQmJZMHJaRG9WNFVTUnBjV2pm?=
+ =?utf-8?B?cFBwd2RiTFpYUk0yV0dYYVVWK01YbmlpUUZwZlZxR0liSjM4b0NjUGVNUGph?=
+ =?utf-8?B?Rk9tV3dXUXhrRTd3b0dua1hON254RkMxWGluR1Q1cEMrTFJnMHArWlVhOVVX?=
+ =?utf-8?B?Z0N6L21mWFlZR2ZEMGhYakhQNDl6YVhTcEJLbDc3VGx3emtMK0xGaHhURFJr?=
+ =?utf-8?B?cmQ4OXNaLzVDckgvZisySU5YVDh5S2NnT1JYVzFNQWlkYWJWUDBnM3E2Tms5?=
+ =?utf-8?B?OVJvUEQ2ejkxMnVDQVVoTmhEZ09UWnRDaXhPZDJ0QnIzUmVnRkx0aXg2dFkz?=
+ =?utf-8?B?dVZLVEJKRFlTTmlaSVJmL3ZYemdRVWU2cHdnY0NCaFhxVTJXUUJocmNCNjU4?=
+ =?utf-8?B?KzQ5ZFJLUEs4NmdlQ29NTlVpOGlQVjh1Q25sdDRQY2wwTVVMc3FFNFRJODZx?=
+ =?utf-8?B?cC9aVXJhd0lDTVgwZ3lLa0tNZE0rUERTb0FrVUEvb3JKaStYWEFQZGNWK0pi?=
+ =?utf-8?B?Ly9CdXNWVnNENi9taHZPdDhUWTlyMEhUSGd6Nityc1pWbXN1MmU2TUdJV3JD?=
+ =?utf-8?B?WXRLWThPUXh4QmV1UnUrOUJRMzlkOFpSaUxWUmVjeGVpczQ2cURQTW1BeWp1?=
+ =?utf-8?B?cnk3dkVGNmhtWTFKYlVkcTF2OUplNzhvV01JTFZnejB0eTl6YzQ2QXFGamlX?=
+ =?utf-8?B?dDVwMjVUM1c4M3VpZzh5NUZDdk1BM0l6M05OcVUwam8rWVVDbW1iZlhBbERY?=
+ =?utf-8?B?MEVPTEdXankzMXNXNXd1Q3U3RCtYNnMrMzdpa2RUNFlrUW5UL2RaQ1B5OFVT?=
+ =?utf-8?B?K2VSNWJRaTRwbGFPOFJLZzNNVVp4dmVnd1FnSUlSZll1NUw1Mng4UVlSVHV3?=
+ =?utf-8?B?YmloSFJZM0RzZURLd0tOZm03dU43blg1K25xUTlMZml1c0twRjNGZFFYQVNN?=
+ =?utf-8?B?cjZ2anpvNmtETXV5MHRJaytBRlp0SkZmTDJMcHdPUWVZSHV1MVhseXZyOEx3?=
+ =?utf-8?B?bjVPNmVrOTZ2L3EzbHJEdlBkS2RYd3VoNHVOcVJLRkYwVVVGRE9FdTI5bTBt?=
+ =?utf-8?B?dzVEVHRZQ1BoSHdrTktTalN0S3F4eWR5Znh3WmMvQzZocUEwS2pzNk9MaGha?=
+ =?utf-8?B?YVZad0k1aEdoUVNzRjM3OVpVV3l6S3NXUEsyUjErcGgra1FNV1d0ZzZqUjJt?=
+ =?utf-8?B?SUwzVlBBUXloQVBOUm16NE1QTk9hRGN1MGF0b2NiMStMQnR1RUtkUlUzc25s?=
+ =?utf-8?B?N3ZhM1FZc2pXNi95dVdqY2FmL2J6MXJuWHlRcDNNZFFkVnlPVmVaWklQVG9s?=
+ =?utf-8?B?MG1XNTFMM054R2lJV3o0SG9yUFQwRGR0RlNpTGZHSS9lUTZnTXJpaFcwN3NX?=
+ =?utf-8?B?dmg0NS9TSGlUSVhic2ZTcUZYVDhUcytGaVQwN2JIOVBkVTU0YjREZzgrZEEv?=
+ =?utf-8?B?UFpZajF0bENmSG5MN1hvaVpJQVZWTXJQMzZsVTZYcW1iYjFTMjVzMzZqdnlr?=
+ =?utf-8?B?VlFEcVdBNFRnUFppT1ZHWlFiMlczTnR3dzFrR1BxZ2JpTDJvSHZGK1Nhc0lB?=
+ =?utf-8?B?ZE9icUc0K0R6NWd3UFdXUUcwbm91YVpya1l3cW5rbXNHWEN5cG9RVm9MdkFw?=
+ =?utf-8?B?WE5kUnRxOVpRTGI2aW00VG92aVcvZjI5aGpMT0xZU0dKWDloakNKTEhtS3ll?=
+ =?utf-8?B?eFFtalhncmorNlRZald3M2c1RDZlMVhPeEVhSzF0UG1yanFJS0NjYWttSm5k?=
+ =?utf-8?B?eHZ3V3JHdVp6a2hJY3JNUGJGVXFvVThNQW5mNkgrK0FGSy9tRlJIdVRaVmRl?=
+ =?utf-8?B?VGpRelVzczA2ZUtveHBQSHVZeURERXZqNGxDeHduaWdYYnZIbEtISVBVR0lM?=
+ =?utf-8?B?cjlMVUN4enNudnRjMG9oQ3ZGK0xmWDFxS25TOTFxWmtYWVBkZ0hUSm9BT2w3?=
+ =?utf-8?B?MlBtekl4MG9MeXJzZHlxOG95ZVdNR21jdFBGQjRYdnU0cHFhMXl4STBnRWR6?=
+ =?utf-8?B?WnZBRyt2V0RHQXlWRnVIT2MyV0JreHA0M1hYSE5GT1hzMHFFK0lXNnhOaUhG?=
+ =?utf-8?B?SDVGc09yUlFwVFo0WjQxSnZiSmF5Wkt6M3ZDSmg2Zm1xaENFalpwVzJoZStK?=
+ =?utf-8?B?MUZJclpqOXg2ZEszemFZUUE2Rm0zUWthUDBFbkhDT1NoNDFPQzZKK2c5NmxJ?=
+ =?utf-8?B?Nm8xcmFqZ204WWxUMkdLMEk0dkU2WlRMbDVUeEYzWWc2Ulc3c2wvT1g3Zkph?=
+ =?utf-8?B?OHhWZ09TRXdFSnNGRm42Tit2RTBXSFVRRndmQktzbnNsYWdpMGR2SjAwaFI2?=
+ =?utf-8?B?b2lNajFId09DV3g5NG9KUklkMm1DeWRicXpwYlJNVTZSZklFSmgyTjhpSm5r?=
+ =?utf-8?B?dUt6YjNTbFR1YTMzdWVmMnhnY0Zxdkg0b1RmdG02eFB6dFcrTjRpb0VNS29u?=
+ =?utf-8?B?cnVHaVRkR2FQUSsrVFJ3cGtTVnUvSEFWQmZWc1c3ZElRN016LzlXTFdETDlu?=
+ =?utf-8?B?Sk9MbWx2blBFWjN0U2Q3aFIrTTFVRzlxT0sxVXg0ejg0bUlkTnJOcG5qVTc2?=
+ =?utf-8?B?Y2lvT3JHRzR1eGl4ZjNXRHhpQWJWa3E2aXpSNXpXVHRuRFV3ZjdlRGZpZWhF?=
+ =?utf-8?B?ak5FWnVkWUhTaC96a25SZWdka1RRcmdDeE9LcGpEV3U5aDR2QnczZnVrM1RM?=
+ =?utf-8?B?MUVsMDhYcTBPQ0tYRFpjRjBGaWNCRGdFNjZlOXYzeCtRRzY4M3lpWlkwTk5T?=
+ =?utf-8?B?QUVpVHZ6ak91Q25jam5UQ1JRdXlZb2tqZ1hpek1wV0RzQkhHNjlIbGs5cGl5?=
+ =?utf-8?B?MGFHbnNxZ1JxN085d0ZBNXA1SUJzVndVMnR1ay9nWG42cTBXVDlrS3NqMDhU?=
+ =?utf-8?B?MGdURTd1ekdRei9udllYdmZtWWU0QjlzekRUeWd5Rks0Z2QyN2NHbndwWUVY?=
+ =?utf-8?B?TEdMKzZNN1JkM1BxZWFHQk1FMTViblU2SW1hRzBabnQ1NXJyemNVOFc3SE9G?=
+ =?utf-8?B?QmljVEhhRWlBR1ZxRTU2SmhzRGVEUnVNaGVuTWJrY3BtZ3kzMnppYUZ2c290?=
+ =?utf-8?B?Z0Q5bFZ3MmVmT0tGYlUzWnJJYklrajIyWGh1TU5rMGFyWUt4MDBLUnVyVHIr?=
+ =?utf-8?B?dWVlRU5aM0FTR0FjWDdJY2lQZXUzTmM3dVQyOUNDbmJGTGQ3cjBha29odGhh?=
+ =?utf-8?Q?arun9HbYugVYd81avMBDR?=
+MIME-Version: 1.0
+
+--0000000000007d99ce065ef81920
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+You don't often get email from socsbox@socs.universityofgalway.ie. Learn wh=
+y this is important<https://aka.ms/LearnAboutSenderIdentification>
+External Email: This email originated outside the University of Galway. Do =
+not open attachments or click on links unless you believe the content is sa=
+fe.
+R=C3=ADomhphost Seachtrach: N=C3=ADor th=C3=A1inig an r=C3=ADomhphost seo =
+=C3=B3 Ollscoil na Gaillimhe. N=C3=A1 hoscail ceangalt=C3=A1in agus n=C3=A1=
+ clice=C3=A1il ar naisc mura gcreideann t=C3=BA go bhfuil an t-=C3=A1bhar s=
+=C3=A1bh=C3=A1ilte.
+
+Hi Cyber Soc,
+
+Please see below who on your committee has outstanding questions/training t=
+o do.
+
+Please set aside time to do this asap. The deadline is October 31st at whic=
+h time we will remove anyone from your committee who has not completed this=
+, you need 4 people on your committee.
+
+First Name      Last Name       Competed Training       leadership question=
+s
+Abbineshkar     Loganathan      Yes     No
+Aksharaa        Guha    Yes     No
+Omkar   Pote    Yes     Yes
+Karolina        Smela   Yes     No
+Michael Proffitt-Cox    No      No
+Bhumika Garigela        Yes     No
+Simra Parvez    Bhombal Yes     Yes
+Harsh   Koladkar        Yes     Yes
+Shubham Kapse   Yes     Yes
+Varun   Nikale  No      No
+Neha    Rajput  Yes     No
+
+
+
+check the supersoc excel for info on outstanding tasks.
+
+https://docs.google.com/spreadsheets/d/1VVEmt4a27o8LkR2zHhWrLubWcpN18RWlNlM=
+ohMhJTqw/edit?usp=3Dsharing<https://docs.google.com/spreadsheets/d/1VVEmt4a=
+27o8LkR2zHhWrLubWcpN18RWlNlMohMhJTqw/edit?usp=3DsharingRegards,>
+Regards,
+
+The Socbox Team
+
+Booking a Room: Please be aware of the following:
+=C3=81ras na Mac L=C3=A9inn is the student building and therefore prioritis=
+es society and student-run events during term time. Rooms are used as-is. S=
+etup services are not provided, and all spaces must be left clean after use=
+.
+Note: After 5 p.m., rooms are reserved exclusively for societies, except fo=
+r the Music Rooms (two piano rooms, the band rehearsal room, and the small =
+acoustic rooms) and the Relaxation Room.
+Students: You may book any available space within 24 hours of your event, b=
+ut please remember that rooms come as found and no setups are available.
+
+
+Regards
+
+The Socs Box team
+
+--------------------------------------------------------------
+I do not expect you to respond to my email outside your work hours.
+
+Student Services/Seirbh=C3=ADs=C3=AD do Mhic L=C3=A9inn
+Address: University of Galway Societies' Office, =C3=81ras Na Mac L=C3=A9in=
+n, University Road, Galway H91 RTR6
+Website: socs.universityofgalway.ie<http://socs.universityofgalway.ie>
+Opening Hours:
+11am-7pm Monday-Thursday
+11am-6pm Friday
+Follow us on Social Media!
+Facebook<https://www.facebook.com/universityofgalwaysocsbox> Twitter<https:=
+//twitter.com/GalwaySocsBox> Linkedin<https://www.linkedin.com/in/societies=
+-office-university-of-galway-5609071b6/> Instagram<https://www.instagram.co=
+m/universityofgalwaysocsbox/> TikTok<https://www.tiktok.com/@thesocsbox?lan=
+g=3Den>
+
+CONFIDENTIALITY AND PRIVACY NOTICE
+
+Information transmitted by this email is proprietary to University of Galwa=
+y and is intended for use only by the individual or entity to which it is a=
+ddressed, and may contain information that is private, privileged, confiden=
+tial or exempt from disclosure under applicable law. If you are not the int=
+ended recipient or it appears that this mail has been forwarded to you with=
+out proper authority, you are notified that any use or dissemination of thi=
+s information in any manner is strictly prohibited. In such cases, please d=
+elete this mail from your records.
+
+--0000000000007d99ce065ef81920
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+</head>
+<body>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" styl=
+e=3D" aspect-ratio: revert !important; background: revert !important; block=
+-size: revert !important; border: revert !important; bottom: revert !import=
+ant; color: revert !important; color-scheme: revert !important; content-vis=
+ibility: revert !important; cursor: revert !important; direction: revert !i=
+mportant; display: revert !important; font-size: revert !important; height:=
+ revert !important; hyphens: revert !important; letter-spacing: revert !imp=
+ortant; line-height: revert !important; margin: revert !important; opacity:=
+ revert !important; order: revert !important; outline: revert !important; o=
+verflow: revert !important; padding: revert !important; position: revert !i=
+mportant; resize: revert !important; rotate: revert !important; scale: reve=
+rt !important; tab-size: revert !important; table-layout: revert !important=
+; text-align: revert !important; text-indent: revert !important; text-orien=
+tation: revert !important; text-overflow: revert !important; text-shadow: r=
+evert !important; text-transform: revert !important; text-wrap: revert !imp=
+ortant; top: revert !important; transition: revert !important; user-select:=
+ revert !important; vertical-align: revert !important; visibility: visible =
+!important; white-space: revert !important; width: revert !important; word-=
+break: revert !important; word-spacing: revert !important; writing-mode: re=
+vert !important; zoom: revert !important; cellpadding: 0 !important; border=
+: 0 !important; cellspacing: 0 !important; display: table !important; width=
+: 100% !important; table-layout: fixed !important; border-collapse: seperat=
+e !important; float: none !important; border-spacing: 0px 0px !important; "=
+ align=3D"left">
+<tbody style=3D" aspect-ratio: revert !important; background: revert !impor=
+tant; block-size: revert !important; border: revert !important; bottom: rev=
+ert !important; color: revert !important; color-scheme: revert !important; =
+content-visibility: revert !important; cursor: revert !important; direction=
+: revert !important; display: revert !important; font-size: revert !importa=
+nt; height: revert !important; hyphens: revert !important; letter-spacing: =
+revert !important; line-height: revert !important; margin: revert !importan=
+t; opacity: revert !important; order: revert !important; outline: revert !i=
+mportant; overflow: revert !important; padding: revert !important; position=
+: revert !important; resize: revert !important; rotate: revert !important; =
+scale: revert !important; tab-size: revert !important; table-layout: revert=
+ !important; text-align: revert !important; text-indent: revert !important;=
+ text-orientation: revert !important; text-overflow: revert !important; tex=
+t-shadow: revert !important; text-transform: revert !important; text-wrap: =
+revert !important; top: revert !important; transition: revert !important; u=
+ser-select: revert !important; vertical-align: revert !important; visibilit=
+y: visible !important; white-space: revert !important; width: revert !impor=
+tant; word-break: revert !important; word-spacing: revert !important; writi=
+ng-mode: revert !important; zoom: revert !important; display: block !import=
+ant; ">
+<tr style=3D" aspect-ratio: revert !important; background: revert !importan=
+t; block-size: revert !important; border: revert !important; bottom: revert=
+ !important; color: revert !important; color-scheme: revert !important; con=
+tent-visibility: revert !important; cursor: revert !important; direction: r=
+evert !important; display: revert !important; font-size: revert !important;=
+ height: revert !important; hyphens: revert !important; letter-spacing: rev=
+ert !important; line-height: revert !important; margin: revert !important; =
+opacity: revert !important; order: revert !important; outline: revert !impo=
+rtant; overflow: revert !important; padding: revert !important; position: r=
+evert !important; resize: revert !important; rotate: revert !important; sca=
+le: revert !important; tab-size: revert !important; table-layout: revert !i=
+mportant; text-align: revert !important; text-indent: revert !important; te=
+xt-orientation: revert !important; text-overflow: revert !important; text-s=
+hadow: revert !important; text-transform: revert !important; text-wrap: rev=
+ert !important; top: revert !important; transition: revert !important; user=
+-select: revert !important; vertical-align: revert !important; visibility: =
+visible !important; white-space: revert !important; width: revert !importan=
+t; word-break: revert !important; word-spacing: revert !important; writing-=
+mode: revert !important; zoom: revert !important; ">
+<td valign=3D"middle" width=3D"1px" bgcolor=3D"#A6A6A6" cellpadding=3D"7px =
+2px 7px 2px" style=3D" aspect-ratio: revert !important; background: revert =
+!important; block-size: revert !important; border: revert !important; botto=
+m: revert !important; color: revert !important; color-scheme: revert !impor=
+tant; content-visibility: revert !important; cursor: revert !important; dir=
+ection: revert !important; display: revert !important; font-size: revert !i=
+mportant; height: revert !important; hyphens: revert !important; letter-spa=
+cing: revert !important; line-height: revert !important; margin: revert !im=
+portant; opacity: revert !important; order: revert !important; outline: rev=
+ert !important; overflow: revert !important; padding: revert !important; po=
+sition: revert !important; resize: revert !important; rotate: revert !impor=
+tant; scale: revert !important; tab-size: revert !important; table-layout: =
+revert !important; text-align: revert !important; text-indent: revert !impo=
+rtant; text-orientation: revert !important; text-overflow: revert !importan=
+t; text-shadow: revert !important; text-transform: revert !important; text-=
+wrap: revert !important; top: revert !important; transition: revert !import=
+ant; user-select: revert !important; vertical-align: revert !important; vis=
+ibility: visible !important; white-space: revert !important; width: revert =
+!important; word-break: revert !important; word-spacing: revert !important;=
+ writing-mode: revert !important; zoom: revert !important; padding: 7px 2px=
+ 7px 2px !important; background-color: #A6A6A6 !important; valign: middle !=
+important; width: 0px !important; ">
+</td>
+<td valign=3D"middle" width=3D"100%" bgcolor=3D"#EAEAEA" cellpadding=3D"7px=
+ 5px 7px 15px" color=3D"#212121" style=3D" aspect-ratio: revert !important;=
+ background: revert !important; block-size: revert !important; border: reve=
+rt !important; bottom: revert !important; color: revert !important; color-s=
+cheme: revert !important; content-visibility: revert !important; cursor: re=
+vert !important; direction: revert !important; display: revert !important; =
+font-size: revert !important; height: revert !important; hyphens: revert !i=
+mportant; letter-spacing: revert !important; line-height: revert !important=
+; margin: revert !important; opacity: revert !important; order: revert !imp=
+ortant; outline: revert !important; overflow: revert !important; padding: r=
+evert !important; position: revert !important; resize: revert !important; r=
+otate: revert !important; scale: revert !important; tab-size: revert !impor=
+tant; table-layout: revert !important; text-align: revert !important; text-=
+indent: revert !important; text-orientation: revert !important; text-overfl=
+ow: revert !important; text-shadow: revert !important; text-transform: reve=
+rt !important; text-wrap: revert !important; top: revert !important; transi=
+tion: revert !important; user-select: revert !important; vertical-align: re=
+vert !important; visibility: visible !important; white-space: revert !impor=
+tant; width: revert !important; word-break: revert !important; word-spacing=
+: revert !important; writing-mode: revert !important; zoom: revert !importa=
+nt; width: 100% !important; background-color: #EAEAEA !important; padding: =
+7px 5px 7px 15px !important; font-family: wf_segoe-ui_normal, Segoe UI, Seg=
+oe WP, Tahoma, Arial, sans-serif !important; font-size: 12px !important; fo=
+nt-weight: normal !important; color: #212121 !important; text-align: left !=
+important; word-wrap: break-word !important; ">
+<div style=3D" aspect-ratio: revert !important; background: revert !importa=
+nt; block-size: revert !important; border: revert !important; bottom: rever=
+t !important; color: revert !important; color-scheme: revert !important; co=
+ntent-visibility: revert !important; cursor: revert !important; direction: =
+revert !important; display: revert !important; font-size: revert !important=
+; height: revert !important; hyphens: revert !important; letter-spacing: re=
+vert !important; line-height: revert !important; margin: revert !important;=
+ opacity: revert !important; order: revert !important; outline: revert !imp=
+ortant; overflow: revert !important; padding: revert !important; position: =
+revert !important; resize: revert !important; rotate: revert !important; sc=
+ale: revert !important; tab-size: revert !important; table-layout: revert !=
+important; text-align: revert !important; text-indent: revert !important; t=
+ext-orientation: revert !important; text-overflow: revert !important; text-=
+shadow: revert !important; text-transform: revert !important; text-wrap: re=
+vert !important; top: revert !important; transition: revert !important; use=
+r-select: revert !important; vertical-align: revert !important; visibility:=
+ visible !important; white-space: revert !important; width: revert !importa=
+nt; word-break: revert !important; word-spacing: revert !important; writing=
+-mode: revert !important; zoom: revert !important; ">
+You don't often get email from socsbox@socs.universityofgalway.ie. <a href=
+=3D"https://aka.ms/LearnAboutSenderIdentification" style=3D"background: rev=
+ert !important;color: revert !important;content-visibility: revert !importa=
+nt;direction: revert !important;display: revert !important;font-size: rever=
+t !important;opacity: revert !important;rotate: revert !important;scale: re=
+vert !important;visibility: revert !important;">
+Learn why this is important</a> </div>
+</td>
+<td valign=3D"middle" align=3D"left" width=3D"75px" bgcolor=3D"#EAEAEA" cel=
+lpadding=3D"7px 5px 7px 5px" color=3D"#212121" style=3D" aspect-ratio: reve=
+rt !important; background: revert !important; block-size: revert !important=
+; border: revert !important; bottom: revert !important; color: revert !impo=
+rtant; color-scheme: revert !important; content-visibility: revert !importa=
+nt; cursor: revert !important; direction: revert !important; display: rever=
+t !important; font-size: revert !important; height: revert !important; hyph=
+ens: revert !important; letter-spacing: revert !important; line-height: rev=
+ert !important; margin: revert !important; opacity: revert !important; orde=
+r: revert !important; outline: revert !important; overflow: revert !importa=
+nt; padding: revert !important; position: revert !important; resize: revert=
+ !important; rotate: revert !important; scale: revert !important; tab-size:=
+ revert !important; table-layout: revert !important; text-align: revert !im=
+portant; text-indent: revert !important; text-orientation: revert !importan=
+t; text-overflow: revert !important; text-shadow: revert !important; text-t=
+ransform: revert !important; text-wrap: revert !important; top: revert !imp=
+ortant; transition: revert !important; user-select: revert !important; vert=
+ical-align: revert !important; visibility: visible !important; white-space:=
+ revert !important; width: revert !important; word-break: revert !important=
+; word-spacing: revert !important; writing-mode: revert !important; zoom: r=
+evert !important; width: 75px !important; background-color: #EAEAEA !import=
+ant; padding: 7px 5px 7px 5px !important; font-family: wf_segoe-ui_normal, =
+Segoe UI, Segoe WP, Tahoma, Arial, sans-serif !important; font-size: 12px !=
+important; font-weight: normal !important; color: #212121 !important; text-=
+align: left !important; word-wrap: break-word !important; align: left !impo=
+rtant; ">
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" align=3D"left" widt=
+h=3D"100%">
+<tbody>
+<tr>
+<td style=3D"background:#dc3232;padding:3pt 1pt 3pt 1pt;font-family:Calibri=
+"></td>
+<td width=3D"100%" cellpadding=3D"3px 6px 3px 15px" style=3D"background:#ff=
+f7f7;padding:3pt 4pt 3pt 12pt;word-wrap:break-word">
+<div style=3D"color:#222222;"><span style=3D"font-size:12px;font-weight:bol=
+d;font-family:&quot;Segoe UI&quot;,sans-serif;color:#212121;">External Emai=
+l:</span>
+<span style=3D"font-size:12px;font-family:&quot;Segoe UI&quot;,sans-serif;c=
+olor:#212121;">This email originated outside the University of Galway. Do n=
+ot open attachments or click on links unless you believe the content is saf=
+e.</span><br>
+<span style=3D"font-size:12px;font-weight:bold;font-family:&quot;Segoe UI&q=
+uot;,sans-serif;color:#212121;">R=C3=ADomhphost Seachtrach:</span>
+<span style=3D"font-size:12px;font-family:&quot;Segoe UI&quot;,sans-serif;c=
+olor:#212121;">N=C3=ADor th=C3=A1inig an r=C3=ADomhphost seo =C3=B3 Ollscoi=
+l na Gaillimhe. N=C3=A1 hoscail ceangalt=C3=A1in agus n=C3=A1 clice=C3=A1il=
+ ar naisc mura gcreideann t=C3=BA go bhfuil an t-=C3=A1bhar s=C3=A1bh=C3=A1=
+ilte.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<br>
+<div>
+<div dir=3D"ltr">
+<div>
+<div>Hi Cyber Soc,</div>
+<div>
+<div class=3D"gmail_quote">
+<div dir=3D"ltr">
+<div><br>
+</div>
+<div>Please see below who on your committee has outstanding questions/train=
+ing to do.</div>
+<div><br>
+</div>
+<div>Please set aside time to do this asap. The deadline&nbsp;is October 31=
+st at which time we will remove anyone from your committee who has not comp=
+leted this, you need 4 people on your committee.</div>
+<div><br>
+</div>
+<div>
+<table cellspacing=3D"0" cellpadding=3D"0" dir=3D"ltr" border=3D"1" style=
+=3D"table-layout:fixed;font-size:10pt;font-family:Arial;width:0px;border-co=
+llapse:collapse;border-width:medium;border-style:none;border-color:currentc=
+olor">
+<colgroup><col width=3D"100"><col width=3D"100"><col width=3D"100"><col wid=
+th=3D"100"></colgroup>
+<tbody>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+First Name</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Last Name</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Competed Training</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+leadership questions</td>
+</tr>
+</tbody>
+</table>
+</div>
+<table cellspacing=3D"0" cellpadding=3D"0" dir=3D"ltr" border=3D"1" style=
+=3D"table-layout:fixed;font-size:10pt;font-family:Arial;width:0px;border-co=
+llapse:collapse;border-width:medium;border-style:none;border-color:currentc=
+olor">
+<colgroup><col width=3D"100"><col width=3D"100"><col width=3D"100"><col wid=
+th=3D"100"></colgroup>
+<tbody>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Abbineshkar</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Loganathan</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+<td style=3D"background-color:rgb(255,153,0);border:1px solid rgb(204,204,2=
+04);overflow:hidden;padding:2px 3px;vertical-align:bottom">
+No</td>
+</tr>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Aksharaa</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Guha</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+<td style=3D"background-color:rgb(255,153,0);border:1px solid rgb(204,204,2=
+04);overflow:hidden;padding:2px 3px;vertical-align:bottom">
+No</td>
+</tr>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Omkar</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Pote</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+</tr>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Karolina</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Smela</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+<td style=3D"background-color:rgb(255,153,0);border:1px solid rgb(204,204,2=
+04);overflow:hidden;padding:2px 3px;vertical-align:bottom">
+No</td>
+</tr>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Michael</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Proffitt-Cox</td>
+<td style=3D"background-color:rgb(252,229,205);border:1px solid rgb(204,204=
+,204);overflow:hidden;padding:2px 3px;vertical-align:bottom">
+No</td>
+<td style=3D"background-color:rgb(255,153,0);border:1px solid rgb(204,204,2=
+04);overflow:hidden;padding:2px 3px;vertical-align:bottom">
+No</td>
+</tr>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Bhumika</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Garigela</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+<td style=3D"background-color:rgb(255,153,0);border:1px solid rgb(204,204,2=
+04);overflow:hidden;padding:2px 3px;vertical-align:bottom">
+No</td>
+</tr>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Simra Parvez</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Bhombal</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+</tr>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Harsh</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Koladkar</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+</tr>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Shubham</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Kapse</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+</tr>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Varun</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Nikale</td>
+<td style=3D"background-color:rgb(252,229,205);border:1px solid rgb(204,204=
+,204);overflow:hidden;padding:2px 3px;vertical-align:bottom">
+No</td>
+<td style=3D"background-color:rgb(255,153,0);border:1px solid rgb(204,204,2=
+04);overflow:hidden;padding:2px 3px;vertical-align:bottom">
+No</td>
+</tr>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Neha</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Rajput</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+Yes</td>
+<td style=3D"background-color:rgb(255,153,0);border:1px solid rgb(204,204,2=
+04);overflow:hidden;padding:2px 3px;vertical-align:bottom">
+No</td>
+</tr>
+</tbody>
+</table>
+<table cellspacing=3D"0" cellpadding=3D"0" dir=3D"ltr" border=3D"1" style=
+=3D"table-layout:fixed;font-size:10pt;font-family:Arial;width:0px;border-co=
+llapse:collapse;border-width:medium;border-style:none;border-color:currentc=
+olor">
+<colgroup><col width=3D"100"><col width=3D"100"><col width=3D"100"><col wid=
+th=3D"100"></colgroup>
+<tbody>
+<tr>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+<br>
+</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+<br>
+</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+</td>
+<td style=3D"border:1px solid rgb(204,204,204);overflow:hidden;padding:2px =
+3px;vertical-align:bottom">
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<div dir=3D"ltr" class=3D"gmail_signature">
+<div dir=3D"ltr">
+<div dir=3D"ltr">
+<div style=3D"font-size:12.8px"><span style=3D"font-size:small;background-c=
+olor:transparent"><br>
+</span></div>
+<div style=3D"font-size:12.8px"><span style=3D"font-size:small;background-c=
+olor:transparent">check the supersoc excel for info on outstanding tasks.</=
+span></div>
+<div style=3D"font-size:12.8px"><span style=3D"font-size:small"><br>
+</span></div>
+<div style=3D"font-size:12.8px"><a href=3D"https://docs.google.com/spreadsh=
+eets/d/1VVEmt4a27o8LkR2zHhWrLubWcpN18RWlNlMohMhJTqw/edit?usp=3DsharingRegar=
+ds," target=3D"_blank"><span style=3D"font-size:small;background-color:tran=
+sparent">https://docs.google.com/spreadsheets/d/1VVEmt4a27o8LkR2zHhWrLubWcp=
+N18RWlNlMohMhJTqw/edit?usp=3Dsharing</span></a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_signatur=
+e">
+<div dir=3D"ltr">
+<div dir=3D"ltr">
+<div style=3D"font-size:12.8px"><span style=3D"color:rgb(34,34,34);font-siz=
+e:small">Regards,&nbsp;</span></div>
+<div style=3D"font-size:12.8px"><span style=3D"color:rgb(34,34,34);font-siz=
+e:small"><br>
+</span></div>
+<div style=3D"font-size:12.8px"><span style=3D"color:rgb(34,34,34);font-siz=
+e:small">The Socbox Team</span></div>
+<div style=3D"font-size:12.8px"><b><span style=3D"color:rgb(34,34,34);font-=
+size:small"><br>
+</span></b></div>
+<div><font size=3D"1"><b><span style=3D"color:rgb(34,34,34)">Booking a Room=
+: Please be aware of the following:</span></b><br style=3D"color:rgb(34,34,=
+34)">
+</font><font size=3D"1"><span style=3D"color:rgb(34,34,34)">=C3=81ras na Ma=
+c L=C3=A9inn is the student building and therefore prioritises society and =
+student-run events during term time. Rooms are used as-is. S</span><span st=
+yle=3D"color:rgb(34,34,34)">etup</span><span style=3D"color:rgb(34,34,34)">=
+&nbsp;services
+ are not&nbsp;</span><span style=3D"color:rgb(34,34,34)">provided</span><sp=
+an style=3D"color:rgb(34,34,34)">, and all spaces must be left clean after =
+use.</span><br style=3D"color:rgb(34,34,34)">
+<span style=3D"color:rgb(34,34,34)"><b>Note:</b> After 5 p.m., rooms are re=
+served exclusively for societies, except for the Music Rooms (two piano roo=
+ms, the band rehearsal room, and the small acoustic rooms) and the Relaxati=
+on Room.</span></font><br style=3D"color:rgb(34,34,34);font-size:small">
+<font size=3D"1"><span style=3D"color:rgb(34,34,34)"><b>Students: </b>You m=
+ay book any available space within 24 hours of your event, but please remem=
+ber that rooms come as found and&nbsp;</span><span style=3D"color:rgb(34,34=
+,34)">no</span><span style=3D"color:rgb(34,34,34)">&nbsp;setups
+ are available.</span></font></div>
+<div style=3D"font-size:12.8px"><br style=3D"color:rgb(34,34,34);font-size:=
+small">
+<br style=3D"color:rgb(34,34,34);font-size:small">
+<span style=3D"color:rgb(34,34,34);font-size:small">Regards</span><span sty=
+le=3D"font-size:12.8px"></span></div>
+<div style=3D"font-size:12.8px"><span style=3D"color:rgb(34,34,34);font-siz=
+e:small"><br>
+</span></div>
+<div style=3D"font-size:12.8px"><span style=3D"color:rgb(34,34,34);font-siz=
+e:small">The Socs Box team</span></div>
+<div style=3D"font-size:12.8px"><span style=3D"font-size:12.8px"><br>
+</span></div>
+<div style=3D"font-size:12.8px"><span style=3D"font-size:12.8px">----------=
+----------------------------------------------------</span></div>
+<div style=3D"font-size:12.8px"><span style=3D"color:rgb(34,34,34);font-siz=
+e:small"><i>I do not expect you to respond to my email outside your work ho=
+urs.</i></span><span style=3D"font-size:12.8px"><br>
+</span></div>
+<div style=3D"font-size:12.8px"><br>
+</div>
+<div style=3D"font-size:12.8px"><span style=3D"color:rgb(34,34,34);font-siz=
+e:small">Student Services/Seirbh=C3=ADs=C3=AD do Mhic L=C3=A9inn</span><spa=
+n style=3D"font-size:12.8px"><br>
+</span></div>
+<span style=3D"font-size:12.8px">Address: University of Galway Societies' O=
+ffice,&nbsp;</span><span style=3D"font-size:12.8px">=C3=81ras Na Mac L=C3=
+=A9inn,&nbsp;</span><span style=3D"font-size:12.8px">University Road, Galwa=
+y H91 RTR6</span></div>
+<div dir=3D"ltr"><span style=3D"font-size:12.8px">Website: <a href=3D"http:=
+//socs.universityofgalway.ie" target=3D"_blank">
+<b><font color=3D"#0000ff">socs.universityofgalway.ie</font></b></a></span>=
+</div>
+<div><b>Opening Hours:&nbsp;</b></div>
+<div>11am-7pm Monday-Thursday&nbsp;</div>
+<div>11am-6pm Friday</div>
+<div dir=3D"ltr">
+<div>
+<div><i><b>Follow us on Social Media!</b></i></div>
+<div><b><font color=3D"#0000ff"><a href=3D"https://www.facebook.com/univers=
+ityofgalwaysocsbox" target=3D"_blank">Facebook</a></font>
+<font color=3D"#0000ff"><a href=3D"https://twitter.com/GalwaySocsBox" targe=
+t=3D"_blank">Twitter</a></font>
+<a href=3D"https://www.linkedin.com/in/societies-office-university-of-galwa=
+y-5609071b6/" target=3D"_blank">
+Linkedin</a><a href=3D"https://www.instagram.com/universityofgalwaysocsbox/=
+" target=3D"_blank"> Instagram</a>
+<a href=3D"https://www.tiktok.com/@thesocsbox?lang=3Den" target=3D"_blank">=
+TikTok</a></b></div>
+</div>
+</div>
+<div dir=3D"ltr">
+<p style=3D"margin-top:0px;margin-bottom:0px;color:rgb(0,0,0);font-family:C=
+alibri,Helvetica,sans-serif;font-size:16px">
+<b style=3D"font-style:inherit;color:rgb(33,33,33);font-family:Calibri,sans=
+-serif;font-size:11pt;text-align:justify"><span style=3D"font-size:9pt;font=
+-family:&quot;Times New Roman&quot;,serif,serif,EmojiFont;color:rgb(68,84,1=
+06)">CONFIDENTIALITY AND PRIVACY NOTICE</span></b></p>
+<p style=3D"margin:0cm 0cm 0.0001pt;font-size:11pt;font-family:Calibri,sans=
+-serif;color:rgb(33,33,33);text-align:justify">
+<span style=3D"font-size:9pt;font-family:&quot;Times New Roman&quot;,serif,=
+serif,EmojiFont;color:rgb(68,84,106)"></span></p>
+<p style=3D"margin:0cm 0cm 0.0001pt;font-size:11pt;font-family:Calibri,sans=
+-serif;color:rgb(33,33,33);text-align:justify">
+<span style=3D"font-size:9pt;font-family:&quot;Times New Roman&quot;,serif,=
+serif,EmojiFont;color:rgb(68,84,106)">Information transmitted by this email=
+ is proprietary to University of Galway and is intended for use only by the=
+ individual or entity to which it is addressed,
+ and may contain information that is private, privileged, confidential or e=
+xempt from disclosure under applicable law. If you are not the intended rec=
+ipient or it appears that this mail has been forwarded to you without prope=
+r authority, you are notified that
+ any use or dissemination of this information in any manner is strictly pro=
+hibited. In such cases, please delete this mail from your records.</span></=
+p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+--0000000000007d99ce065ef81920--

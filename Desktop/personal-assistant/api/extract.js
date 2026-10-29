@@ -1,6 +1,6 @@
 import { loadLocalEnv } from './_lib/env.js'
+import { gemmaRequestBody, gemmaUrl, getAvailableGemmaModel } from './_lib/gemma.js'
 
-const model = process.env.GEMMA_MODEL || 'gemma-4-31b-it'
 loadLocalEnv()
 
 export default async function handler(request, response) {
@@ -10,6 +10,8 @@ export default async function handler(request, response) {
   }
 
   const apiKey = process.env.GEMMA_API_KEY
+  const configuredModel = process.env.GEMMA_MODEL || 'gemma-4-26b-a4b-it'
+  const model = await getAvailableGemmaModel(apiKey, configuredModel)
   if (!apiKey) {
     return response.status(500).json({ error: 'GEMMA_API_KEY is not configured on the server.' })
   }
@@ -25,11 +27,11 @@ Email:
 ${email.slice(0, 50000)}`
 
   const gemmaResponse = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${encodeURIComponent(apiKey)}`,
+    gemmaUrl(model, apiKey),
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] }),
+      body: JSON.stringify(gemmaRequestBody(prompt)),
     },
   )
 

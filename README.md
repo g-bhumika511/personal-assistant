@@ -1,3 +1,11 @@
+MLH Hackathon WINNER!!!
+
+https://www.mlh.com/events/hacktoberfest-hack-day-galway-x-cybersecurity-society-university-of-galway/manage/submissions
+
+<img width="918" height="725" alt="Screenshot 2026-10-30 at 2 58 04 PM" src="https://github.com/user-attachments/assets/3f2701f0-c2bd-4bd0-980a-5d4bb121e120" />
+
+
+
 # Quiet Desk
 
 Quiet Desk is a calm personal assistant for students. Students get many

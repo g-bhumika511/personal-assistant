@@ -4,6 +4,8 @@ Quiet Desk is a calm personal assistant for students. Students get many
 events, interviews, deadlines, and announcements buried in email, and need
 one calm list of what matters and what to do next.
 
+Access: https://quiet-desk-rouge.vercel.app/ 
+
 ## Project files
 
 - `README.md` - the project brief, MVP scope, stretch goals, and inbox review.
